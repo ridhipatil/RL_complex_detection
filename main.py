@@ -99,14 +99,12 @@ def network():
         nodes_list = list(G.nodes())
         n = random.choice(nodes_list)
         # make sure n is not a node floating around
-        if allgraphs.neighbors(n) == 0:
-           while True:
-               n = random.choice(nodes_list)
-               if allgraphs.neighbors(n) != 0:
-                   print('hi')
-                   False
-               else:
-                   continue
+        while len(list(allgraphs.neighbors(n))) == 0:
+           n = random.choice(nodes_list)
+           if allgraphs.neighbors(n) != 0:
+             False
+           else:
+             continue
         g = nx.Graph()
         nx.add_path(g, [n])
         logging.warning(n)
