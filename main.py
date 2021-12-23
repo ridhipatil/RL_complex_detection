@@ -1,229 +1,227 @@
-import random
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import networkx as nx
 import csv
 import logging
+import scipy as sp
 
 matplotlib.use('Agg')
 logging.basicConfig(level=logging.WARNING)
 gamma = 0.5
 matplotlib.use( 'tkagg' )
-# pentagon graph
-K = nx.Graph()
-nx.add_path(K, [1, 2, 3, 4, 5, 1])
-nx.add_path(K, [1, 6])
-nx.add_path(K, [2, 7])
-nx.add_path(K, [3, 8])
-nx.add_path(K, [4, 9])
-nx.add_path(K, [5, 10])
-K.add_nodes_from([11, 12, 13, 14, 15])
-nx.draw(K, with_labels=True)
-plt.savefig("pentagon")
-rewards_dict_K = {1: 0.2, 2: 0.2, 3: 0.2, 4: 0.2, 5: 0.2, 6: -0.2,
-                  7: -0.2, 8: -0.2, 9: -0.2,
-                  10: -0.2, 11: -0.2, 12: -0.2,
-                  13: -0.2, 14: -0.2, 15: -0.2, 16: -0.2}
 
-# weird shape
-I = nx.Graph()
-nx.add_path(I, [16, 20, 22, 21, 19, 20, 17, 18, 23])
-nx.add_path(I, [23, 25])
-nx.add_path(I, [18, 28])
-nx.add_path(I, [17, 26, 27])
-nx.add_path(I, [22, 24])
-plt.figure()
-nx.draw(I, with_labels=True)
-plt.savefig("scribble")
-rewards_dict_I = {16: 0.2, 17: 0.2, 18: 0.2, 19: 0.2, 20: 0.2,
-                  21: 0.2, 22: 0.2, 23: -0.2,
-                  24: -0.2, 25: -0.2, 26: -0.2,
-                  27: -0.2, 28: -0.2, 30: -0.2, 5: -0.2}
-# kite
-J = nx.Graph()
-nx.add_path(J, [29, 30, 31, 32, 30, 31, 29, 32, 33, 32, 30, 34])
-nx.add_path(J, [33, 31])
-nx.add_path(J, [29, 35])
-nx.add_path(J, [30, 36])
-nx.add_path(J, [31, 37])
-nx.add_path(J, [18, 30])
-plt.figure()
-nx.draw(J, with_labels=True)
-plt.savefig("kite")
-rewards_dict_J = {29: 0.2, 30: 0.2, 31: 0.2, 32: 0.2, 33: -0.2,
-                  34: -0.2, 35: -0.2, 36: -0.2, 37: -0.2, 39: -0.2, 18: -0.2}
 
-# almost star shape
-H = nx.Graph()
-nx.add_path(H, [38, 40, 43, 39, 41, 42, 38])
-nx.add_path(H, [42, 44])
-H.add_nodes_from([45, 46])
-plt.figure()
-nx.draw(H, with_labels=True)
-plt.savefig("almost_star")
-rewards_dict_H = {38: 0.2, 39: 0.2, 40: 0.2, 41: 0.2, 42: 0.2, 43: 0.2,
-                  44: -0.2, 45: -0.2, 46: -0.2, 32: -0.2}
-plt.figure()
-all_graphs = [K, I, J, H]
+## Using real Protein Complexes
+# get data
+fileName = "training_CORUM_complexes_node_lists.txt"
+fileObj = open(fileName, "r") #opens the file in read mode
+complexes = fileObj.read().splitlines()
+for c in range(len(complexes)):
+    complexes[c] = complexes[c].split()
 
-# combine all complexes
-allgraphs = nx.compose_all(all_graphs)
-nx.add_path(allgraphs, [5, 16])
-nx.add_path(allgraphs, [18, 30])
-nx.add_path(allgraphs, [32, 39])
-plt.figure()
-nx.draw(allgraphs, with_labels=True)
-plt.savefig("all complexes")
-print(allgraphs.nodes())
-# plt.figure()
-# nx.draw(complex_graphs, with_labels=True)
-# plt.savefig("all graphs")
-# print(G.edges)
+#puts the file into an array
+fileObj.close()
+weight = []
+# edges data
+fileName = "humap_network_weighted_edge_lists.txt"
+G = nx.Graph()
+G = nx.read_weighted_edgelist(fileName, nodetype=str)
+fileObj.close()
+# remove duplicate edges and none
+G.remove_edges_from(nx.selfloop_edges(G))
+for i in list(G.nodes()):
+    if i.isnumeric() == False:
+        G.remove_node(i)
+#print(G.nodes())
+        #print(i)
+# subgraphs
+subgraphs = []
+for s in range(len(complexes)):
+    comp_list = complexes[s]
+    for b in range(len(comp_list)):
+        if comp_list[b] not in G.nodes():
+            G.add_nodes_from(complexes[s])
+    sub = G.subgraph(complexes[s])
+    subgraphs.append(complexes[s])
+#print(G.nodes())
+logging.warning('Number of Nodes and Edges')
+logging.warning(G.number_of_nodes())
+logging.warning(G.number_of_edges())
+
+# plot original raw data
+#plt.figure()
+#nx.draw(G, with_labels=True)
+#plt.savefig("raw graph.png")
+
 action_returns = []
 node_order = []
 value_dict = {}
-rewards_dict = {}
-g = nx.Graph()
-dens = nx.density(g)
+reward_dict = {}
+gg = nx.Graph()
+dens = nx.density(gg)
 value_dict[dens] = 0
 dens_counter = {}
+valuefn_change = {}
 
 
 def network():
     global imag_n
     iteration = 0
-    for graph in range(len(all_graphs)):
+    reward_dict = {}
+    for graph in subgraphs:
+        all_nodes = list(G.nodes())
         iteration = iteration + 1
-        G = all_graphs[graph]
-        nodes_list = list(G.nodes())
-        n = random.choice(nodes_list)
+        sub = G.subgraph(graph)
+        nodes_list = list(sub.nodes())
+        logging.warning('Current graph')
+        logging.warning(nodes_list)
+        for n in nodes_list:
+            # create rewards dictionary
+            for i in nodes_list:
+               reward_dict[str(i)] = 0.2
+            str_list = [str(int) for int in nodes_list]
+            nodes_list_set = set(str_list)
+            all_nodes_set = set(all_nodes)
+            remaining_n = all_nodes_set - nodes_list_set
+            #print(remaining_n)
+            for i in remaining_n:
+                reward_dict[i] = -0.2
+
         # make sure n is not a node floating around
-        while len(list(allgraphs.neighbors(n))) == 0:
-           n = random.choice(nodes_list)
-           if allgraphs.neighbors(n) != 0:
-             False
-           else:
-             continue
-        g = nx.Graph()
-        nx.add_path(g, [n])
-        logging.warning(n)
-        if all_graphs[graph] == K:
-            rewards_dict = rewards_dict_K
-        elif all_graphs[graph] == H:
-            rewards_dict = rewards_dict_H
-        elif all_graphs[graph] == I:
-            rewards_dict = rewards_dict_I
-        else:
-            rewards_dict = rewards_dict_J
+            logging.warning('Current node')
+            logging.warning(n)
+            logging.warning('Neighbors')
+            logging.warning(len(list(G.neighbors(str(n)))))
+            while len(list(G.neighbors(str(n)))) == 0:
+                i = nodes_list.index(str(n))+1
+                logging.warning('Neighbors = 0')
+                n = nodes_list[i]
+                logging.warning(len(list(G.neighbors(str(n)))))
+                if len(list(G.neighbors(str(n)))) != 0:
+                    break
+                i +=1
+            # new graph to store new complexes
+            gg = nx.Graph()
+            nx.add_path(gg, [n])
+            logging.warning('Added Node to test value function')
+            logging.warning(gg.nodes())
 
-        # empty dictionary, add key in loop if not in there already (if it is just update current)
-        iter = 0
-        # value iteration
-        while True:
-            logging.warning(value_dict)
-            iter = iter + 1
-            # Initial value functions of states are 0
-            all_nodes = list(g.nodes)  # all current nodes
-            logging.warning(all_nodes)
-            d = nx.density(g)
-            # get neighbors
-            neighbors = []
-            update = 0
-            imag_n = 0
-            neighb_val = {}
-            for k in range(len(all_nodes)):
-                neighbors = neighbors + list(allgraphs.neighbors(all_nodes[k]))
-            neighbors = list(set(neighbors) - set(all_nodes))
-            logging.warning(neighbors)
-            for m in range(len(neighbors)):
-                for k in range(len(all_nodes)):
-                    curr_nb = allgraphs.neighbors(all_nodes[k])
-                    if neighbors[m] in curr_nb:
-                        logging.warning('Checking neighbors and temp density')
+            # empty dictionary, add key in loop if not in there already (if it is just update current)
+            iter = 0
+            # value iteration
+            while True:
+                logging.warning('Value Dictionary')
+                logging.warning(value_dict)
+                iter = iter + 1
+                # Initial value functions of states are 0
+                curr_nodes = gg.nodes  # all current nodes
+                logging.warning('Current Nodes in updating graph')
+                logging.warning(curr_nodes)
+                d = nx.density(gg)
+                # get neighbors
+                neighbors = []
+                update = 0
+                imag_n = 0
+                neighb_val = {}
+                for k in curr_nodes:
+                    neighbors = neighbors + list(G.neighbors(k))
+                neighbors = list(set(neighbors) - set(curr_nodes))
+                logging.warning('Neighbors of current node')
+                logging.warning(neighbors)
+                for m in neighbors:
+                    for k in curr_nodes:
+                        curr_nb = list(G.neighbors(k))
+                        if m in curr_nb:
+                            logging.warning('Checking neighbors and temp density')
                         # density of adding temporary node
-                        nx.add_path(g, [all_nodes[k], neighbors[m]])
-                        temp_dens = nx.density(g)
-                        g.remove_node(neighbors[m])  # remove node
-                        # add new state if new density
-                        if temp_dens not in value_dict:
-                            logging.warning("Value function of new density")
-                            dens_counter[temp_dens] = 1
+                            nx.add_path(gg, [k, m])
+                            temp_dens = nx.density(gg)
+                            logging.warning(gg.nodes())
+                            gg.remove_node(m)  # remove node
+                            logging.warning('Remove Node')
+                            logging.warning(gg.nodes())
+                            update_list = []
+
+                            # add new state if new density
+                            if temp_dens not in value_dict:
+                                logging.warning("Value function of new density")
+                                dens_counter[temp_dens] = 1
+
                             # find corresponding reward
-                            logging.warning(rewards_dict)
-                            reward = rewards_dict[neighbors[m]]
-                            update = reward + gamma * 0
-                            logging.warning("reward:")
-                            logging.warning(reward)
-                            imag_n = 0 + gamma * 0  # add imaginary node value function
-                        else:
-                            logging.warning("Updating value function of density")
-                            dens_counter[temp_dens] += 1
-                            # get value function of neighbor
-                            old_val = value_dict[temp_dens]
-                            reward = rewards_dict[neighbors[m]]
-                            update = reward + gamma * old_val
-                            logging.warning("reward:")
-                            logging.warning(reward)
+                                reward = reward_dict[m]
+                                logging.warning(m)
+                                logging.warning(reward)
+                                logging.warning(reward_dict[m])
+                                update = reward + gamma * 0
+                                logging.warning("reward:")
+                                logging.warning(reward)
+                                update_list.append(update)
+                                valuefn_change[temp_dens] = update
+                                imag_n = 0 + gamma * 0  # add imaginary node value function
+                            else:
+                                logging.warning("Updating value function of density")
+                                dens_counter[temp_dens] += 1
+                                curr_valfns = valuefn_change[temp_dens]
+                               # get value function of neighbor
+                                old_val = value_dict[temp_dens]
+                                #print(temp_dens, ":", old_val)
+                                reward = reward_dict[m]
+                                update = reward + gamma * old_val
+                                logging.warning(update)
+                                curr_valfns.append(update)
+                                update_list.append(update)
+                                valuefn_change[temp_dens] = update
+                                logging.warning("reward:")
+                                logging.warning(reward)
                             # add imaginary node value function
-                            imag_n = 0 + gamma * old_val
-                        logging.warning("update node and value fn in list:")
-                        neighb_val[neighbors[m]] = update
-                        neighb_val[50] = imag_n
+                                imag_n = 0 + gamma * old_val
+                            logging.warning("update node and value fn in list:")
+                            neighb_val[m] = update
+                            logging.warning("dictionary to see how density value fns change over iterations")
+                            logging.warning(valuefn_change)
+                            neighb_val[2] = imag_n
             # find the node that has the highest value function
-            logging.warning("find max val fn in list")
-            logging.warning(neighb_val)
-            added_n = max(neighb_val, key=neighb_val.get)  # max, get index
-            if added_n == 50:
-                logging.warning("if imaginary node then stop")
-                break
-            else:
-                for k in range(len(all_nodes)):
-                    logging.warning("if not imaginary then get neighbors of current nodes")
-                    neighbors = list(allgraphs.neighbors(all_nodes[k]))
-                    for j in range(len(neighbors)):
-                        if neighbors[j] == added_n:
-                            logging.warning(added_n)
-                            nx.add_path(g, [added_n, all_nodes[k]])
-                            value_dict[d] = neighb_val[added_n]
-            logging.warning(value_dict)
-        if iteration == 1:
-            file = open("Value_dictionary K.txt", "w")
+                logging.warning("find max val fn in list")
+                logging.warning(neighb_val)
+                added_n = max(neighb_val, key=neighb_val.get)  # max, get index
+                logging.warning(added_n)
+                logging.warning(neighb_val.get(added_n))
+                if added_n == 2:
+                    logging.warning("if imaginary node then stop")
+                    break
+                else:
+                     for k in list(curr_nodes):
+                        #k = str(k)
+                        logging.warning("if not imaginary then get neighbors of current nodes")
+                        logging.warning(curr_nodes)
+                        neighbors = list(G.neighbors(k))
+                        if added_n in neighbors:
+                           logging.warning(added_n)
+                           nx.add_path(gg, [added_n, k])
+                           value_dict[d] = neighb_val[added_n]
+                logging.warning(value_dict)
+            file = open("Value_dictionary_protein.txt", "w")
             str_dictionary = repr(value_dict)
             file.write("value_dict  = " + str_dictionary + "\n")
             file.close()
-        if iteration == 2:
-            file = open("Value_dictionary H.txt", "w")
-            str_dictionary = repr(value_dict)
-            file.write("value_dict  = " + str_dictionary + "\n")
-            file.close()
-        if iteration == 3:
-            file = open("Value_dictionary I.txt", "w")
-            str_dictionary = repr(value_dict)
-            file.write("value_dict  = " + str_dictionary + "\n")
-            file.close()
-        else:
-            file = open("Value_dictionary J.txt", "w")
-            str_dictionary = repr(value_dict)
-            file.write("value_dict  = " + str_dictionary + "\n")
-            file.close()
-    return g
-
-
-p = network()
+    return gg
+network()
 print(dens_counter)
 plt.figure()
-nx.draw(p, with_labels=True)
+nx.draw(gg, with_labels=True)
 plt.savefig("final")
 file = open("Value_dictionary Final.txt", "w")
 str_dictionary = repr(value_dict)
 file.write("value_dict  = " + str_dictionary + "\n")
 file.close()
+
 # Frequency of density visited
 file = open("Density Frequency.txt", "w")
 str_dictionary = repr(dens_counter)
 file.write("density  = " + str_dictionary + "\n")
 file.close()
+
 # plotting Value Function vs Density
 x = list(value_dict.keys())
 x.pop(0)
@@ -231,7 +229,7 @@ y = list(value_dict.values())
 y.pop(0)
 print(x,y)
 plt.figure()
-plt.plot(x,y)
+plt.plot(x,y,'o-')
 plt.xlabel('Density')
 plt.ylabel('Value Function')
 plt.title('Value Function and Density Relationship')
