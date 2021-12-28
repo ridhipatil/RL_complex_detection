@@ -108,12 +108,10 @@ def network():
             logging.warning(gg.nodes())
 
             # empty dictionary, add key in loop if not in there already (if it is just update current)
-            iter = 0
             # value iteration
             while True:
                 logging.warning('Value Dictionary')
                 logging.warning(value_dict)
-                iter = iter + 1
                 # Initial value functions of states are 0
                 curr_nodes = gg.nodes  # all current nodes
                 logging.warning('Current Nodes in updating graph')
@@ -146,8 +144,8 @@ def network():
                             # add new state if new density
                             if temp_dens not in value_dict:
                                 logging.warning("Value function of new density")
-                                dens_counter[temp_dens] = 1
-
+                               # dens_counter[temp_dens] = 1
+                              #  logging.warning(temp_dens)
                             # find corresponding reward
                                 reward = reward_dict[m]
                                 logging.warning(m)
@@ -161,15 +159,16 @@ def network():
                                 imag_n = 0 + gamma * 0  # add imaginary node value function
                             else:
                                 logging.warning("Updating value function of density")
-                                dens_counter[temp_dens] += 1
-                                curr_valfns = valuefn_change[temp_dens]
+                                logging.warning(dens_counter)
+                              #  dens_counter[temp_dens] += 1
+                               # curr_valfns = valuefn_change[temp_dens]
                                # get value function of neighbor
                                 old_val = value_dict[temp_dens]
                                 #print(temp_dens, ":", old_val)
                                 reward = reward_dict[m]
                                 update = reward + gamma * old_val
                                 logging.warning(update)
-                                curr_valfns.append(update)
+                               # curr_valfns.append(update)
                                 update_list.append(update)
                                 valuefn_change[temp_dens] = update
                                 logging.warning("reward:")
@@ -184,23 +183,28 @@ def network():
             # find the node that has the highest value function
                 logging.warning("find max val fn in list")
                 logging.warning(neighb_val)
-                added_n = max(neighb_val, key=neighb_val.get)  # max, get index
+                if len(neighbors) != 0:
+                    added_n = max(neighb_val, key=neighb_val.get)  # max, get index
+                else:
+                    added_n = 2
                 logging.warning(added_n)
                 logging.warning(neighb_val.get(added_n))
                 if added_n == 2:
-                    logging.warning("if imaginary node then stop")
-                    break
+                   logging.warning("if imaginary node then stop")
+                   break
                 else:
-                     for k in list(curr_nodes):
+                   logging.warning("if not imaginary then get neighbors of current nodes")
+                   logging.warning(curr_nodes)
+                   for k in list(curr_nodes):
                         #k = str(k)
-                        logging.warning("if not imaginary then get neighbors of current nodes")
-                        logging.warning(curr_nodes)
                         neighbors = list(G.neighbors(k))
+                        logging.warning(neighbors)
                         if added_n in neighbors:
                            logging.warning(added_n)
                            nx.add_path(gg, [added_n, k])
                            value_dict[d] = neighb_val[added_n]
-                logging.warning(value_dict)
+                           logging.warning(d)
+                   logging.warning(value_dict)
             file = open("Value_dictionary_protein.txt", "w")
             str_dictionary = repr(value_dict)
             file.write("value_dict  = " + str_dictionary + "\n")
