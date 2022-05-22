@@ -1,0 +1,5232 @@
+MBD3 : Complex1 Complex362 Complex639
+ZNF521 : Complex1 Complex76
+KPNA3 : Complex1 Complex199
+MTA1 : Complex1 Complex1099
+KPNA4 : Complex1 Complex199
+GATAD2B : Complex1 Complex76 Complex287 Complex639
+CHD3 : Complex1
+HDAC2 : Complex1 Complex76
+PDHA1 : Complex2
+STAT5B : Complex2
+PDHX : Complex2
+DLAT : Complex2
+STAT5A : Complex2
+LARGE1 : Complex3
+PKN1 : Complex3
+PCYOX1L : Complex3
+PLAUR : Complex3
+DDX11 : Complex3
+ZNF197 : Complex4 Complex198
+ZKSCAN1 : Complex4
+ZNF174 : Complex4
+PGBD1 : Complex4 Complex198
+ZSCAN21 : Complex4 Complex198
+ZNF397 : Complex4 Complex360 Complex1146
+ZKSCAN4 : Complex4 Complex360
+ZSCAN22 : Complex4
+ZSCAN23 : Complex4 Complex1146
+ZSCAN29 : Complex4 Complex198
+ZSCAN18 : Complex4 Complex198 Complex360
+ZSCAN16 : Complex4
+ZNF24 : Complex4
+ZKSCAN3 : Complex4
+ZNF394 : Complex4
+ZNF446 : Complex4 Complex360
+ZSCAN32 : Complex4 Complex1146
+ELOVL2 : Complex5
+PIGW : Complex5
+ABCD1 : Complex5
+SLC39A4 : Complex5
+S1PR5 : Complex5
+GOLM1 : Complex5
+TMEM143 : Complex5
+BNIP1 : Complex6 Complex370
+ATR : Complex6 Complex299 Complex380
+ZW10 : Complex6 Complex370 Complex998
+SCFD2 : Complex6
+C19orf25 : Complex6 Complex299 Complex998
+RINT1 : Complex6
+PUF60 : Complex7 Complex496 Complex1081
+SNRPD2 : Complex7 Complex58 Complex920 Complex969
+PSIP1 : Complex7
+DDX5 : Complex7 Complex639 Complex804 Complex929 Complex1015 Complex1067
+RCC2 : Complex7 Complex969
+U2SURP : Complex7 Complex746 Complex950 Complex967
+ANAPC1 : Complex8
+CDC23 : Complex8
+ZNF12 : Complex8 Complex40
+CDC27 : Complex8 Complex40
+MAGIX : Complex8 Complex130
+ANAPC16 : Complex8 Complex40
+EDC4 : Complex9
+EDC3 : Complex9
+PNRC1 : Complex9
+DCP1A : Complex9
+MARF1 : Complex9
+DCP1B : Complex9
+CCT4 : Complex10 Complex91
+CCT5 : Complex10
+TCEA1 : Complex10
+TCP1 : Complex10
+CCT6B : Complex10
+H2AFX : Complex11 Complex146
+RPL8 : Complex11 Complex414 Complex597
+EEF1B2 : Complex11 Complex536 Complex537 Complex672 Complex768 Complex833 Complex863
+RPS3 : Complex11 Complex137 Complex173 Complex682 Complex973
+EIF3B : Complex11 Complex536 Complex621 Complex863
+RPS19 : Complex11 Complex137
+RPL23A : Complex11
+RPS23 : Complex11 Complex60 Complex682 Complex973
+CDH13 : Complex12
+DPYSL3 : Complex12 Complex25
+AMPH : Complex12 Complex35
+CALB2 : Complex12 Complex25 Complex35 Complex134
+SYN2 : Complex12 Complex35
+GPM6B : Complex12
+CAMKV : Complex12 Complex35 Complex134 Complex140
+NCAM1 : Complex12 Complex25 Complex35 Complex955
+CNTN1 : Complex12 Complex35 Complex140 Complex492
+RAB7A : Complex12 Complex35 Complex742 Complex949
+SYT1 : Complex12 Complex140 Complex324 Complex955
+GNAO1 : Complex12 Complex25
+SYP : Complex12 Complex431
+GPM6A : Complex12 Complex140 Complex268 Complex324 Complex431
+CRMP1 : Complex12
+MGAT5 : Complex12
+DGUOK : Complex12 Complex25 Complex134 Complex930 Complex955
+CNTLN : Complex13
+CARNMT1 : Complex13
+TAB1 : Complex13
+MAP3K7 : Complex13
+ZBTB25 : Complex13
+LENG9 : Complex13
+PSMA5 : Complex14 Complex365 Complex513
+PSMA4 : Complex14 Complex158 Complex513 Complex689
+AMT : Complex14 Complex513
+PSMA2 : Complex14 Complex265 Complex421 Complex513
+PSMB6 : Complex14 Complex421
+PSMF1 : Complex14 Complex513
+PSME1 : Complex14 Complex513 Complex689
+PSMB10 : Complex14 Complex513
+PSMB2 : Complex14
+DHRS2 : Complex15
+TMEFF1 : Complex15
+FGF2 : Complex15
+STEAP3 : Complex15
+BCS1L : Complex15
+KIF20A : Complex16
+PDCD10 : Complex16
+STK26 : Complex16
+C4orf19 : Complex16
+STK25 : Complex16
+STK24 : Complex16
+ZNF598 : Complex16
+NUP133 : Complex17
+NUP43 : Complex17 Complex213
+NUP214 : Complex17 Complex195
+NUP42 : Complex17
+NUP205 : Complex17 Complex521
+NUP188 : Complex17
+CDKN2C : Complex18
+CCND2 : Complex18
+CDKN2B : Complex18
+CDK4 : Complex18
+CDKN2A : Complex18
+OGFRL1 : Complex18
+HSP90AA5P : Complex19
+HSP90AB4P : Complex19
+HSP90AA4P : Complex19
+FKBP5 : Complex19
+SMYD3 : Complex19
+HSP90AB3P : Complex19
+P2RX4 : Complex20
+PLD6 : Complex20
+PIGH : Complex20
+CYBC1 : Complex20
+FAM20B : Complex20
+RSBN1L : Complex21 Complex63 Complex127 Complex277 Complex280 Complex771 Complex781
+UTP3 : Complex21
+NGDN : Complex21
+GPATCH4 : Complex21 Complex63 Complex105 Complex127
+DDX55 : Complex21 Complex63 Complex277 Complex597 Complex781 Complex992
+RSBN1 : Complex21 Complex539 Complex920 Complex937
+POP1 : Complex21 Complex63 Complex187
+BMI1 : Complex22
+RING1 : Complex22 Complex538 Complex640 Complex677
+PHC3 : Complex22 Complex538
+CBX7 : Complex22
+PHC2 : Complex22 Complex817
+ST5 : Complex23 Complex738 Complex829
+MYO5A : Complex23 Complex1073
+MYO1E : Complex23 Complex332 Complex838
+ACTB : Complex23 Complex78 Complex415 Complex488 Complex945 Complex948
+PPP1R12A : Complex23 Complex157 Complex988
+ACTA1 : Complex23 Complex905 Complex971
+MRPL12 : Complex24 Complex118
+MRPL18 : Complex24
+MRPL39 : Complex24 Complex143
+MCAT : Complex24 Complex26 Complex722 Complex1076
+NGRN : Complex24 Complex118 Complex233
+FASTKD2 : Complex24 Complex1076
+PTCD1 : Complex24 Complex26 Complex752
+MRPL49 : Complex24 Complex43
+MTERF3 : Complex24 Complex233 Complex1076
+MRPL35 : Complex24 Complex43 Complex143 Complex233 Complex722
+MRPL22 : Complex24 Complex43
+MRPL44 : Complex24
+MRPL52 : Complex24 Complex26
+MRPL46 : Complex24 Complex118 Complex1076
+MRPL2 : Complex24 Complex43 Complex279
+MRPL9 : Complex24 Complex26 Complex43 Complex118
+MRPL42 : Complex24 Complex43 Complex143
+MRPL54 : Complex24 Complex43 Complex143
+PPP3R1 : Complex25 Complex431 Complex949
+DPYSL4 : Complex25 Complex35 Complex140
+DCX : Complex25 Complex35 Complex742
+DPYSL2 : Complex25 Complex35
+L1CAM : Complex25
+EDIL3 : Complex25 Complex35 Complex134
+DNM1L : Complex25
+DCLK1 : Complex25 Complex35
+NCALD : Complex25 Complex134 Complex545
+DPYSL5 : Complex25 Complex268 Complex431
+DCK : Complex25 Complex930
+STXBP1 : Complex25
+STX1A : Complex25
+MRPL28 : Complex26
+MRPL1 : Complex26 Complex43 Complex143
+MRPL24 : Complex26
+MRPL43 : Complex26 Complex118 Complex752
+MRPL17 : Complex26
+MRPL14 : Complex26 Complex43 Complex1155
+MRPL19 : Complex26 Complex43
+MRPL30 : Complex26
+MRPL34 : Complex26
+RPN2 : Complex27
+STT3B : Complex27
+RPN1 : Complex27
+MAGT1 : Complex27
+DDOST : Complex27
+TANK : Complex28
+CASP2 : Complex28
+BBOX1 : Complex28
+AZI2 : Complex28
+TBK1 : Complex28
+RTF2 : Complex28
+CASC4 : Complex29
+EFCAB14 : Complex29
+GRAMD1B : Complex29
+GRAMD1C : Complex29
+GRAMD2B : Complex29
+EXD2 : Complex29
+PHKA1 : Complex30
+PHKG2 : Complex30
+NR2F6 : Complex30
+PHKA2 : Complex30
+MPPED1 : Complex30
+NARF : Complex30
+MPPED2 : Complex30
+PHKB : Complex30
+FAM193B : Complex31
+TRIM44 : Complex31
+TRIM35 : Complex31
+KLHL41 : Complex31
+MTMR1 : Complex31
+TRIM10 : Complex31
+PPP1R15B : Complex32
+FARP2 : Complex32
+PLCB1 : Complex32
+PTGER3 : Complex32
+TYW1B : Complex32
+GNG7 : Complex33
+GNG5 : Complex33
+GNAI1 : Complex33
+GNG10 : Complex33
+GNAI2 : Complex33
+GNAI3 : Complex33
+GNB4 : Complex33
+GNG4 : Complex33
+GPS1 : Complex34
+CUL3 : Complex34 Complex834
+DCAF11 : Complex34 Complex469
+COPS4 : Complex34 Complex469
+APPBP2 : Complex34
+COPS3 : Complex34
+CUL4B : Complex34
+DDB2 : Complex34
+COPS2 : Complex34
+BTBD1 : Complex34
+BTBD2 : Complex34
+CUL2 : Complex34 Complex469 Complex943
+HPCAL4 : Complex35
+TPX2 : Complex35 Complex742
+RAB5A : Complex35 Complex780
+STX1B : Complex35 Complex492 Complex930
+GRIA2 : Complex35
+MAP2 : Complex35
+EPB41L1 : Complex35
+MAPT : Complex35
+ATP4A : Complex35 Complex140 Complex742
+ANK2 : Complex35 Complex930
+NTM : Complex35
+CAMK2A : Complex35 Complex140
+SNCB : Complex35
+RAB3A : Complex35 Complex492 Complex955
+STRN : Complex36
+PPP2R3B : Complex36
+ANKLE2 : Complex36
+STRN4 : Complex36
+FECH : Complex36
+STRN3 : Complex36
+TBCCD1 : Complex36
+SLMAP : Complex36
+CTTNBP2 : Complex36 Complex1077
+HIRA : Complex37
+C15orf41 : Complex37
+UBN1 : Complex37
+ASF1A : Complex37
+UBN2 : Complex37
+CDAN1 : Complex37
+RALBP1 : Complex38
+AP2M1 : Complex38 Complex185 Complex488
+GULP1 : Complex38
+PJA2 : Complex38 Complex185
+NUMB : Complex38
+SNX29 : Complex38
+YES1 : Complex39 Complex374 Complex491
+PRKCA : Complex39 Complex159 Complex855
+ERICH5 : Complex39 Complex374
+RALA : Complex39 Complex491 Complex1140
+PALM : Complex39 Complex491 Complex1151
+RRAS2 : Complex39 Complex374 Complex717
+SORBS3 : Complex40
+CDC26 : Complex40
+FBXO5 : Complex40
+PENK : Complex40
+ANAPC2 : Complex40 Complex130
+ANAPC10 : Complex40 Complex130 Complex773
+ANAPC7 : Complex40
+GNPTAB : Complex40
+CDC16 : Complex40
+GNPTG : Complex40 Complex130
+CDC20 : Complex40 Complex773
+ANAPC13 : Complex40 Complex130
+RPL12 : Complex41 Complex364 Complex615 Complex621 Complex894
+RPL10 : Complex41 Complex206 Complex537 Complex672 Complex836 Complex863 Complex992 Complex1001 Complex1039
+SUPT16H : Complex41 Complex364 Complex621 Complex894
+RPS7 : Complex41
+RPL29 : Complex41 Complex743
+G3BP1 : Complex41
+SURF6 : Complex42 Complex66
+DHX29 : Complex42 Complex66
+UTP23 : Complex42 Complex74 Complex981
+RBM28 : Complex42 Complex259 Complex315
+DHX30 : Complex42 Complex105 Complex127 Complex187 Complex1056
+SRP72 : Complex42 Complex63 Complex119 Complex537 Complex672 Complex836 Complex992 Complex994 Complex1001 Complex1035 Complex1157
+PURA : Complex42
+MRPL27 : Complex43
+MRPL4 : Complex43 Complex143 Complex233
+MRPL15 : Complex43 Complex118
+MRPL53 : Complex43
+MRPL37 : Complex43
+MRPL40 : Complex43 Complex118 Complex233
+MRPL20 : Complex43 Complex118
+MRPL58 : Complex43
+RCC1L : Complex43 Complex143
+YTHDC1 : Complex43 Complex143 Complex233 Complex722 Complex752
+MRPS30 : Complex43
+MRPL13 : Complex43 Complex143
+MRPL57 : Complex43
+PAIP2 : Complex43 Complex752
+MRPL48 : Complex43
+MRPL45 : Complex43
+CASK : Complex44
+APBA1 : Complex44
+MPP6 : Complex44
+LIN7C : Complex44
+MPDZ : Complex44
+ABLIM2 : Complex44
+MPP2 : Complex44
+CLSPN : Complex45
+GINS3 : Complex45
+TIPIN : Complex45
+TIMELESS : Complex45
+GINS4 : Complex45
+CD2BP2 : Complex46 Complex525 Complex793 Complex865 Complex1012 Complex1081
+PRPF40A : Complex46 Complex967
+SNRNP200 : Complex46 Complex746 Complex793
+PPM1G : Complex46
+RBM22 : Complex46 Complex508 Complex960
+PRPF8 : Complex46 Complex1068
+SNRPB2 : Complex46 Complex934 Complex1028
+CDC5L : Complex46 Complex489 Complex793 Complex865 Complex1012
+SF3A3 : Complex46
+SF3B1 : Complex46 Complex112 Complex362 Complex598 Complex920
+RTL8A : Complex47
+PEG10 : Complex47
+RTL8C : Complex47
+NPL : Complex47
+LDOC1 : Complex47
+RTL8B : Complex47
+ABCB1 : Complex48
+LAMA1 : Complex48
+PTPRZ1 : Complex48 Complex316
+ST6GAL2 : Complex48
+SDK2 : Complex48
+LGALS3 : Complex48 Complex316
+NSA2 : Complex49
+RPS5 : Complex49 Complex60 Complex66 Complex74 Complex117 Complex187 Complex517 Complex992
+IMP3 : Complex49 Complex1001
+RPS15 : Complex49 Complex60 Complex906
+LARP1 : Complex49 Complex63
+RPL3 : Complex49 Complex60 Complex146 Complex284 Complex906
+ABT1 : Complex49 Complex913 Complex1074
+GAR1 : Complex49 Complex144 Complex209 Complex236 Complex364 Complex537 Complex913
+DDX10 : Complex49 Complex63
+LARP1B : Complex49
+MPHOSPH10 : Complex49 Complex144 Complex1001
+DDX56 : Complex49
+NIFK : Complex49
+SEPTIN4 : Complex50
+SEPTIN12 : Complex50 Complex67
+SEPTIN9 : Complex50
+PCMTD2 : Complex50 Complex67
+SEPTIN2 : Complex50
+SEPTIN11 : Complex50
+SEPTIN14 : Complex50
+SEPTIN3 : Complex50 Complex67
+SEPTIN1 : Complex50
+SEPTIN6 : Complex50
+MFAP3 : Complex51
+GLRX3 : Complex51
+CCDC28B : Complex51
+OSGEP : Complex51
+HYKK : Complex51
+TPRKB : Complex51
+GON7 : Complex51
+HLA-E : Complex52
+HLA-C : Complex52
+ECEL1 : Complex52
+HLA-H : Complex52
+HLA-F : Complex52
+MCM2 : Complex53 Complex489 Complex832 Complex1020
+TOP2A : Complex53 Complex489 Complex1043
+PDS5A : Complex53 Complex793
+CDCA5 : Complex53
+SMC1A : Complex53 Complex1012
+RAD21 : Complex53
+TRIM38 : Complex53 Complex1012
+STAG2 : Complex53
+WAPL : Complex53
+STAG1 : Complex53
+CYC1 : Complex54
+CYTB : Complex54
+COX7A2L : Complex54
+UQCRC1 : Complex54
+UQCRB : Complex54
+UQCRFS1 : Complex54
+ATP5F1B : Complex55 Complex509 Complex615 Complex1066
+ATP5F1C : Complex55
+ATP5PB : Complex55
+ATP2A2 : Complex55 Complex509 Complex1066
+PHB : Complex55 Complex826 Complex1054
+COX2 : Complex55
+ATP5PD : Complex55 Complex615 Complex965 Complex1029
+SLC22A23 : Complex56
+CLCN5 : Complex56
+LGALS8 : Complex56 Complex186 Complex316 Complex806
+SLC17A5 : Complex56 Complex316
+C1orf159 : Complex56
+ALCAM : Complex56 Complex806 Complex935
+THADA : Complex57 Complex299 Complex370 Complex1145
+CIP2A : Complex57 Complex591 Complex977 Complex1145
+BTAF1 : Complex57 Complex272 Complex299 Complex881
+TNPO3 : Complex57 Complex69 Complex881 Complex1141
+XPO4 : Complex57
+FANCD2 : Complex57
+TNPO1 : Complex57
+XAB2 : Complex58 Complex508 Complex793 Complex1129
+RAN : Complex58 Complex969
+SNRPD1 : Complex58 Complex112 Complex508 Complex539 Complex1128 Complex1157
+CDK12 : Complex58 Complex105 Complex539 Complex920 Complex937 Complex958 Complex1080 Complex1121
+KANSL1 : Complex59
+ATN1 : Complex59 Complex578
+PAXIP1 : Complex59
+NCOA6 : Complex59
+KAT8 : Complex59
+WDR5 : Complex59
+ASH2L : Complex59
+RPL10A : Complex60 Complex284 Complex535 Complex835 Complex1074
+RPL27 : Complex60
+RPS20 : Complex60
+FBL : Complex60 Complex74 Complex117 Complex191 Complex281 Complex1017
+RPLP0 : Complex60
+BTF3L4 : Complex60 Complex101
+EEF1A1 : Complex60 Complex533
+IFRD2 : Complex60
+RPL28 : Complex60
+RRS1 : Complex60 Complex117 Complex127 Complex146 Complex315 Complex414 Complex1019 Complex1039
+INO80 : Complex61
+WBP2NL : Complex61
+ACTR5 : Complex61
+INO80E : Complex61 Complex353
+MCRS1 : Complex61
+YY1 : Complex61
+ACTR8 : Complex61
+UCHL5 : Complex61 Complex353 Complex1093
+NFRKB : Complex61
+PSG9 : Complex62
+CELSR3 : Complex62
+SHCBP1 : Complex62
+PARN : Complex62
+SECISBP2L : Complex62
+PSG1 : Complex62
+LLPH : Complex63 Complex597 Complex981 Complex992
+EIF6 : Complex63
+RPL17 : Complex63 Complex187
+PABPC4 : Complex63
+IGF2BP3 : Complex63 Complex837
+ZNF22 : Complex63
+DDX27 : Complex63 Complex105
+DDX54 : Complex63
+RPSA : Complex63 Complex281 Complex723 Complex1130
+HERC5 : Complex63
+RAB11FIP1 : Complex64
+RAB11FIP2 : Complex64
+RAB11B : Complex64
+RAB11FIP5 : Complex64
+RAB25 : Complex64
+SH3BP5L : Complex64
+DTNB : Complex64
+MBIP : Complex65 Complex813
+FAM92A : Complex65 Complex813 Complex867
+SUPT20H : Complex65 Complex167
+TADA3 : Complex65 Complex867
+ZZZ3 : Complex65
+KAT14 : Complex65
+SSB : Complex66
+RPL9 : Complex66
+RPL30 : Complex66 Complex74 Complex101 Complex315 Complex812 Complex826 Complex1066 Complex1070
+RPL18 : Complex66
+RPS18 : Complex66 Complex117
+IGF2BP1 : Complex66 Complex315 Complex826
+NSUN2 : Complex66 Complex835
+HSP90AA1 : Complex66
+SEPTIN5 : Complex67
+SEPTIN10 : Complex67
+CDC42EP4 : Complex67
+SEPTIN7 : Complex67
+HBB : Complex68
+C3 : Complex68
+ORM1 : Complex68
+GDPD1 : Complex68
+CP : Complex68
+APOA2 : Complex68
+TNPO2 : Complex69 Complex272 Complex299 Complex380 Complex792
+FIG4 : Complex69
+TTI1 : Complex69 Complex299 Complex370
+VAC14 : Complex69
+INTS3 : Complex69 Complex370
+DCAF16 : Complex70
+DDB1 : Complex70
+DCAF10 : Complex70
+TOR1AIP2 : Complex70
+DCAF6 : Complex70
+BRWD1 : Complex70
+PRORP : Complex71
+NOTCH2 : Complex71 Complex485
+PPP6R1 : Complex71
+ANKRD52 : Complex71
+ANKRD44 : Complex71 Complex485
+PPP6C : Complex71
+ANKHD1 : Complex72
+MAGEA1 : Complex72
+HSPBAP1 : Complex72
+MAGEB4 : Complex72
+MAGEB6 : Complex72
+SPAG1 : Complex72
+ANKHD1-EIF4EBP3 : Complex72
+FBXL18 : Complex72
+STX3 : Complex73 Complex81
+SNAP29 : Complex73 Complex174 Complex787
+SEC22B : Complex73 Complex787
+STXBP5 : Complex73 Complex81
+STX5 : Complex73 Complex109
+TRPM7 : Complex73
+GOSR2 : Complex73 Complex174
+ATP5PO : Complex74 Complex615 Complex723
+MRTO4 : Complex74 Complex770 Complex981
+SLC25A5 : Complex74 Complex1054
+YBX1 : Complex74
+RPS3A : Complex74
+MTHFD1 : Complex74
+BTF3 : Complex74 Complex191 Complex626 Complex682 Complex768 Complex901 Complex1005
+ATP5F1A : Complex74 Complex536 Complex826 Complex965 Complex973 Complex1066
+TUFM : Complex74 Complex127 Complex187 Complex191 Complex626 Complex981 Complex1017
+SLC25A4 : Complex74 Complex1029
+LUC7L : Complex75 Complex257 Complex525 Complex999 Complex1092 Complex1125
+MKRN1 : Complex75 Complex823
+SNRNP70 : Complex75 Complex257
+SRSF9 : Complex75 Complex257 Complex595 Complex746 Complex902 Complex967
+SRSF1 : Complex75 Complex559 Complex823 Complex858 Complex902
+DDX46 : Complex75 Complex373 Complex422 Complex1125 Complex1128
+CWC22 : Complex75 Complex373
+RBBP7 : Complex76 Complex362 Complex759
+SHPRH : Complex76
+BCL11A : Complex76 Complex199
+MBD2 : Complex76 Complex1099
+NPAT : Complex76
+GATAD2A : Complex76 Complex804 Complex1082 Complex1099
+ZNF423 : Complex76 Complex362
+CDK2AP1 : Complex76 Complex199 Complex287 Complex362
+SLC27A3 : Complex77
+PDZD8 : Complex77
+EPHX1 : Complex77
+VRK2 : Complex77
+DGKE : Complex77 Complex938
+CFAP74 : Complex77 Complex424
+ATP2A3 : Complex77
+TEX264 : Complex77
+DHRS7 : Complex77
+CYP51A1 : Complex77
+PREB : Complex77
+THEM6 : Complex77
+ESYT1 : Complex77
+TYW1 : Complex77
+FAM189B : Complex77 Complex987
+RETSAT : Complex77
+PDE3B : Complex77
+UPK3BL1 : Complex77 Complex938
+LGP1 : Complex77
+PPP1CA : Complex78 Complex205 Complex228 Complex314 Complex332 Complex764
+TPRN : Complex78 Complex228 Complex332 Complex654
+SORBS2 : Complex78 Complex87 Complex945 Complex1042 Complex1133
+AFAP1 : Complex78 Complex136 Complex415
+LIMA1 : Complex78 Complex438 Complex738 Complex829 Complex948 Complex971
+CFL2 : Complex78 Complex426 Complex438 Complex573 Complex654 Complex1027 Complex1078
+POLR2M : Complex79
+POLR2G : Complex79 Complex138
+GCOM1 : Complex79 Complex447
+POLR2K : Complex79
+POLR2D : Complex79 Complex693
+RPRD1A : Complex79
+RPRD2 : Complex79
+POLR2J : Complex79 Complex1087
+TWF1 : Complex80 Complex95
+MYO5B : Complex80
+TPM2 : Complex80 Complex136 Complex905 Complex948 Complex971
+MYLK : Complex80 Complex764
+CORO2A : Complex80 Complex87 Complex905
+CORO1C : Complex80 Complex95 Complex1156
+PLEKHG3 : Complex80
+SSH2 : Complex80 Complex136 Complex438 Complex829
+VAMP8 : Complex81
+STX7 : Complex81 Complex174
+SKA1 : Complex81 Complex174 Complex787
+STX12 : Complex81 Complex109 Complex174
+PTTG1IP : Complex81
+NAPG : Complex81
+STX6 : Complex81 Complex109
+VAMP4 : Complex81
+VTI1A : Complex81
+HIKESHI : Complex82
+KLF13 : Complex82
+TSR3 : Complex82
+FAM172A : Complex82
+ZADH2 : Complex82
+TEDC2 : Complex82
+LCMT2 : Complex82
+TBC1D10A : Complex82
+FGL1 : Complex82
+DUSP16 : Complex83
+MEF2D : Complex83
+RHBDF1 : Complex83 Complex942
+MAPK14 : Complex83
+OBSL1 : Complex83
+KIF22 : Complex83 Complex942
+ERCC1 : Complex84
+SLX4 : Complex84
+XPA : Complex84
+ERCC4 : Complex84
+SLX4IP : Complex84
+WASHC4 : Complex85 Complex322
+VPS33B : Complex85
+WASHC5 : Complex85 Complex322
+FKBP15 : Complex85
+ANKRD27 : Complex85 Complex506
+VPS26A : Complex85 Complex322 Complex506 Complex643
+PIK3R1 : Complex86
+PIK3CD : Complex86
+PLEKHH3 : Complex86
+PKN3 : Complex86
+NYAP2 : Complex86
+PIK3CB : Complex86
+MYO5C : Complex87 Complex157
+ARHGAP21 : Complex87
+ZDHHC5 : Complex87
+TMOD1 : Complex87 Complex157 Complex764 Complex1023 Complex1042 Complex1086
+NEXN : Complex87 Complex95
+PLEC : Complex87 Complex438 Complex764 Complex1023
+EXOSC4 : Complex88
+EXOSC5 : Complex88
+EXOSC1 : Complex88
+EXOSC10 : Complex88
+FAM98B : Complex88 Complex830
+EXOSC6 : Complex88
+EXOSC8 : Complex88 Complex853
+DIS3L : Complex88
+EXOSC2 : Complex88 Complex853
+C1D : Complex88
+EXOSC7 : Complex88
+EXOSC3 : Complex88
+MPHOSPH6 : Complex88
+EXOSC9 : Complex88 Complex853
+FARSB : Complex88 Complex830 Complex853
+DIS3 : Complex88 Complex853
+NET1 : Complex89
+SIPA1L3 : Complex89 Complex228 Complex573 Complex944 Complex971 Complex1078
+PIKFYVE : Complex89
+WDR83 : Complex89 Complex807 Complex911 Complex960
+SH2B2 : Complex89 Complex971
+PARVG : Complex90
+ILK : Complex90
+PARVA : Complex90
+PARVB : Complex90
+LIMS1 : Complex90
+TXNDC9 : Complex91 Complex397
+PDCL3 : Complex91
+HGH1 : Complex91
+PDCL : Complex91
+CCT2 : Complex91 Complex397
+SEC31B : Complex91
+CCT8 : Complex91 Complex1065
+MLST8 : Complex91
+NEUROD1 : Complex92
+TCF3 : Complex92
+TCF4 : Complex92
+TCF12 : Complex92
+ID1 : Complex92
+ARSB : Complex93 Complex886
+MEGF8 : Complex93 Complex886
+COL18A1 : Complex93 Complex168 Complex190 Complex1091
+SGSH : Complex93 Complex168 Complex193 Complex1134
+MOXD1 : Complex93 Complex126 Complex190 Complex607
+CHPF : Complex93 Complex193 Complex963 Complex1091
+SIAE : Complex93 Complex168
+RABAC1 : Complex94 Complex273
+ATP2C1 : Complex94 Complex162 Complex845
+NDUFA2 : Complex94 Complex162
+NDUFB4 : Complex94 Complex133 Complex150 Complex162
+NDUFA7 : Complex94 Complex150
+GOLT1B : Complex94 Complex442
+SPTBN1 : Complex95 Complex136 Complex157 Complex415 Complex803 Complex898 Complex988 Complex1080
+ACTN1 : Complex95 Complex803 Complex1073 Complex1133
+SIPA1 : Complex95
+MPRIP : Complex95 Complex763
+ACTG1 : Complex95
+CFL1 : Complex95 Complex415 Complex803 Complex1023 Complex1127
+FRS2 : Complex95 Complex1156
+CALM1 : Complex95 Complex415 Complex764
+EIF2B3 : Complex96
+EIF2B1 : Complex96
+EIF2B4 : Complex96 Complex1141
+ZSWIM6 : Complex96
+EIF2B2 : Complex96
+EIF2B5 : Complex96
+MRPS15 : Complex97
+MRPS28 : Complex97 Complex672
+MRPS25 : Complex97 Complex672
+ERAL1 : Complex97 Complex672
+PTCD3 : Complex97 Complex672
+COL1A1 : Complex97
+MRPS24 : Complex97
+CCDC93 : Complex98 Complex1152
+COMMD3 : Complex98
+CCDC22 : Complex98
+VPS29 : Complex98 Complex643 Complex846 Complex1152
+COMMD8 : Complex98
+COMMD2 : Complex98
+COMMD4 : Complex98
+VPS35 : Complex98 Complex322
+COMMD6 : Complex98
+DDX39B : Complex99
+THOC3 : Complex99 Complex970 Complex1028
+DHX38 : Complex99
+NCBP3 : Complex99
+THOC6 : Complex99 Complex869
+THOC5 : Complex99 Complex970
+MAGEA4 : Complex100 Complex124
+ERI1 : Complex100
+MAGEA9B : Complex100
+NRIP1 : Complex100
+FAM216A : Complex100
+MAGEA10 : Complex100 Complex124
+FOXJ2 : Complex100
+RPL11 : Complex101 Complex117 Complex743 Complex986 Complex1039
+RPS25 : Complex101
+RPL23 : Complex101 Complex191 Complex414
+RPL21 : Complex101
+RPL10L : Complex101
+CENPP : Complex102
+CENPM : Complex102
+CENPI : Complex102
+CENPH : Complex102
+CENPL : Complex102
+ITGB3BP : Complex102
+CENPQ : Complex102
+CENPK : Complex102
+CENPO : Complex102
+DARS : Complex103
+YTHDF2 : Complex103
+LARS : Complex103
+AIMP1 : Complex103
+QARS : Complex103
+RARS : Complex103
+IARS : Complex103
+NARS : Complex103
+ATXN2 : Complex103
+EEF1E1 : Complex103
+KARS : Complex103
+MARS : Complex103
+RAPH1 : Complex104 Complex188
+ABI1 : Complex104
+CYFIP2 : Complex104 Complex668
+KIAA1522 : Complex104 Complex668
+ABI2 : Complex104
+NCK2 : Complex104 Complex188 Complex361 Complex731
+NCKAP1 : Complex104
+NHS : Complex104
+BRK1 : Complex104
+WASF2 : Complex104
+CYFIP1 : Complex104 Complex668
+C8orf33 : Complex105 Complex137 Complex173 Complex280 Complex1056
+KRR1 : Complex105 Complex280
+CTCF : Complex105
+DDX31 : Complex105
+SF3B2 : Complex105 Complex1157
+PQBP1 : Complex105 Complex539 Complex1080
+C7orf50 : Complex105
+LTV1 : Complex105
+HP1BP3 : Complex105
+RUVBL2 : Complex106 Complex871
+BRD8 : Complex106 Complex200
+DMAP1 : Complex106 Complex200
+SRCAP : Complex106 Complex200 Complex329 Complex551
+ACTR6 : Complex106 Complex200 Complex871
+ING3 : Complex106 Complex200 Complex329
+PEX19 : Complex107
+EXOG : Complex107
+FAM174A : Complex107 Complex585
+CDA : Complex107
+MUL1 : Complex107 Complex585
+MYO1D : Complex107
+PRKAR1B : Complex108
+GPR161 : Complex108
+AKAP11 : Complex108
+CEP68 : Complex108
+PRKACA : Complex108 Complex1084
+PRKAR1A : Complex108
+CDK5RAP2 : Complex108
+GOSR1 : Complex109
+BET1 : Complex109 Complex174
+STX10 : Complex109 Complex174
+OPTN : Complex109
+C6orf226 : Complex110
+PEX13 : Complex110
+PEX7 : Complex110
+ACAA1 : Complex110
+ZC3H14 : Complex111 Complex999
+CASC3 : Complex111
+CLK3 : Complex111 Complex595 Complex823 Complex858
+MAGOH : Complex111
+RBM8A : Complex111
+PHF6 : Complex112
+SNRPA1 : Complex112 Complex342 Complex539 Complex865 Complex1006 Complex1125
+SF3B6 : Complex112 Complex598 Complex950 Complex1015
+SRRT : Complex112 Complex411 Complex496 Complex920
+PRPF31 : Complex112
+GARS : Complex113
+GALE : Complex113 Complex726
+CAP2 : Complex113
+DPP9 : Complex113
+ASNS : Complex113
+CAP1 : Complex113 Complex1023
+CASP8 : Complex114
+RNF149 : Complex114
+IFNGR1 : Complex114
+FAS : Complex114
+TNFRSF10B : Complex114
+UGCG : Complex114
+SH3GL3 : Complex115
+SH3GL1 : Complex115
+SH3GL2 : Complex115
+FRG1 : Complex115
+SULT4A1 : Complex116
+DPH2 : Complex116
+DPH1 : Complex116
+TXNRD2 : Complex116
+PUM3 : Complex117 Complex127 Complex146 Complex173 Complex414 Complex986 Complex994 Complex1019 Complex1039
+PPAN-P2RY11 : Complex117 Complex127 Complex146 Complex414 Complex1103
+RPL18A : Complex117
+RPL37A : Complex117
+RPL37 : Complex117
+NOL6 : Complex117
+MRPS6 : Complex118
+MRPL41 : Complex118
+IGF2BP2 : Complex118
+MRPL16 : Complex118
+YTHDC2 : Complex119
+FOCAD : Complex119 Complex770 Complex863 Complex1001
+RRP1B : Complex119
+ZC3H8 : Complex119 Complex144 Complex537
+SCN2B : Complex119 Complex413 Complex770 Complex863
+GLYR1 : Complex119
+NOP2 : Complex119
+NOP56 : Complex119 Complex236
+RRP12 : Complex119
+TSC22D4 : Complex120
+NRBP1 : Complex120
+TSC22D2 : Complex120
+NRBP2 : Complex120
+TSC22D1 : Complex120
+WNK3 : Complex120
+TTL : Complex120
+WNK2 : Complex120
+DDAH2 : Complex120
+MYH3 : Complex121
+ANKRD36 : Complex121
+TRIM9 : Complex121 Complex919
+TXLNG : Complex121
+KRT40 : Complex121
+TBC1D2 : Complex121
+MYH4 : Complex121 Complex919
+FASTKD5 : Complex122
+C3orf33 : Complex122
+HSPA12B : Complex122
+BSG : Complex122
+DDC : Complex122
+TARBP1 : Complex122
+TBCD : Complex122
+PCGF6 : Complex123
+TFDP1 : Complex123
+MGA : Complex123
+E2F6 : Complex123
+MSANTD2 : Complex123
+L3MBTL2 : Complex123
+CRTC3 : Complex124
+PHF8 : Complex124
+NCOA2 : Complex124
+POU2F1 : Complex124
+HMMR : Complex125
+DYNLL1 : Complex125
+ZMYM4 : Complex125
+GLCCI1 : Complex125
+DYNLL2 : Complex125
+DCBLD2 : Complex126
+ARSK : Complex126 Complex193 Complex250 Complex607 Complex1085
+CACNA2D2 : Complex126 Complex168 Complex747
+PLXNA3 : Complex126 Complex452
+FAM234B : Complex126
+MBTPS1 : Complex126 Complex1085
+NAP1L1 : Complex127 Complex1019
+GNL3 : Complex127
+DHX57 : Complex127
+DKC1 : Complex127 Complex537
+XRN2 : Complex127 Complex517
+PES1 : Complex127 Complex906 Complex981
+IER5 : Complex128
+ZNF746 : Complex128
+CDCA4 : Complex128 Complex698
+FAM122B : Complex128 Complex698
+SIK2 : Complex128
+PPP2R2C : Complex128
+PPP2R2B : Complex128
+TRIM41 : Complex129 Complex155 Complex532
+NRXN3 : Complex129 Complex532 Complex800
+TMED8 : Complex129
+GPR183 : Complex129
+SDC4 : Complex129
+ARHGAP29 : Complex129
+ANAPC4 : Complex130
+ANAPC15 : Complex130
+NEK2 : Complex130
+TMEM214 : Complex131
+UBE2I : Complex131 Complex170 Complex521
+AAAS : Complex131
+SUMO2 : Complex131 Complex170
+NUP85 : Complex131 Complex195 Complex213
+NUP155 : Complex131 Complex195
+GLE1 : Complex131 Complex1079
+PRPF3 : Complex132 Complex342 Complex539
+USP39 : Complex132 Complex342 Complex1015
+WBP11 : Complex132 Complex559 Complex869
+SART1 : Complex132 Complex539
+RBM25 : Complex132 Complex525 Complex869 Complex967 Complex989 Complex1006
+SF3B5 : Complex132 Complex934 Complex1006
+CCDC97 : Complex132 Complex598 Complex1068
+NDUFS1 : Complex133
+CAVIN3 : Complex133
+TMEM43 : Complex133 Complex283
+NDUFA12 : Complex133 Complex283
+ATAD1 : Complex133
+NUFIP1 : Complex134 Complex140 Complex324 Complex545 Complex742 Complex930
+SLC12A5 : Complex134 Complex955 Complex1045
+ATP6V0D2 : Complex135
+AIDA : Complex135
+CSNK1G1 : Complex135
+TBC1D24 : Complex135
+TMEM185B : Complex135
+TMEM185A : Complex135
+C1orf21 : Complex135
+MYO1B : Complex136 Complex1086
+CORO1B : Complex136 Complex803
+WDR1 : Complex136
+ZBTB20 : Complex136
+TES : Complex136 Complex838 Complex1156
+PPP1R9B : Complex136 Complex654
+CALML3 : Complex136 Complex438 Complex654 Complex1086
+EBNA1BP2 : Complex137 Complex981
+CCDC124 : Complex137
+SRPK2 : Complex137 Complex682
+RBM34 : Complex137
+GPN3 : Complex138 Complex693 Complex711 Complex814
+POLR2J2 : Complex138
+CTDP1 : Complex138 Complex814 Complex923
+GPN1 : Complex138 Complex923 Complex1087
+POLR2I : Complex138
+CEP170B : Complex139
+SYNE2 : Complex139 Complex1021
+RUFY2 : Complex139
+BEGAIN : Complex139
+CEP170 : Complex139
+CEP170P1 : Complex139
+SYN1 : Complex140
+ZNHIT3 : Complex140 Complex545
+CALHM4 : Complex141
+LYG2 : Complex141
+DUSP14 : Complex141
+LRRC15 : Complex141
+DSG4 : Complex141
+PYHIN1 : Complex141
+S100A3 : Complex141
+PKP1 : Complex141
+HEPHL1 : Complex141
+PADI3 : Complex141
+PLCD1 : Complex141
+HECW2 : Complex142
+WWP2 : Complex142
+WWP1 : Complex142
+ANKRD13A : Complex142
+NEDD4L : Complex142
+ITCH : Complex142
+WWOX : Complex142
+NEDD4 : Complex142
+ANKRD13D : Complex142
+MALSU1 : Complex143
+MRPL23 : Complex143
+HNRNPUL2 : Complex143 Complex722 Complex752
+TRUB2 : Complex143 Complex722
+MRPS18A : Complex143
+MRPL47 : Complex143
+ZNF629 : Complex144
+MYBBP1A : Complex144
+RPL36A : Complex144
+FARS2 : Complex144
+ZNF770 : Complex144 Complex259
+RFC2 : Complex144
+NOP53 : Complex144 Complex209 Complex236 Complex746 Complex894 Complex1001
+BOP1 : Complex144 Complex894 Complex906
+DHX33 : Complex144 Complex1070
+NOC2L : Complex144 Complex173 Complex187 Complex517
+DDX50 : Complex144
+C12orf43 : Complex144
+ZKSCAN8 : Complex144
+STAU1 : Complex144
+SEC13 : Complex145 Complex245
+SEC24B : Complex145
+FAM83H : Complex145 Complex361
+USO1 : Complex145 Complex774
+SEC24D : Complex145
+SEC23B : Complex145 Complex245
+SEC24C : Complex145 Complex632
+RPS13 : Complex146
+RPS9 : Complex146 Complex615 Complex812 Complex1019 Complex1117 Complex1119
+RPLP2 : Complex146
+RPL14 : Complex146
+RPL26 : Complex146
+BUD31 : Complex147
+CRNKL1 : Complex147 Complex1105
+CACTIN : Complex147
+DHX8 : Complex147
+RAB43 : Complex147 Complex793 Complex911
+DHX35 : Complex147 Complex807 Complex911 Complex958
+AQR : Complex147 Complex508 Complex958
+SLU7 : Complex147 Complex508 Complex758 Complex989 Complex1129
+ZNF830 : Complex147 Complex1105
+ISL2 : Complex148
+LHX1 : Complex148
+ISL1 : Complex148
+LDB1 : Complex148
+SSBP3 : Complex148
+SSBP4 : Complex148
+LMX1B : Complex148
+SSBP2 : Complex148
+LMO4 : Complex148
+SMAD4 : Complex148
+THAP12 : Complex148
+LHX4 : Complex148
+PSMD4 : Complex149 Complex695 Complex1106
+PSMC1 : Complex149 Complex436 Complex648
+PSMA1 : Complex149 Complex513 Complex927
+CCDC92 : Complex149 Complex695 Complex1139
+PSMD9 : Complex149 Complex312
+USP14 : Complex149 Complex312 Complex695
+PSMD5 : Complex149
+PSMC3 : Complex149 Complex436 Complex763
+PSMB8 : Complex149 Complex648
+PSMD6 : Complex149 Complex695
+NDUFS3 : Complex150 Complex162 Complex283 Complex1075
+NDUFS7 : Complex150 Complex162
+NDUFB6 : Complex150 Complex1111
+NDUFA8 : Complex150 Complex162 Complex283 Complex1075
+NDUFV3 : Complex150 Complex162
+XRCC5 : Complex151
+HIST2H2AB : Complex151
+H2AFY : Complex151
+XPC : Complex151
+PARP2 : Complex151
+HIST1H2BJ : Complex151
+FBXW8 : Complex152
+EPB41L4B : Complex152
+CASQ2 : Complex152
+ASB1 : Complex152
+ZFP91 : Complex152
+PRDM10 : Complex152
+ATRX : Complex152
+TSNARE1 : Complex152
+DAXX : Complex152
+CTBP1 : Complex153
+ZEB2 : Complex153
+CTBP2 : Complex153
+ZNF217 : Complex153
+GALK1 : Complex153
+TRPS1 : Complex153
+PRDM2 : Complex153
+ZNF516 : Complex153
+C10orf12 : Complex153
+OFD1 : Complex154
+FOPNL : Complex154
+CCDC138 : Complex154
+PCM1 : Complex154
+BBS4 : Complex154 Complex269
+MIB1 : Complex154 Complex269
+FGFR1OP : Complex154 Complex565
+C2CD3 : Complex154 Complex269
+CCDC14 : Complex154
+CEP19 : Complex154 Complex565
+TTLL5 : Complex154
+MIER3 : Complex155
+HIST1H2BA : Complex155 Complex532
+GON4L : Complex155
+ARID5B : Complex155
+RHBDF2 : Complex156
+FLT4 : Complex156
+TMEM205 : Complex156
+TMEM52B : Complex156
+MYO19 : Complex157
+COBL : Complex157 Complex654 Complex898
+ANXA2 : Complex157 Complex1042
+PSMB7 : Complex158 Complex265 Complex513
+PSME4 : Complex158 Complex513
+PSMG4 : Complex158 Complex513 Complex927
+PSMA6 : Complex158 Complex513 Complex1093
+PSMB5 : Complex158 Complex265 Complex365 Complex513
+PSMB3 : Complex158 Complex265 Complex365 Complex513
+PSME2 : Complex158 Complex421 Complex513 Complex689
+B4GALT4 : Complex158 Complex513
+CXADR : Complex159
+GLIPR2 : Complex159 Complex374
+FYN : Complex159
+GNAZ : Complex159 Complex1140
+RAP2B : Complex159 Complex491
+LYN : Complex159 Complex491
+PAG1 : Complex159 Complex491 Complex855
+TMED5 : Complex160
+TMED10 : Complex160
+TMED3 : Complex160
+GOLGA2 : Complex160 Complex774
+TMED2 : Complex160
+TICAM2 : Complex160
+TMED1 : Complex160
+TMED4 : Complex160
+TMED9 : Complex160
+MRFAP1L1 : Complex161
+SIN3B : Complex161
+EMSY : Complex161
+MORF4L2 : Complex161 Complex200
+PALB2 : Complex161
+EP400P1 : Complex161
+KDM5A : Complex161
+PHF12 : Complex161
+GATAD1 : Complex161
+MORF4L1 : Complex161 Complex871
+NDUFB1 : Complex162 Complex283
+NDUFA5 : Complex162
+NDUFB10 : Complex162 Complex172
+NDUFS4 : Complex162 Complex283
+NDUFB8 : Complex162 Complex283
+NDUFB9 : Complex162 Complex172
+NDUFA1 : Complex162
+NDUFB11 : Complex162 Complex1111
+NDUFS5 : Complex162 Complex283
+NDUFS8 : Complex162
+NDUFV1 : Complex162
+NDUFA6 : Complex162
+NDUFAF4 : Complex162
+IMMP1L : Complex163
+MRM2 : Complex163 Complex460
+SNX25 : Complex163
+TSPAN5 : Complex163 Complex460
+NAT8L : Complex163
+PIEZO1 : Complex163
+ZDHHC21 : Complex163 Complex460
+TMEM248 : Complex163
+KLHL2 : Complex163
+SLC38A2 : Complex163
+CEACAM21 : Complex164
+PODXL2 : Complex164
+CDON : Complex164
+RYK : Complex164
+NRSN2 : Complex164 Complex395
+PCDHGA11 : Complex164
+ABCB10 : Complex164
+XRCC2 : Complex165
+NDUFAF5 : Complex165
+RAD51D : Complex165
+RAD51B : Complex165
+SMARCA4 : Complex166
+SMARCB1 : Complex166 Complex206
+ACTL6A : Complex166 Complex206
+SMARCC2 : Complex166
+SMARCD3 : Complex166 Complex206
+TBL1XR1 : Complex166
+PHF10 : Complex166 Complex206
+TBL1X : Complex166
+BRD9 : Complex166 Complex206
+SMARCC1 : Complex166 Complex179
+TAF12 : Complex167
+TAF4B : Complex167 Complex841
+SUPT3H : Complex167
+TAF9 : Complex167
+TADA2B : Complex167 Complex171
+PRCP : Complex168
+GUSB : Complex168 Complex193
+NAGLU : Complex168 Complex193
+TXNDC16 : Complex168 Complex190
+POGLUT1 : Complex168 Complex193 Complex747
+B3GLCT : Complex168 Complex649 Complex963
+GALNT13 : Complex168 Complex638 Complex1085
+FUT11 : Complex168 Complex190 Complex452 Complex453
+PCSK6 : Complex168 Complex453
+GALNT18 : Complex168
+MAN2B1 : Complex168
+SLIT2 : Complex168
+HIP1R : Complex169 Complex651
+DENND1A : Complex169
+CLTCL1 : Complex169
+GAK : Complex169 Complex1123
+PFKFB3 : Complex169
+STAMBP : Complex169 Complex651
+CLINT1 : Complex169
+KIFC1 : Complex170
+NUP50 : Complex170 Complex548
+SENP1 : Complex170
+NUP153 : Complex170 Complex548
+RANGAP1 : Complex170 Complex929
+NEMP1 : Complex170
+TAF5L : Complex171
+SUPT7L : Complex171
+TAF6L : Complex171
+TAF10 : Complex171
+AK6 : Complex171
+NDUFAF1 : Complex172
+ECSIT : Complex172 Complex1111
+NDUFS2 : Complex172 Complex283
+NDUFA3 : Complex172
+RPL15 : Complex173 Complex894 Complex1017
+GTPBP4 : Complex173 Complex187 Complex781 Complex913
+SNAP23 : Complex174
+NAPA : Complex174
+VTI1B : Complex174
+STX16 : Complex174
+PTK7 : Complex175
+BTN2A2 : Complex175
+TMX4 : Complex175
+CNNM2 : Complex175
+BTN2A1 : Complex175
+CNNM4 : Complex175
+NFE2L1 : Complex176
+NFE2L2 : Complex176
+BACH2 : Complex176
+BACH1 : Complex176
+RTL6 : Complex176
+NFE2L3 : Complex176
+MAFF : Complex176
+PPP3CA : Complex177
+RCAN3 : Complex177
+RCAN1 : Complex177
+NFATC1 : Complex177
+RCAN2 : Complex177
+PPP3CC : Complex177
+NBN : Complex178
+FAM219A : Complex178
+FBXO10 : Complex178
+MRE11 : Complex178
+SHPK : Complex178
+RAD50 : Complex178
+TOP2B : Complex179 Complex206
+SS18L1 : Complex179
+ARID1B : Complex179
+DPF2 : Complex179
+BICRA : Complex179
+SS18 : Complex179
+CCDC57 : Complex180
+ODF2L : Complex180
+BORCS6 : Complex180 Complex1007
+CCDC122 : Complex180
+BORCS7 : Complex180
+TEX35 : Complex180
+SCLT1 : Complex180
+PXN : Complex181
+FBXL20 : Complex181
+PGBD5 : Complex181
+PPP1R16A : Complex181
+RABGGTB : Complex181
+PIP5K1A : Complex181 Complex800
+INHBA : Complex182
+RCHY1 : Complex182
+GINM1 : Complex182
+PLEKHA5 : Complex182
+CALCB : Complex182
+ITGB8 : Complex182
+LIG3 : Complex183
+MSH3 : Complex183
+PNKP : Complex183
+XRCC1 : Complex183
+POLB : Complex183
+HLTF : Complex183
+APLF : Complex183
+TIMM50 : Complex184
+AUP1 : Complex184
+PDE3A : Complex184
+MAP7D1 : Complex184
+TUBB4A : Complex184
+TUBB6 : Complex184
+TUBA1C : Complex184
+AAK1 : Complex185
+AP2S1 : Complex185 Complex488
+REXO1 : Complex185
+AP2A2 : Complex185
+MAGED4B : Complex185
+CSPG4 : Complex186 Complex935
+PTPRJ : Complex186 Complex935
+ATP13A3 : Complex186
+SLC9A6 : Complex186 Complex935
+PODXL : Complex186 Complex935 Complex979
+SPPL2A : Complex186 Complex935
+NKRF : Complex187 Complex770 Complex796
+AATF : Complex187 Complex280
+TTC28 : Complex188
+WASF3 : Complex188
+WASL : Complex188
+SHB : Complex188
+WIPF2 : Complex188 Complex361 Complex731
+MAPK15 : Complex189
+CKS1B : Complex189 Complex471
+CDKN1C : Complex189
+CCNE1 : Complex189 Complex1137
+CCND3 : Complex189
+RBL1 : Complex189 Complex1137
+CDK2 : Complex189 Complex471
+UGGT2 : Complex190 Complex193 Complex453
+CHID1 : Complex190
+BMP7 : Complex190 Complex193 Complex963
+CERCAM : Complex190 Complex453
+POGLUT2 : Complex190 Complex452 Complex453 Complex963
+RPLP1 : Complex191
+TPT1 : Complex191
+RPL24 : Complex191 Complex536
+KAT7 : Complex192
+CCDC88A : Complex192
+ING4 : Complex192
+AARSD1 : Complex192
+JADE2 : Complex192
+ING5 : Complex192
+BRD1 : Complex192
+PAM : Complex193
+GALNS : Complex193 Complex886
+CHPF2 : Complex193 Complex453
+EDEM3 : Complex193 Complex453
+NEK3 : Complex194
+KLK11 : Complex194
+CCNK : Complex194
+CDK13 : Complex194
+TTC9C : Complex194
+SPSB3 : Complex194
+FBXO44 : Complex194
+NUP210 : Complex195
+NUP35 : Complex195
+NXF1 : Complex195 Complex521
+PARD6A : Complex196
+LLGL2 : Complex196
+PARD6B : Complex196
+WWC1 : Complex196
+PTPN14 : Complex196
+PARD3 : Complex196
+MIS12 : Complex197
+NUF2 : Complex197
+SPC24 : Complex197
+SPC25 : Complex197
+NDUFAF6 : Complex197
+NDC80 : Complex197
+PMF1 : Complex197
+NSL1 : Complex197
+SCAND1 : Complex198
+ZSCAN20 : Complex198
+ZNF232 : Complex198
+ZNF449 : Complex198
+ZBTB7B : Complex199
+MTA3 : Complex199 Complex362 Complex759
+TRRAP : Complex200
+FOXR2 : Complex200 Complex329
+MYC : Complex200 Complex329 Complex551 Complex871
+MEAF6 : Complex200
+DPCD : Complex200 Complex871
+TTI2 : Complex200
+EP400 : Complex200
+YEATS4 : Complex200 Complex551
+ZNHIT1 : Complex200
+MBTD1 : Complex200
+ZMYND19 : Complex201
+WDR26 : Complex201
+WARS2 : Complex201
+MKLN1 : Complex201
+RANBP9 : Complex201 Complex589
+GID8 : Complex201
+RMND5A : Complex201 Complex589
+RANBP10 : Complex201
+EMC6 : Complex202
+EMC2 : Complex202
+EMC10 : Complex202
+EMC1 : Complex202
+EMC4 : Complex202
+EMC8 : Complex202
+MMGT1 : Complex202
+EMC7 : Complex202
+EMC9 : Complex202
+EMC3 : Complex202
+CST1 : Complex203
+AMY1C : Complex203
+CST2 : Complex203
+CST4 : Complex203
+MUC7 : Complex203
+ZG16B : Complex203
+RPP14 : Complex204
+IBTK : Complex204
+POP7 : Complex204
+C18orf21 : Complex204
+POP4 : Complex204
+RPP25 : Complex204
+RPP30 : Complex204
+RPP40 : Complex204
+RPP38 : Complex204
+NEPRO : Complex204
+NCOA5 : Complex205 Complex653 Complex820
+RIF1 : Complex205
+PPP1CC : Complex205 Complex314 Complex527
+ZFYVE9 : Complex205
+YLPM1 : Complex205 Complex653 Complex1067
+PPP1R8 : Complex205 Complex208 Complex228 Complex332
+ARID2 : Complex206
+SMARCD1 : Complex206
+BCL7C : Complex206
+BCL7A : Complex206
+SMARCD2 : Complex206
+DPF3 : Complex206
+BRD7 : Complex206
+DPF1 : Complex206
+PBRM1 : Complex206
+ACTL6B : Complex206
+REEP1 : Complex207 Complex630
+PHTF2 : Complex207
+USP24 : Complex207 Complex630
+SLC41A1 : Complex207
+LYPD3 : Complex207
+CSRNP1 : Complex208 Complex228
+C2orf74 : Complex208
+PPP1R3D : Complex208
+AGL : Complex208 Complex736
+PPP1R3B : Complex208
+MRPS22 : Complex209 Complex277 Complex672 Complex836 Complex1019
+MRPS26 : Complex209 Complex1056
+DAP3 : Complex209 Complex672
+MRPS5 : Complex209 Complex277
+MRPS14 : Complex209
+MRPS31 : Complex209
+ORC5 : Complex210
+ORC1 : Complex210
+ORC6 : Complex210
+FAM210A : Complex210
+ORC2 : Complex210
+LRWD1 : Complex210
+STK4 : Complex211
+RASSF2 : Complex211
+RASSF1 : Complex211
+STK3 : Complex211
+GPSM2 : Complex212
+ZUP1 : Complex212
+USP11 : Complex212
+TCEAL4 : Complex212
+TCEAL1 : Complex212
+KDM3A : Complex212
+POGK : Complex212
+NUP98 : Complex213
+SUMO1 : Complex213 Complex521
+NUP107 : Complex213 Complex521
+NUP88 : Complex213
+NUP160 : Complex213
+NUP37 : Complex213
+NUP93 : Complex213
+NDC1 : Complex213
+AKTIP : Complex214
+HOOK1 : Complex214
+FAM160A2 : Complex214
+NAB1 : Complex214
+FAM160A1 : Complex214
+HOOK3 : Complex214
+HOOK2 : Complex214
+USP8 : Complex215
+GAB1 : Complex215
+AKAP10 : Complex215
+GRAP2 : Complex215
+GAREM1 : Complex215
+PTPN23 : Complex215
+DFFA : Complex216
+DFFB : Complex216
+TSPYL4 : Complex216
+MAPKAPK3 : Complex217
+MAPK11 : Complex217
+PRKY : Complex217
+NLRP3 : Complex218
+LTBP4 : Complex218
+NLRP5 : Complex218
+EDEM2 : Complex219
+FBLN7 : Complex219
+ASPH : Complex219
+TXNDC11 : Complex219
+ALKBH2 : Complex220
+ARID3A : Complex220
+LCN15 : Complex220
+RAB6A : Complex221 Complex855
+RAB13 : Complex221
+RAB1B : Complex221 Complex691
+RAB34 : Complex221
+RAB1A : Complex221 Complex691
+RAB8B : Complex221 Complex691
+GDI1 : Complex221
+RAB12 : Complex221
+RAB4A : Complex221
+RAB35 : Complex221
+NCDN : Complex222
+ECD : Complex222
+ZNHIT2 : Complex222
+TSSC4 : Complex222
+EAPP : Complex222
+SLC7A6OS : Complex222
+AAR2 : Complex222
+HNRNPA1 : Complex223 Complex584 Complex635 Complex741 Complex907
+RBM3 : Complex223 Complex584 Complex1067
+ABCF1 : Complex223
+SLTM : Complex223 Complex408
+PURB : Complex223
+PXDC1 : Complex224
+RABGAP1L : Complex224
+RABGAP1 : Complex224
+ATP11C : Complex225
+SLC4A7 : Complex225
+SLC12A2 : Complex225
+SLC12A7 : Complex225
+SLC12A6 : Complex225
+SLC12A4 : Complex225
+SLC12A9 : Complex225
+FKBP6 : Complex226
+OSBP : Complex226
+CDC37L1 : Complex226
+PDE4A : Complex226
+EEF2K : Complex226
+USP19 : Complex226
+AGAP3 : Complex226
+MTMR2 : Complex227
+MTMR12 : Complex227
+MTMR10 : Complex227
+SBF2 : Complex227
+ZFYVE16 : Complex228
+CSRNP2 : Complex228 Complex527
+SPIN1 : Complex229
+TMA7 : Complex229
+CGGBP1 : Complex229
+SPINDOC : Complex229
+SPIN2B : Complex229 Complex430
+VCAN : Complex230
+ULK3 : Complex230
+BCAN : Complex230
+ZC3HC1 : Complex231
+GRN : Complex231
+RAPGEF6 : Complex231
+OTUD5 : Complex231
+MET : Complex232
+PCBP1 : Complex232
+FRK : Complex232
+CINP : Complex233
+FRMPD2 : Complex234
+ERLEC1 : Complex234
+OS9 : Complex234
+SEL1L : Complex234
+FOXP4 : Complex235
+NUS1 : Complex235
+DHDDS : Complex235
+RIOX1 : Complex236
+SAMD1 : Complex236
+DKK1 : Complex237
+TK2 : Complex237
+RBM45 : Complex237
+GABRB3 : Complex238
+MCOLN2 : Complex238
+DAGLA : Complex238
+MCOLN3 : Complex238
+MCOLN1 : Complex238
+KATNBL1 : Complex239
+KATNB1 : Complex239
+KATNA1 : Complex239
+FBXO28 : Complex240
+GIT1 : Complex240
+CDC42BPA : Complex240
+SHTN1 : Complex240
+PAK2 : Complex240
+LURAP1L : Complex240
+AP3B1 : Complex241
+AP3M1 : Complex241
+AP3M2 : Complex241
+EDA : Complex241
+AP3D1 : Complex241
+VRK3 : Complex242
+TXNDC5 : Complex242
+YY1AP1 : Complex242
+ADNP : Complex242
+ZNF524 : Complex242
+LUM : Complex243
+LGALS9B : Complex243
+LGALS9 : Complex243
+PBK : Complex243
+LGALS9C : Complex243
+DAG1 : Complex243
+BOLA3 : Complex244
+FAHD2A : Complex244
+FAHD2B : Complex244
+KANK2 : Complex245
+FAM83B : Complex245
+BTBD3 : Complex245
+PKP2 : Complex245
+SEC16A : Complex245
+IGLL1 : Complex246
+IGLC7 : Complex246
+IGLL5 : Complex246
+CABS1 : Complex247
+TRAPPC9 : Complex247
+BCL2L14 : Complex247
+MAP11 : Complex247
+TRAPPC10 : Complex247
+TRAPPC6B : Complex247
+VPS53 : Complex248
+VPS52 : Complex248
+VPS54 : Complex248
+EIPR1 : Complex248
+VPS51 : Complex248
+VPS50 : Complex248
+CD276 : Complex249
+CLEC5A : Complex249
+TMBIM6 : Complex249
+MAN2A1 : Complex250
+PLTP : Complex250 Complex453
+TMEM132A : Complex250 Complex453
+MAN2A2 : Complex250
+WDR13 : Complex251
+NLGN1 : Complex251
+RELCH : Complex251
+B3GAT3 : Complex251
+NLGN2 : Complex251
+CNOT6L : Complex252
+CNOT11 : Complex252
+CNOT8 : Complex252
+TOB2 : Complex252
+BTG3 : Complex252
+CNOT10 : Complex252
+CNOT6 : Complex252
+CNOT2 : Complex252
+CNOT7 : Complex252
+CNOT9 : Complex252
+CNOT3 : Complex252
+TOB1 : Complex252
+CNOT1 : Complex252
+FHL2 : Complex252
+TNKS1BP1 : Complex252
+GAPDH : Complex253 Complex880
+TPI1 : Complex253 Complex997
+SRI : Complex253 Complex1033
+PGK1 : Complex253 Complex839
+TKT : Complex253
+MPI : Complex253
+SDCCAG8 : Complex254
+SCARA3 : Complex254
+COLEC12 : Complex254
+RD3 : Complex255
+LRBA : Complex255
+NBEA : Complex255
+STK40 : Complex256
+TRIB1 : Complex256
+DET1 : Complex256
+ETV5 : Complex256
+PRPF4B : Complex257 Complex411 Complex422 Complex496 Complex595 Complex858 Complex902 Complex1092
+MATR3 : Complex257 Complex411
+RNPS1 : Complex257 Complex559 Complex980 Complex1144 Complex1148
+TRA2B : Complex257 Complex411 Complex980 Complex999
+LUC7L3 : Complex257 Complex373 Complex525 Complex999 Complex1081
+CDK11A : Complex257 Complex586
+ZC3H18 : Complex257
+ZRANB2 : Complex257 Complex418 Complex980
+AP1S2 : Complex258
+SYNRG : Complex258
+AP1M2 : Complex258
+AP1G2 : Complex258
+AP1AR : Complex258
+AP1S3 : Complex258
+REPIN1 : Complex259 Complex875
+ZNF408 : Complex259
+PWWP2A : Complex259
+FAM111B : Complex259
+SET : Complex259 Complex771 Complex875
+MEN1 : Complex259
+IKZF5 : Complex259
+C14orf93 : Complex259 Complex771
+TIMM9 : Complex260
+TIMM8A : Complex260
+TIMM10 : Complex260
+RNF34 : Complex261
+SHC1 : Complex261
+RFFL : Complex261
+VPS37C : Complex262
+VPS28 : Complex262
+VTA1 : Complex262
+TSG101 : Complex262
+UBAP1 : Complex262
+MVB12A : Complex262
+VPS37A : Complex262
+CHMP5 : Complex262
+VPS37B : Complex262
+MIS18BP1 : Complex263
+MIS18A : Complex263
+OIP5 : Complex263
+HMG20A : Complex264
+RCOR1 : Complex264
+KDM1A : Complex264
+TCF20 : Complex264
+PHF21A : Complex264
+HMG20B : Complex264
+UBFD1 : Complex265
+RAC3 : Complex265 Complex513
+POMP : Complex265 Complex513
+PSMG2 : Complex265 Complex513 Complex927 Complex1093
+PSMB4 : Complex265 Complex927
+LRRC39 : Complex266
+NINL : Complex266
+MIPOL1 : Complex266
+CPSF2 : Complex267
+CPSF3 : Complex267
+SYMPK : Complex267
+FIP1L1 : Complex267
+CPSF1 : Complex267
+CPSF4 : Complex267
+WDR33 : Complex267
+GAS2L1 : Complex268
+PLCG1 : Complex268
+MAPRE3 : Complex268
+CCDC18 : Complex269
+TBC1D31 : Complex269
+HDDC3 : Complex269
+KIAA1328 : Complex269
+WRAP73 : Complex269
+SSX2IP : Complex269
+ASNSP6 : Complex269
+PIBF1 : Complex269
+BORCS5 : Complex270
+SYBU : Complex270 Complex610
+DTNBP1 : Complex270
+BLOC1S4 : Complex270
+BLOC1S5 : Complex270
+BLOC1S3 : Complex270
+DEPDC5 : Complex271
+ZNF414 : Complex271
+KDM4B : Complex271
+NPRL2 : Complex271
+EXOC6 : Complex272 Complex977
+EXOC7 : Complex272 Complex977
+EXOC3 : Complex272 Complex977
+EXOC5 : Complex272 Complex977
+RTN4 : Complex273
+SYVN1 : Complex273
+SH3PXD2A : Complex273
+FAM8A1 : Complex273 Complex714
+FAM241A : Complex273
+METTL7B : Complex273
+ARL6IP1 : Complex273
+RTN2 : Complex273
+TFAM : Complex273 Complex739
+ATP1B2 : Complex273
+CCSER2 : Complex274
+NDEL1 : Complex274
+NDE1 : Complex274
+ARHGAP26 : Complex275
+C2CD2 : Complex275
+ARHGAP10 : Complex275
+CIR1 : Complex276 Complex775
+FANCI : Complex276 Complex775
+HEATR1 : Complex276
+NF1 : Complex276
+MON2 : Complex276
+PI4KA : Complex276
+CAND2 : Complex276
+MRPS17 : Complex277 Complex672 Complex1056
+MRPS2 : Complex277 Complex672 Complex1056
+MRPS11 : Complex277
+MRPS27 : Complex277 Complex836
+SPATS2L : Complex278
+LTBR : Complex278 Complex743
+TFB1M : Complex278 Complex1116
+TRAF3 : Complex278
+SKI : Complex278
+HIST2H3C : Complex278 Complex994 Complex1116
+ZNF724 : Complex278
+CCDC121 : Complex278
+PRC1 : Complex278
+ODF2 : Complex278
+CEP95 : Complex278
+TAOK2 : Complex278
+HDAC5 : Complex278
+CCDC113 : Complex278
+GADD45GIP1 : Complex279
+MRPL50 : Complex279 Complex1155
+TBC1D8 : Complex279
+MRPL51 : Complex279
+DRG1 : Complex280 Complex961
+ZC3H15 : Complex280
+ZNF430 : Complex281
+TGS1 : Complex281
+RPL19 : Complex281 Complex1029
+BMPR1B : Complex282
+ETNK1 : Complex282
+EVA1C : Complex282
+PIGA : Complex282
+ND5 : Complex283 Complex1075
+KTN1 : Complex283
+NPM1 : Complex284 Complex826 Complex986
+SCAF1 : Complex284
+MTPAP : Complex284 Complex1107
+HIST1H2BD : Complex284
+WTIP : Complex285
+ZFAND2B : Complex285
+AJUBA : Complex285
+TRIP6 : Complex285
+GTF2H1 : Complex286
+MNAT1 : Complex286 Complex739
+GTF2H5 : Complex286
+CCNH : Complex286
+GTF2H3 : Complex286
+ERCC3 : Complex286
+GTF2H4 : Complex286
+GTF2H2 : Complex286
+BAHCC1 : Complex287
+ARID4A : Complex287
+SIN3A : Complex287
+BRMS1 : Complex287
+CCDC71 : Complex287 Complex362
+FOXK1 : Complex287 Complex759
+SAP30 : Complex287 Complex759
+SUDS3 : Complex287 Complex759
+ING1 : Complex287
+SAP130 : Complex287
+MREG : Complex288
+CHCHD4 : Complex288
+TOR1AIP1 : Complex288
+CT55 : Complex289
+UHRF1BP1L : Complex289
+C12orf45 : Complex289
+ACOT11 : Complex290
+TEKT2 : Complex290
+PTER : Complex290
+PAK6 : Complex291
+PAK4 : Complex291
+PAK5 : Complex291
+ARHGEF11 : Complex291
+C16orf70 : Complex292
+BNIP3L : Complex292
+WIPI2 : Complex292
+BCAS3 : Complex292
+BNIP3 : Complex292
+DNASE1L2 : Complex293
+TLE4 : Complex293
+TBX20 : Complex293
+TLE1 : Complex293
+SESN2 : Complex294
+WDR59 : Complex294
+WDR24 : Complex294
+MIOS : Complex294
+CHCHD3 : Complex295
+MTX3 : Complex295
+MTX2 : Complex295
+PDXDC1 : Complex295
+SAMM50 : Complex295
+IMMT : Complex295
+POMT1 : Complex295
+CCDC127 : Complex295
+CD244 : Complex295
+CARD19 : Complex295
+GK2 : Complex296
+SLAMF1 : Complex296
+ZNF292 : Complex296
+CPS1 : Complex297 Complex975
+GFM1 : Complex297
+DARS2 : Complex297
+PDPR : Complex297
+MTIF2 : Complex297
+EPX : Complex298
+ICE2 : Complex298
+TMEM237 : Complex298
+BPIFA1 : Complex298
+CTSG : Complex298
+BPIFB1 : Complex298
+XPO7 : Complex299 Complex998
+GCN1 : Complex299 Complex1063
+ITLN2 : Complex300
+ITLN1 : Complex300
+NACC1 : Complex300
+TEAD3 : Complex301
+PDLIM7 : Complex301
+IRF2BP2 : Complex301
+IRF2BPL : Complex301
+VGLL4 : Complex301
+USP22 : Complex302
+ATXN7 : Complex302
+ATXN7L3 : Complex302
+ATXN7L1 : Complex302
+ATXN7L2 : Complex302
+USP27X : Complex302
+KIR3DL1 : Complex303
+KIR2DS2 : Complex303
+KIR3DS1 : Complex303
+KIR2DS5 : Complex303
+KIR3DP1 : Complex303
+LOC100287457 : Complex303
+BPIFA2 : Complex303
+HAUS6 : Complex304
+HAUS3 : Complex304
+HAUS4 : Complex304
+HAUS7 : Complex304
+HAUS2 : Complex304
+HAUS5 : Complex304
+HAUS8 : Complex304
+HAUS1 : Complex304
+IMPAD1 : Complex305
+DNAJC16 : Complex305
+TMEM30A : Complex305
+PGAP1 : Complex305
+DIPK1B : Complex305 Complex638
+LRFN3 : Complex305 Complex767
+NETO2 : Complex305 Complex1014
+HGFAC : Complex306
+SEC22A : Complex306
+FRMD5 : Complex306
+SPINT2 : Complex306
+SCARF2 : Complex306
+CNTNAP1 : Complex306
+NECTIN4 : Complex307
+PDSS1 : Complex307
+TNFSF13B : Complex307
+C6orf62 : Complex307
+FAM118A : Complex307
+ATG4B : Complex308
+A4GNT : Complex308
+FANK1 : Complex308
+HECTD2 : Complex309
+KIF1A : Complex309
+PARP11 : Complex309
+RNF166 : Complex309
+ARPC1B : Complex310 Complex964
+TBCE : Complex310 Complex952
+ARPC5 : Complex310 Complex830
+ARPC1A : Complex310
+ARPC2 : Complex310
+ACTR3 : Complex310 Complex952
+ACTR2 : Complex310 Complex737
+ARPC5L : Complex310 Complex964
+BLVRA : Complex311
+RTN4IP1 : Complex311
+PCYOX1 : Complex311
+PSMD2 : Complex312 Complex353 Complex421 Complex695
+PSMD14 : Complex312 Complex436 Complex648
+APOB : Complex312
+UBE3A : Complex312
+MVB12B : Complex312
+GLRB : Complex313
+LEPR : Complex313
+OSBP2 : Complex313
+BTNL8 : Complex313
+PPP1R18 : Complex314
+KIF18A : Complex314 Complex332 Complex527
+ERBIN : Complex314
+KIF1BP : Complex314
+RPF1 : Complex315
+RPF2 : Complex315 Complex1074
+TMEM63A : Complex316
+SDK1 : Complex316
+HEG1 : Complex316
+PBX2 : Complex317
+MEIS1 : Complex317
+MAB21L1 : Complex317
+PBX3 : Complex317
+MEIS2 : Complex317
+MEIS3 : Complex317
+PBX1 : Complex317
+PIGL : Complex317
+SUSD3 : Complex318
+S100A7A : Complex318
+CD207 : Complex318
+BTN3A1 : Complex319
+BTN3A3 : Complex319
+BTN3A2 : Complex319
+MLXIP : Complex320
+PNKD : Complex320
+GOLPH3L : Complex320
+DCUN1D5 : Complex320
+ATRIP : Complex320
+RADIL : Complex320
+LSS : Complex320
+SETX : Complex320
+PPFIBP1 : Complex320
+PRMT9 : Complex320
+PPARGC1B : Complex320
+PRKAA2 : Complex321
+SPATA20 : Complex321
+DCLRE1C : Complex321
+PRKAB2 : Complex321
+PRKAB1 : Complex321
+PRKAG1 : Complex321
+PRKAG2 : Complex321
+TBC1D5 : Complex322 Complex643
+SNX5 : Complex322 Complex846
+WASHC2C : Complex322
+SNX1 : Complex322 Complex846
+WASHC2A : Complex322
+C11orf42 : Complex322 Complex846
+INPP5K : Complex323
+ACE2 : Complex323
+AAMP : Complex323
+AEN : Complex323
+CLPB : Complex324 Complex417
+HAX1 : Complex324 Complex417
+GGCX : Complex325
+GPAT3 : Complex325
+CHP1 : Complex325
+FADS2 : Complex325
+GPAT4 : Complex325
+NRBF2 : Complex326
+ATG14 : Complex326
+SOGA3 : Complex326
+TEX15 : Complex327
+SERPINC1 : Complex327
+MBL2 : Complex327
+UAP1 : Complex327
+PPM1K : Complex328
+BCKDHA : Complex328
+BCKDHB : Complex328
+JAZF1 : Complex329
+SIM2 : Complex329
+RAB3GAP1 : Complex330
+MTDH : Complex330
+GPAM : Complex330
+RAB3GAP2 : Complex330
+SIRT2 : Complex330
+PIGU : Complex331
+PIGS : Complex331
+GPAA1 : Complex331
+PIGT : Complex331
+PIGK : Complex331
+PPP1R37 : Complex332
+PPP1R13L : Complex332
+SH2D4A : Complex332
+PLCL2 : Complex332
+PPP1R2 : Complex332 Complex527
+PDSS2 : Complex333
+FMC1 : Complex333
+OXLD1 : Complex333
+MOCS1 : Complex333
+TRMT2B : Complex333
+MTG2 : Complex333
+ZNF609 : Complex334 Complex748 Complex817
+YAF2 : Complex334 Complex677 Complex817
+PCGF1 : Complex334 Complex677 Complex817
+PCGF5 : Complex334 Complex538 Complex640 Complex817
+ACTL8 : Complex334 Complex748
+USP7 : Complex334 Complex748
+TERF2 : Complex335
+TERF2IP : Complex335
+TERF1 : Complex335
+POT1 : Complex335
+PINX1 : Complex335
+WDR43 : Complex335
+DCLRE1B : Complex335
+ACD : Complex335
+CAB39L : Complex336
+STK11 : Complex336
+STRADA : Complex336
+SZT2 : Complex337
+TMCO4 : Complex337
+KPTN : Complex337
+ITFG2 : Complex337
+C12orf66 : Complex337
+LIN52 : Complex338
+LIN37 : Complex338
+LIN54 : Complex338
+MYBL2 : Complex338
+MYBL1 : Complex338
+LIN9 : Complex338
+PDE7A : Complex339
+THBS1 : Complex339
+THBS3 : Complex339
+IQSEC2 : Complex339
+FANCB : Complex339
+FAAP100 : Complex339
+C5orf34 : Complex339
+FKBP9 : Complex340
+ADAMTS12 : Complex340
+SNRK : Complex340
+ZNRD2 : Complex341
+TNKS : Complex341
+TNKS2 : Complex341
+TFIP11 : Complex342
+SF3B3 : Complex342 Complex489 Complex929 Complex969 Complex1028 Complex1080
+PAXBP1 : Complex342
+GTF2IRD1 : Complex343
+GTF2IRD2B : Complex343
+GTF2IRD2 : Complex343
+RET : Complex343 Complex921
+SIRT5 : Complex343
+NID2 : Complex344
+B4GALNT4 : Complex344
+PILRB : Complex344
+PILRA : Complex344
+LRRTM4 : Complex344
+ANTXR1 : Complex344
+MBNL2 : Complex345
+MBNL1 : Complex345
+MBNL3 : Complex345
+ALG10 : Complex346
+DHCR24 : Complex346
+RER1 : Complex346
+TMEM161A : Complex346
+PCSK1N : Complex347
+ADCYAP1 : Complex347
+SAV1 : Complex347
+SLC9A1 : Complex348
+LPAR1 : Complex348
+MFSD5 : Complex348
+EXTL2 : Complex348
+CXNQ : Complex348
+MORN2 : Complex349
+C8orf74 : Complex349
+FGFR2 : Complex349
+IFT172 : Complex350
+IFT57 : Complex350 Complex403
+IFT20 : Complex350 Complex403
+IFT22 : Complex350 Complex661
+TTC30B : Complex350 Complex455
+HIP1 : Complex350
+SSX2B : Complex351
+SSX3 : Complex351
+SSX6P : Complex351
+SSX2 : Complex351
+DNAJC18 : Complex352
+DNAJC30 : Complex352
+CHRNA9 : Complex352
+ZIC2 : Complex352
+CHEK1 : Complex352
+PSMD12 : Complex353
+PSMD3 : Complex353 Complex695
+PSMD10 : Complex353 Complex436 Complex1139
+INO80C : Complex353
+PSMC6 : Complex353 Complex648 Complex695 Complex1106
+MAN1A1 : Complex354
+GOLGA7 : Complex354
+ZDHHC8 : Complex354
+CLDND1 : Complex354
+MAN1A2 : Complex354
+RAB22A : Complex355
+TRIM4 : Complex355
+RAB31 : Complex355
+WDR7 : Complex356
+DMXL1 : Complex356
+DMXL2 : Complex356
+ROGDI : Complex356
+POLE3 : Complex357
+POLE : Complex357
+CHRAC1 : Complex357
+POLE4 : Complex357
+KDM3B : Complex357
+POLA1 : Complex357
+SLC38A7 : Complex358
+CA14 : Complex358
+EVA1B : Complex358
+HLA-DQB1 : Complex359
+CNNM1 : Complex359
+CNNM3 : Complex359
+ZNF500 : Complex360
+ZNF26 : Complex360 Complex1146
+ZSCAN30 : Complex360
+PIK3AP1 : Complex361
+CASKIN2 : Complex361 Complex632
+TNK2 : Complex361 Complex632 Complex740 Complex774
+ARAP1 : Complex361
+CHD4 : Complex362 Complex639 Complex804
+RANBP2 : Complex362 Complex929
+FOXF2 : Complex363
+SDF4 : Complex363
+IQSEC1 : Complex363
+RICTOR : Complex363
+HADHA : Complex364 Complex1029
+NOP10 : Complex364
+NMNAT1 : Complex364
+REXO4 : Complex364 Complex1035
+TTF2 : Complex365 Complex513
+PSMA7 : Complex365 Complex513
+HDAC7 : Complex365
+AKIRIN2 : Complex365 Complex927 Complex1132
+TMEM102 : Complex366
+PPFIA3 : Complex366
+RAB3IP : Complex366
+RAB3IL1 : Complex366
+SLC1A3 : Complex367
+THAP9 : Complex367 Complex1155
+PDPK1 : Complex367
+KCTD17 : Complex367 Complex1155
+POLK : Complex367
+KCTD5 : Complex367
+KCTD2 : Complex367
+TMEM45A : Complex367
+FHL5 : Complex368
+ZMYM1 : Complex368
+CEP76 : Complex368
+KHSRP : Complex369
+PCBP2 : Complex369
+RAD54L2 : Complex369
+USE1 : Complex370
+ZWILCH : Complex370
+SPATA6L : Complex371
+ZBTB1 : Complex371
+KIF4A : Complex371
+USP45 : Complex372
+NCBP2 : Complex372
+LENG1 : Complex372
+SRSF3 : Complex373 Complex1148
+SRSF8 : Complex373 Complex823 Complex858
+ARGLU1 : Complex373
+SRSF6 : Complex373 Complex525 Complex1115
+CCNY : Complex374 Complex491 Complex1151
+CTNND1 : Complex374 Complex491
+EPHA2 : Complex374 Complex717
+MEAK7 : Complex374 Complex717
+RAB2A : Complex374 Complex855
+GNA11 : Complex374
+EPB41L3 : Complex374
+SMPDL3B : Complex374
+GNAQ : Complex374 Complex497
+UBE2L3 : Complex375
+MDH2 : Complex375 Complex1064
+AKR1A1 : Complex375 Complex882
+UPP1 : Complex375 Complex790 Complex882 Complex925 Complex1113
+GSR : Complex375 Complex1126
+ACO2 : Complex375
+IGSF3 : Complex376
+NAALAD2 : Complex376
+NAALADL2 : Complex376
+VDAC3 : Complex377
+RNF5 : Complex377
+ITIH1 : Complex377
+TOMM40 : Complex377
+SMG8 : Complex378
+SMG1 : Complex378
+SMG9 : Complex378
+ASNSD1 : Complex379
+RFPL1 : Complex379
+RFPL2 : Complex379
+DAB2IP : Complex379
+RFPL3 : Complex379
+MTOR : Complex380
+COG2 : Complex380
+COG5 : Complex380
+COG6 : Complex380 Complex998
+COG4 : Complex380 Complex998
+COG7 : Complex380
+COG8 : Complex380
+TMEM94 : Complex381
+C2CD5 : Complex381
+CABLES1 : Complex381
+CABLES2 : Complex381
+FIBP : Complex381
+LYPLA2 : Complex382
+TBC1D8B : Complex382 Complex808
+WBP2 : Complex382
+YKT6 : Complex382
+CKMT1A : Complex382
+HOMER1 : Complex383
+HOMER3 : Complex383
+LMAN2L : Complex383
+TRAF5 : Complex383
+SPTBN4 : Complex383
+WDR11 : Complex384
+FAM91A1 : Complex384
+C17orf75 : Complex384
+DDRGK1 : Complex385
+GCSH : Complex385
+UFL1 : Complex385
+FLYWCH1 : Complex385
+CDK5RAP3 : Complex385
+UFM1 : Complex385
+TMEM171 : Complex386
+TPCN1 : Complex386
+CMTM4 : Complex386
+GPRC5C : Complex386
+TMEM186 : Complex386
+NAA15 : Complex387
+RMI1 : Complex387
+RMI2 : Complex387
+TOP3A : Complex387
+NAA10 : Complex387 Complex775
+ARPIN : Complex388
+OXNAD1 : Complex388
+EFHD1 : Complex388
+CHAC2 : Complex388
+FSD1 : Complex388
+ATF6 : Complex389
+TTC17 : Complex389
+TMEM131 : Complex389
+ERLIN2 : Complex390
+TAPT1 : Complex390
+RIC3 : Complex390
+ALOX12B : Complex391
+KPRP : Complex391
+POF1B : Complex391
+NCCRP1 : Complex391
+TGM3 : Complex391
+SBSN : Complex391 Complex1098
+DCBLD1 : Complex392
+ATP13A2 : Complex392
+UTP14C : Complex392 Complex622
+FUT4 : Complex392
+IL27RA : Complex392
+HS3ST3B1 : Complex392
+NOB1 : Complex392
+HLA-DPA1 : Complex392
+FGFRL1 : Complex392
+SPCS3 : Complex393
+SEC11A : Complex393
+SPCS1 : Complex393
+SPCS2 : Complex393
+CHSY1 : Complex394
+KLHL17 : Complex394
+DCN : Complex394
+CD1B : Complex395
+CYB5D2 : Complex395
+FCGRT : Complex395
+B2M : Complex395
+MR1 : Complex395
+TGFBR2 : Complex396
+ACVR2A : Complex396
+LGR4 : Complex396
+ACVR2B : Complex396 Complex432
+LRP10 : Complex396
+BMPR1A : Complex396
+CCT7 : Complex397
+FASN : Complex397
+DNAJC19 : Complex397
+MITD1 : Complex398
+ATP6V0C : Complex398
+VMA21 : Complex398 Complex1044
+ATP6AP2 : Complex398
+TCIRG1 : Complex398
+CBWD6 : Complex399
+CBWD2 : Complex399
+CBWD7 : Complex399
+CBWD1 : Complex399
+CRNN : Complex400
+CALML5 : Complex400
+PPL : Complex400
+ANXA1 : Complex400 Complex544
+SPRR3 : Complex400
+SUGCT : Complex401
+SKAP2 : Complex401
+CC2D1B : Complex401
+PAX3 : Complex401
+SKAP1 : Complex401
+NPHP4 : Complex401
+BRCC3 : Complex402
+UIMC1 : Complex402
+ABRAXAS1 : Complex402
+BABAM1 : Complex402
+TRAF3IP1 : Complex403
+CRACR2A : Complex403
+MCPH1 : Complex403
+CLUAP1 : Complex403
+RABEP2 : Complex403
+KIAA1586 : Complex404
+VPS13B : Complex404
+DDIT4 : Complex404
+SPACA1 : Complex404
+CPA6 : Complex405
+FBXO15 : Complex405
+HINT3 : Complex405
+UHRF1BP1 : Complex406
+CREB3L2 : Complex406
+CREB3 : Complex406
+PDGFC : Complex406
+NCAPG : Complex407
+NCAPH : Complex407
+NCAPD2 : Complex407
+HDGFL2 : Complex408
+PCNP : Complex408
+CCAR1 : Complex408
+RBM5 : Complex408
+RBM10 : Complex408
+LAMC1 : Complex408
+CRYBG3 : Complex409
+PALM2AKAP2 : Complex409
+AKAP7 : Complex409
+AKAP1 : Complex409
+TSSK1B : Complex409
+PDE4DIP : Complex409 Complex610
+PRKAR2B : Complex409 Complex470
+EMD : Complex409
+PRKX : Complex409
+MFGE8 : Complex410
+FAM3A : Complex410
+ITGB5 : Complex410
+SRRM2 : Complex411
+SELENOH : Complex411
+PNN : Complex411
+ACIN1 : Complex411 Complex559
+CUTC : Complex412
+PIN4 : Complex412
+TRIR : Complex412
+ZNF207 : Complex412
+DNAJC8 : Complex412
+CD70 : Complex413
+CD27 : Complex413
+GSDME : Complex413
+C1GALT1 : Complex413
+TMEM67 : Complex413
+SLC25A51 : Complex413 Complex770
+RPS15A : Complex414
+RPL3L : Complex414
+LRRFIP2 : Complex415 Complex944
+PRG2 : Complex416
+ZNF460 : Complex416
+TRPC4AP : Complex416
+DPP6 : Complex417
+LSAMP : Complex417
+PLXNA4 : Complex417
+DNAAF2 : Complex417
+ALS2 : Complex417
+EAF1 : Complex418
+PIP4K2B : Complex418
+NFKBIL1 : Complex418
+PIP4K2A : Complex418
+PIP4K2C : Complex418
+NECTIN3 : Complex419
+MAK : Complex419
+NECTIN1 : Complex419
+ELMSAN1 : Complex420
+WDFY2 : Complex420
+RUFY1 : Complex420
+SLC7A3 : Complex420
+UTP6 : Complex420
+DNTTIP1 : Complex420
+MIEF1 : Complex420
+PSMA8 : Complex421 Complex513 Complex1093
+PAF1 : Complex422 Complex1121
+CDC73 : Complex422 Complex1121
+LEO1 : Complex422
+IWS1 : Complex422 Complex902
+CTR9 : Complex422
+SRPRA : Complex423
+MIA2 : Complex423
+SRPRB : Complex423
+APEX1 : Complex424
+KLHL36 : Complex424
+CELSR2 : Complex425
+FREM2 : Complex425
+CELSR1 : Complex425
+FABP7 : Complex426
+GOT2 : Complex426 Complex790 Complex1064
+GLRX : Complex426 Complex888
+AKR1D1 : Complex426 Complex1027
+FABP3 : Complex426
+COLEC10 : Complex427
+PTX3 : Complex427
+INHBE : Complex427
+RYBP : Complex428 Complex677 Complex817
+PCGF3 : Complex428 Complex538
+RNF2 : Complex428 Complex538 Complex817
+PCGF2 : Complex428 Complex748
+BCOR : Complex428 Complex817
+ZFAND6 : Complex429
+HGS : Complex429
+STAM2 : Complex429
+SH3BP1 : Complex429
+STAM : Complex429
+TOPORS : Complex430
+ZGPAT : Complex430
+SPIN4 : Complex430
+YRDC : Complex430
+UBR7 : Complex430
+KIF5C : Complex431
+KIF5B : Complex431
+KIF5A : Complex431
+KLC1 : Complex431
+ZNF627 : Complex432
+LAPTM4A : Complex432
+CSPG5 : Complex432
+MCRIP2 : Complex432
+SEC14L1 : Complex432
+DLK1 : Complex432
+ANKRD13C : Complex432
+PDHA2 : Complex433
+SDHAF2 : Complex433
+SDHB : Complex433
+SDHA : Complex433
+MLLT6 : Complex434
+DOT1L : Complex434
+MLLT10 : Complex434
+C1orf112 : Complex435
+SNX17 : Complex435
+FIGNL1 : Complex435
+WDR47 : Complex435
+RHEX : Complex435
+KIF21A : Complex436
+FAM117B : Complex436
+NCOA4 : Complex436 Complex1139
+PSMD8 : Complex436 Complex513 Complex695
+ADRM1 : Complex436 Complex695
+HIRIP3 : Complex437
+C18orf25 : Complex437
+CSNK2A2 : Complex437 Complex619
+PHRF1 : Complex437
+SRSF12 : Complex437
+NKAPD1 : Complex437 Complex619
+NKAP : Complex437
+SYNPO : Complex438
+ACTRT1 : Complex438
+FRAT1 : Complex439
+AXIN1 : Complex439
+GSK3B : Complex439
+APC : Complex439
+GSK3A : Complex439
+CACNB3 : Complex440
+CIAPIN1 : Complex440
+NDOR1 : Complex440
+MMS19 : Complex441
+CDKAL1 : Complex441
+CIAO2B : Complex441
+NDUFS6 : Complex442
+NDUFB7 : Complex442
+ENDOD1 : Complex442
+PTGES : Complex442
+C5orf30 : Complex443
+SPDEF : Complex443
+PRDM16 : Complex443
+MECOM : Complex443
+GEMIN5 : Complex444
+DDX20 : Complex444
+GEMIN4 : Complex444 Complex591 Complex881 Complex977 Complex1145
+KIF14 : Complex444 Complex792 Complex1141
+LSM11 : Complex444
+MAP4K5 : Complex445
+CDRT15 : Complex445
+CDRT15L2 : Complex445
+VASP : Complex446
+ENAH : Complex446
+EVL : Complex446
+POLR2E : Complex447 Complex693 Complex814 Complex1087
+ZNRD1 : Complex447
+CD3EAP : Complex447 Complex814
+POLR1A : Complex447 Complex693 Complex814
+RRN3 : Complex447 Complex814
+POLR2C : Complex447
+POLR1D : Complex447
+RANGRF : Complex448
+SP3 : Complex448
+SGCZ : Complex448
+TSPAN3 : Complex449 Complex1147
+DIP2B : Complex449
+EPHA5 : Complex449
+RDH14 : Complex449 Complex1147
+EPHB4 : Complex449
+SDC3 : Complex449
+EFNB1 : Complex449
+EPHB3 : Complex449
+EFNB2 : Complex449
+PI4K2A : Complex449 Complex1147
+ITGA6 : Complex450
+ITGAV : Complex450 Complex687
+ITGB1 : Complex450 Complex760
+IGF1R : Complex450
+ITGA3 : Complex450 Complex687 Complex760
+PTGFRN : Complex450
+INSR : Complex450
+PRAMEF4 : Complex451
+PRAMEF15 : Complex451
+PRAMEF5 : Complex451
+CHST10 : Complex452
+PLXNA1 : Complex452 Complex1096
+IL17RA : Complex453
+NID1 : Complex453
+FAM3C : Complex453 Complex515
+TAZ : Complex453 Complex1091
+ARSA : Complex453 Complex649 Complex886
+VWDE : Complex453
+DHFR2 : Complex453 Complex515
+SMG6 : Complex454
+C2orf68 : Complex454
+GNE : Complex454
+TTC30A : Complex455
+IFT52 : Complex455
+ANKRD55 : Complex455
+IFT27 : Complex455
+RNF31 : Complex456
+LIPF : Complex456
+SHARPIN : Complex456
+LRSAM1 : Complex456
+ASPSCR1 : Complex457
+FAM89A : Complex457
+FAM104A : Complex457
+UBXN2B : Complex457
+RRAGD : Complex458
+RRAGC : Complex458
+SLC38A9 : Complex458
+RRAGA : Complex458
+OSM : Complex459
+IL6ST : Complex459
+TRPM3 : Complex459
+CELA2B : Complex460
+RPUSD2 : Complex460
+AP1M1 : Complex461
+AP1G1 : Complex461
+AP1B1 : Complex461
+AP1S1 : Complex461
+FARP1 : Complex462
+BRD4 : Complex462
+FAM90A1 : Complex462
+BRD2 : Complex462
+MTMR14 : Complex462
+CRYZL1 : Complex463
+GATD1 : Complex463
+C12orf4 : Complex463
+TBCK : Complex463
+PPP1R21 : Complex463
+AP4S1 : Complex464
+CBX5 : Complex464
+AP4M1 : Complex464
+SUV39H2 : Complex464 Complex876
+AP4B1 : Complex464
+CBX3 : Complex464 Complex876
+AP4E1 : Complex464
+TUBGCP4 : Complex465
+MZT2A : Complex465
+NME7 : Complex465
+TUBGCP5 : Complex465
+NEDD1 : Complex465
+TUBGCP6 : Complex465
+TUBG1 : Complex465
+TUBGCP3 : Complex465
+MZT1 : Complex465
+TUBGCP2 : Complex465
+MZT2B : Complex465
+AREGB : Complex466
+AREG : Complex466
+ADCY9 : Complex466
+DEGS1 : Complex467
+PANX1 : Complex467
+C4orf3 : Complex467
+XYLT1 : Complex468
+ADH1B : Complex468
+ADH1C : Complex468
+BRAP : Complex469
+DIDO1 : Complex469
+COPS8 : Complex469
+KLHDC3 : Complex469
+COPS7A : Complex469
+SPA17 : Complex470
+EFCAB7 : Complex470
+AKAP14 : Complex470
+ROPN1L : Complex470
+CDK1 : Complex471
+RBL2 : Complex471
+CCNE2 : Complex471
+CDKN1A : Complex471
+USP3 : Complex472
+RHOG : Complex472
+NT5E : Complex472
+SLC6A8 : Complex472
+UGDH : Complex473
+PAICS : Complex473
+VWA8 : Complex473
+AARS : Complex473
+AACS : Complex473
+DEF6 : Complex474
+ARHGAP42 : Complex474
+GRID1 : Complex474
+CECR2 : Complex474
+ANKS1A : Complex474
+CAVIN1 : Complex475
+NAP1L3 : Complex475
+GOPC : Complex475
+FAM9A : Complex475
+EYA4 : Complex476
+EYA1 : Complex476
+SIX1 : Complex476
+HTR1B : Complex477
+CLEC4M : Complex477
+CD209 : Complex477
+HPS5 : Complex478
+MAGI3 : Complex478
+TCL1B : Complex478
+C1QTNF2 : Complex479
+UBE2Q1 : Complex479
+EGLN2 : Complex479
+UBE3D : Complex480
+MEMO1 : Complex480
+HMBOX1 : Complex480
+HLA-DMB : Complex481
+HLA-DRA : Complex481
+KLK4 : Complex481
+WDR60 : Complex482
+DYNLT3 : Complex482
+WDR34 : Complex482
+DYNLRB1 : Complex482
+PDK2 : Complex483
+PDK3 : Complex483
+PDK1 : Complex483
+RIN1 : Complex484
+PPA2 : Complex484
+NADK2 : Complex484
+ACSS1 : Complex484
+RBPJ : Complex485
+ANKRD28 : Complex485
+FBXO42 : Complex485
+MAML1 : Complex485
+NOTCH1 : Complex485
+ZNF268 : Complex485
+CDK6 : Complex486
+CDKN2D : Complex486
+UBE2W : Complex486
+METTL6 : Complex487
+DENND4A : Complex487
+STIM1 : Complex487
+WNK1 : Complex487
+MYO6 : Complex488
+AP2A1 : Complex488
+CALCOCO1 : Complex488
+MCM5 : Complex489 Complex832
+LMNA : Complex489
+PRPF19 : Complex489
+CD200R1 : Complex490
+TCP10 : Complex490
+TCP10L2 : Complex490
+GRIPAP1 : Complex490
+GNA13 : Complex491
+GAP43 : Complex491 Complex855
+RAB3B : Complex492
+SYTL4 : Complex492 Complex955
+TMEM231 : Complex493
+FGFR3 : Complex493
+B9D1 : Complex493
+B9D2 : Complex493
+ARNTL2 : Complex494
+MANEA : Complex494
+OLFM2 : Complex494
+OLFM1 : Complex494
+DYNC1I2 : Complex495
+DYNC1H1 : Complex495
+DYNLRB2 : Complex495
+DYNC1LI1 : Complex495
+SUGP1 : Complex495
+BCLAF1 : Complex496 Complex559 Complex595 Complex980
+U2AF2 : Complex496 Complex525 Complex586 Complex937
+U2AF1L4 : Complex496
+GNAS : Complex497
+GNB1 : Complex497
+TRO : Complex497
+GNAL : Complex497
+GNA12 : Complex497
+GNB2 : Complex497
+PCF11 : Complex498
+CSTF2T : Complex498
+PAPOLA : Complex498
+CSTF2 : Complex498
+CSTF3 : Complex498
+PAPOLB : Complex498
+CLP1 : Complex498
+IFNA5 : Complex499
+IFIT1 : Complex499
+IFIT3 : Complex499
+IFNA6 : Complex499
+IFNA2 : Complex499
+IFNA14 : Complex499
+IFNA4 : Complex499
+ATF7 : Complex500
+ATF3 : Complex500
+FOS : Complex500
+JUNB : Complex500 Complex709
+FOSL2 : Complex500
+CREB5 : Complex500
+JUN : Complex500
+ATF2 : Complex500
+BATF3 : Complex500
+CAMK1 : Complex501
+CAMK1D : Complex501
+CAMK1G : Complex501
+MED20 : Complex502
+MED16 : Complex502
+MED25 : Complex502
+MED30 : Complex502
+MED4 : Complex502
+MED6 : Complex502
+MED8 : Complex502
+MED22 : Complex502
+MED29 : Complex502
+MED17 : Complex502
+MED15 : Complex502
+MED14 : Complex502
+MED19 : Complex502
+MED1 : Complex502
+CDK8 : Complex502
+MED13L : Complex502
+MED12L : Complex502
+MED23 : Complex502
+MED24 : Complex502
+CCNC : Complex502
+MED7 : Complex502
+MED27 : Complex502
+MED21 : Complex502
+MED13 : Complex502
+MED18 : Complex502
+MED10 : Complex502
+MED12 : Complex502
+MED28 : Complex502
+MED9 : Complex502
+MED11 : Complex502
+CDK19 : Complex502
+MED26 : Complex502
+MED31 : Complex502
+CCDC25 : Complex503
+SF1 : Complex503
+ATXN2L : Complex503
+HSDL2 : Complex503
+PAK3 : Complex503
+CPT2 : Complex503
+CPLANE2 : Complex504
+INTU : Complex504
+FUZ : Complex504
+XRCC6 : Complex505
+PAXX : Complex505
+KLHL11 : Complex505
+KIAA0930 : Complex505
+WRN : Complex505
+NFKB2 : Complex506
+ENTR1 : Complex506 Complex643
+NFKBIA : Complex506
+RELB : Complex506
+CHUK : Complex506
+NFKB1 : Complex506
+RELA : Complex506
+SLF2 : Complex507
+MPHOSPH8 : Complex507
+SMC5 : Complex507
+NSMCE3 : Complex507
+SMC6 : Complex507
+ZNF597 : Complex507
+NSMCE2 : Complex507
+NSMCE1 : Complex507
+TASOR2 : Complex507
+ISY1 : Complex508 Complex1043
+SNW1 : Complex508 Complex911 Complex989 Complex1120
+C1orf52 : Complex508 Complex1020 Complex1105 Complex1129
+CPSF6 : Complex508
+CWC15 : Complex508 Complex807 Complex911 Complex960 Complex1043
+ATP5PF : Complex509 Complex723 Complex1029
+SLC43A3 : Complex509
+ABCD3 : Complex509
+SLC35F6 : Complex509
+TMEM33 : Complex509
+SYT10 : Complex510
+SYT6 : Complex510
+SYT3 : Complex510
+TAF3 : Complex511
+TAF6 : Complex511
+TAF1 : Complex511
+E2F4 : Complex512
+TFDP2 : Complex512
+E2F5 : Complex512
+E2F1 : Complex512
+E2F2 : Complex512
+PSMB9 : Complex513
+LAMB1 : Complex513 Complex689
+PSMA3 : Complex513 Complex1132
+REX1BD : Complex513 Complex648
+PSMB1 : Complex513 Complex689
+PSMG3 : Complex513
+PSMG1 : Complex513
+FAM217B : Complex514
+TFAP4 : Complex514
+NEU2 : Complex514
+PEX5 : Complex514
+ABHD14A : Complex515
+ST3GAL4 : Complex515
+HYAL2 : Complex515 Complex1134
+IGHMBP2 : Complex516
+NELFE : Complex516
+NELFB : Complex516
+NELFCD : Complex516
+NELFA : Complex516
+CDKN2AIP : Complex517
+TOE1 : Complex517
+PHAX : Complex517
+TSPAN33 : Complex518
+PDZD11 : Complex518
+PLEKHA7 : Complex518
+PRMT5 : Complex519
+COPRS : Complex519
+WDR77 : Complex519
+CLNS1A : Complex519
+RIOK1 : Complex519
+TP53 : Complex520
+CUL9 : Complex520
+MDM4 : Complex520
+RCC1 : Complex521 Complex548 Complex1079
+DLGAP5 : Complex521
+IGSF8 : Complex522
+DNAJC14 : Complex522
+ANTXR2 : Complex522
+CD9 : Complex522
+SARNP : Complex522
+FAM114A2 : Complex523
+HSPA12A : Complex523
+RAB5IF : Complex523
+TMEM51 : Complex523
+PDCD4 : Complex523
+GNPDA1 : Complex524
+GNPDA2 : Complex524
+AMDHD2 : Complex524
+SRSF7 : Complex525
+TRIM62 : Complex526
+YJU2 : Complex526
+SETMAR : Complex526
+CRKL : Complex527
+PPP1R11 : Complex527
+LENG8 : Complex527
+PEAK1 : Complex527
+RAD1 : Complex528
+RAD9A : Complex528
+ZBTB14 : Complex528
+ZNF273 : Complex529
+TOR1A : Complex529
+TOR2A : Complex529
+ZNF747 : Complex529
+ZNF707 : Complex529
+CTNNA2 : Complex530
+CDH10 : Complex530
+CDH1 : Complex530
+CTNNB1 : Complex530
+CTNNA1 : Complex530
+GMPR : Complex531
+KCTD14 : Complex531
+ADHFE1 : Complex531
+RPIA : Complex531
+GMPR2 : Complex531
+ACSF3 : Complex531
+C16orf87 : Complex532
+MIER1 : Complex532
+TONSL : Complex532
+BAHD1 : Complex532
+BBS5 : Complex533
+LZTFL1 : Complex533
+TTC8 : Complex533
+BBS7 : Complex533
+BBS2 : Complex533
+SLC39A7 : Complex533
+BBS9 : Complex533
+POLD4 : Complex534
+POLD2 : Complex534
+POLD1 : Complex534
+WDR18 : Complex535
+TEX10 : Complex535
+LAS1L : Complex535
+PELP1 : Complex535
+NPM3 : Complex535
+NOL9 : Complex535
+UBA52 : Complex536
+UQCRC2 : Complex536
+BMS1 : Complex537
+AUTS2 : Complex538 Complex640
+CBX4 : Complex538 Complex817
+CBX8 : Complex538 Complex817
+FBRS : Complex538
+PHC1 : Complex538
+TXNIP : Complex540
+IL12RB1 : Complex540
+ISOC2 : Complex540
+QPRT : Complex541
+RAVER2 : Complex541
+TRAF3IP2 : Complex541
+KIF6 : Complex542
+FEZ2 : Complex542
+SNX16 : Complex542
+HEATR5A : Complex542
+DEPDC1B : Complex543
+DAPK1 : Complex543
+IFI30 : Complex543
+GTPBP2 : Complex543
+UBE3B : Complex543
+TTC31 : Complex543
+S100A9 : Complex544
+GM2A : Complex544
+TYMP : Complex544
+S100A8 : Complex544 Complex802
+TRIM29 : Complex544
+IVL : Complex544
+RAB14 : Complex545
+GNG3 : Complex545
+HTRA2 : Complex546
+XIAP : Complex546
+BIRC8 : Complex546
+CASP9 : Complex546
+FAM189A2 : Complex547
+PCNX3 : Complex547
+KCNG1 : Complex547
+AREL1 : Complex547
+KLHL7 : Complex548 Complex570
+TMEM209 : Complex548
+OXSR1 : Complex549
+RELT : Complex549
+STK39 : Complex549
+PFKM : Complex550
+ACVR1B : Complex550
+PFKL : Complex550
+PTPRS : Complex550
+GRK2 : Complex550
+PTPRF : Complex550
+ARNT : Complex551
+HIF1A : Complex551
+EPC2 : Complex551
+VPS72 : Complex551 Complex871
+TEN1 : Complex552
+STN1 : Complex552
+ACTR3C : Complex552
+CTC1 : Complex552
+SOX2 : Complex553
+SOX21 : Complex553
+SOX14 : Complex553
+AGTRAP : Complex554
+DIAPH3 : Complex554
+CRLF3 : Complex554
+MEX3B : Complex554
+SACS : Complex554
+ENPP6 : Complex554
+MIER2 : Complex555
+WIZ : Complex555
+EHMT1 : Complex555
+CDYL : Complex555
+EHMT2 : Complex555
+ZNF644 : Complex555
+TAMM41 : Complex556
+KLK8 : Complex556
+RAB39B : Complex556
+SLC5A3 : Complex557
+SLC7A6 : Complex557
+PXMP2 : Complex557
+CYTH1 : Complex558
+CYTIP : Complex558
+CYTH3 : Complex558
+CYTH2 : Complex558
+THRAP3 : Complex559 Complex595
+PPIG : Complex559
+WTAP : Complex559 Complex1009
+PABPN1 : Complex559
+FAF2 : Complex560 Complex602
+PIP4P1 : Complex560
+VPS9D1 : Complex560
+VPS4B : Complex560
+SARAF : Complex560
+SETDB1 : Complex560 Complex602
+SPAST : Complex560
+CAPN7 : Complex560
+RGCC : Complex561
+TLN2 : Complex561
+CARS2 : Complex561
+IREB2 : Complex562
+CCNL2 : Complex562
+ZBTB43 : Complex562
+FNBP1L : Complex563
+MCMBP : Complex563
+MCM10 : Complex563
+MCM6 : Complex563
+MCM4 : Complex563
+TM9SF3 : Complex564
+MBOAT1 : Complex564
+PTDSS2 : Complex564
+DERL1 : Complex564
+TMEM87A : Complex564
+CEP350 : Complex565
+CEP78 : Complex565
+CCDC77 : Complex565
+CSPP1 : Complex565
+SNAPC5 : Complex566
+SNAPC1 : Complex566
+CBX2 : Complex566
+SNAPC2 : Complex566
+PSME3 : Complex566
+SERTAD4 : Complex567
+PPP2R1B : Complex567
+PPP2R1A : Complex567
+PPP2R5D : Complex567 Complex791
+PPP2R5E : Complex567
+TP53BP2 : Complex568
+FRMD6 : Complex568
+RASSF8 : Complex568
+PPP1R13B : Complex568
+RASSF7 : Complex568
+NEO1 : Complex569
+TNFRSF1A : Complex569
+TNF : Complex569
+MTERF4 : Complex570
+PIAS4 : Complex570
+KCTD15 : Complex570
+RNGTT : Complex570
+PPRC1 : Complex570
+CA10 : Complex570
+WDHD1 : Complex570
+ASS1 : Complex570
+TUFT1 : Complex571
+CACNG2 : Complex571
+ATF1 : Complex571
+CREM : Complex571
+H6PD : Complex572
+NUDT9 : Complex572
+ENTPD5 : Complex572
+PPT2 : Complex572
+MAN2B2 : Complex572
+FBXO6 : Complex572
+MYO18A : Complex573 Complex700
+MYL6 : Complex573 Complex945
+TPM4 : Complex573 Complex948 Complex988
+LIMCH1 : Complex573
+TPM1 : Complex573 Complex763 Complex919 Complex971 Complex1086
+CEP162 : Complex573 Complex905 Complex944 Complex945
+HTT : Complex574
+PRMT2 : Complex574
+SHANK3 : Complex574
+USP51 : Complex574
+L3MBTL3 : Complex574
+ZBTB40 : Complex575
+IER2 : Complex575
+PITX2 : Complex575
+EPM2AIP1 : Complex576
+BAG5 : Complex576
+MAD2L1BP : Complex576
+MAD2L1 : Complex576
+MAD1L1 : Complex576
+MBD3L1 : Complex577
+LDLR : Complex577
+LTBP1 : Complex577
+ZFP41 : Complex577
+LRP1B : Complex577
+FBN1 : Complex577
+FBLN5 : Complex577
+GGNBP2 : Complex577
+ZNF296 : Complex577
+BEND7 : Complex577
+LRP4 : Complex577
+AGRN : Complex577
+SETD1B : Complex578
+KDM6A : Complex578
+SETD1A : Complex578
+BOD1 : Complex578
+CXXC1 : Complex578
+BOD1L1 : Complex578
+BOD1L2 : Complex578
+RBBP5 : Complex578
+SULT1A3 : Complex579
+SULT1A2 : Complex579
+SULT1A1 : Complex579
+EED : Complex580
+PHF19 : Complex580
+EPOP : Complex580
+MTF2 : Complex580
+ENDOV : Complex581
+APAF1 : Complex581
+SEPHS2 : Complex581
+LYPD6 : Complex582
+TMEM68 : Complex582
+TMEM245 : Complex582
+AHCTF1 : Complex583
+INTS5 : Complex583 Complex1060
+INTS4P2 : Complex583
+INTS11 : Complex583
+INTS12 : Complex583
+INTS9 : Complex583
+INTS4 : Complex583
+RBM12B : Complex584 Complex820
+APOBEC3B : Complex584
+TAF15 : Complex584 Complex653
+ZNF326 : Complex584
+RBMX : Complex584 Complex820
+RP2 : Complex585
+OSTF1 : Complex585
+SLC44A2 : Complex585
+MARC2 : Complex585
+RDH12 : Complex585
+ANP32B : Complex586
+ANP32A : Complex586
+SAP30BP : Complex586
+BECN1 : Complex587
+PIK3C3 : Complex587
+PIK3R4 : Complex587
+UVRAG : Complex587
+ATP6V1F : Complex588 Complex798
+ATP6V1C2 : Complex588
+ATP6V1B2 : Complex588
+STOM : Complex588
+ATP6V1D : Complex588
+ATP6V1E2 : Complex588
+ATP6V1A : Complex588
+IGBP1 : Complex588
+ATP6V1H : Complex588 Complex798
+GID4 : Complex589
+TCEAL9 : Complex589
+YPEL5 : Complex589
+MORC2 : Complex590
+HERC1 : Complex590
+MORC1 : Complex590
+GEMIN6 : Complex591
+SZRD1 : Complex591
+GEMIN7 : Complex591
+SMN1 : Complex591
+STRAP : Complex591
+PMS2 : Complex592
+MLH1 : Complex592
+FAN1 : Complex592
+KLHL26 : Complex593
+KCTD21 : Complex593
+KLHL14 : Complex593
+SLC47A1 : Complex594
+FZD2 : Complex594
+GJA1 : Complex594
+FITM2 : Complex594
+GPR89A : Complex594
+GP1BB : Complex594
+SIDT2 : Complex594
+FMR1 : Complex595
+FXR1 : Complex595
+CIAO3 : Complex596
+CHFR : Complex596
+DTX3 : Complex596
+NAT10 : Complex597 Complex1017
+RIOX2 : Complex597
+RPS2 : Complex597
+PDCD7 : Complex598
+ZMAT5 : Complex598
+ZRSR2 : Complex598 Complex1068
+SNRNP35 : Complex598
+CTDSP2 : Complex599
+CTDSPL : Complex599
+CDCA3 : Complex599
+CTDSP1 : Complex599
+LRRC46 : Complex600
+PACS2 : Complex600
+SIX4 : Complex600
+PLCD3 : Complex600
+AEBP2 : Complex601
+JARID2 : Complex601
+EZH2 : Complex601
+SUZ12 : Complex601
+MFN1 : Complex602
+UBAC2 : Complex602
+ATF7IP : Complex602
+MCUB : Complex602
+ARL14EP : Complex602
+DDI1 : Complex603
+NRIP3 : Complex603
+RSC1A1 : Complex603
+EI24 : Complex604
+YIPF3 : Complex604
+CHPT1 : Complex604
+BAK1 : Complex605
+MCL1 : Complex605
+BBC3 : Complex605
+ALG9 : Complex606
+MGAT1 : Complex606
+LMF2 : Complex606
+GLB1L2 : Complex606
+LMLN : Complex607 Complex976
+CTSF : Complex607 Complex886
+CACNA2D1 : Complex607
+FLAD1 : Complex608
+CENPJ : Complex608
+PLEKHO2 : Complex608
+TACC3 : Complex608
+ARX : Complex608
+USP46 : Complex609
+PHLPP2 : Complex609
+WDR48 : Complex609
+DMWD : Complex609 Complex1123
+WDR20 : Complex609
+USP1 : Complex609
+CLIP2 : Complex610
+CLASP1 : Complex610
+CLASP2 : Complex610
+KIF18B : Complex610
+MAPRE1 : Complex610
+DNMBP : Complex611
+BIN3 : Complex611
+PICK1 : Complex611
+ARHGEF37 : Complex611
+SALL2 : Complex612
+HPS1 : Complex612
+SALL1 : Complex612
+NMI : Complex613
+ASRGL1 : Complex613
+IFI35 : Complex613
+YIF1A : Complex614
+YIPF5 : Complex614
+YIF1B : Complex614
+WDR62 : Complex616
+DUSP8 : Complex616
+MAPK9 : Complex616
+MAPK8 : Complex616
+GTF3C3 : Complex617
+GTF3C1 : Complex617
+GTF3C5 : Complex617
+GTF3C2 : Complex617
+GTF3C4 : Complex617
+EML1 : Complex618
+NEK9 : Complex618
+EML3 : Complex618
+EML4 : Complex618
+EML2 : Complex618 Complex848
+MITF : Complex618
+CSNK2B : Complex619 Complex1024
+CFDP1 : Complex619
+GPATCH2L : Complex619
+ELP1 : Complex620
+ELP3 : Complex620
+ELP2 : Complex620
+EIF3J : Complex621 Complex1097
+EIF3F : Complex621 Complex1097
+EIF3C : Complex621 Complex1097
+EIF3M : Complex621
+PRRC2B : Complex621 Complex914
+EIF3H : Complex621
+EIF3I : Complex621
+EIF3K : Complex621
+EIF3G : Complex621
+ITPKC : Complex622
+AUNIP : Complex622
+MTMR3 : Complex622
+SNX18 : Complex622
+AURKA : Complex622
+SETD2 : Complex622
+PNO1 : Complex622
+MTMR4 : Complex622
+CDC6 : Complex623
+ISLR : Complex623
+SLC10A7 : Complex623
+ZRANB3 : Complex623
+LILRB2 : Complex624
+LILRA3 : Complex624
+LILRA1 : Complex624
+LILRB1 : Complex624
+MIGA1 : Complex625
+COMTD1 : Complex625
+IFRD1 : Complex625
+TP53BP1 : Complex625
+USP28 : Complex625
+CAPRIN1 : Complex626 Complex1065
+G3BP2 : Complex626
+NUFIP2 : Complex626
+GRB2 : Complex627
+OSBPL2 : Complex627
+APLP1 : Complex627
+APBB2 : Complex627
+ATP7A : Complex627
+C11orf74 : Complex628
+IFT140 : Complex628
+EEF1AKMT3 : Complex628
+WDR19 : Complex628
+IFT43 : Complex628
+WDR35 : Complex628
+IFT122 : Complex628
+TACC2 : Complex629
+TOX4 : Complex629
+CKAP5 : Complex629
+ALKBH5 : Complex629
+SLAIN2 : Complex629
+LDLRAD4 : Complex630
+PEX11B : Complex630
+SMURF2 : Complex630
+STXBP4 : Complex630
+WWC2 : Complex630
+DPY19L1 : Complex630
+RBCK1 : Complex630
+UBE4B : Complex631
+STUB1 : Complex631
+UBL7 : Complex631
+FAM83A : Complex632
+CRTC2 : Complex632
+OCRL : Complex632 Complex740 Complex774
+DOK1 : Complex632
+SHROOM1 : Complex633
+C13orf1 : Complex633
+NYX : Complex633
+RABIF : Complex634 Complex1034
+TOLLIP : Complex634
+DNAJB1 : Complex634
+ARPP19 : Complex634
+TRIM25 : Complex634
+SUPV3L1 : Complex635
+HNRNPH1 : Complex635 Complex933
+SYNCRIP : Complex635 Complex741 Complex907 Complex1022 Complex1142
+HNRNPDL : Complex635 Complex651 Complex946 Complex1037
+RNASEH2C : Complex636
+KIAA1143 : Complex636
+RNASEH2B : Complex636
+DCUN1D1 : Complex636
+RNASEH2A : Complex636
+MAGEB1 : Complex636
+CEP128 : Complex637
+TSN : Complex637
+TSNAX : Complex637
+KIF2A : Complex637
+ENTPD6 : Complex638
+ITGA8 : Complex638 Complex1096
+PTPRU : Complex638 Complex1096
+CHST14 : Complex638 Complex767 Complex1011
+LRIG1 : Complex638 Complex767
+ZNF219 : Complex639
+DHX9 : Complex639
+MORC4 : Complex640 Complex677 Complex817
+DCAF7 : Complex640 Complex817
+MBD5 : Complex641
+NSD3 : Complex641
+MBD6 : Complex641
+ASXL2 : Complex641
+BAP1 : Complex641
+KDM1B : Complex641
+P2RY12 : Complex642
+TTC39A : Complex642
+TMEM161B : Complex642
+VPS26B : Complex643
+SMAD9 : Complex644
+LEMD3 : Complex644
+SMAD3 : Complex644
+SMAD2 : Complex644
+CD74 : Complex645
+HSDL1 : Complex645
+TM4SF20 : Complex645
+C16orf91 : Complex646
+UQCC2 : Complex646
+UQCC1 : Complex646
+COX20 : Complex646
+MRTFB : Complex647
+KCTD3 : Complex647
+TJAP1 : Complex647
+FHL3 : Complex647
+MTUS1 : Complex647
+CORO1A : Complex647
+CORO6 : Complex647
+ACBD3 : Complex648 Complex695
+SUMF1 : Complex649
+FBXO21 : Complex649
+IDS : Complex649
+RFPL4B : Complex650
+RFPL4A : Complex650
+ZNF302 : Complex650
+ZNF784 : Complex650
+GTSE1 : Complex651
+PICALM : Complex651
+ZC2HC1A : Complex652
+CASTOR2 : Complex652
+CASTOR1 : Complex652
+ZNF638 : Complex653
+RBM6 : Complex653 Complex902
+ABLIM1 : Complex654 Complex1073 Complex1127
+PACSIN3 : Complex654
+S100B : Complex655
+S100P : Complex655
+S100A4 : Complex655
+GRIP1 : Complex656
+DYRK1B : Complex656
+FAM53C : Complex656
+FNTB : Complex656
+CENPF : Complex656
+KCNK1 : Complex657
+CXCR4 : Complex657
+CERS2 : Complex657
+VKORC1 : Complex657
+GOLGA5 : Complex657
+CERS6 : Complex657
+ABCC1 : Complex657
+VPS25 : Complex658
+SNF8 : Complex658
+VPS36 : Complex658
+RANBP6 : Complex659
+KPNA1 : Complex659
+KPNA6 : Complex659
+IPO5 : Complex659 Complex682
+KPNA5 : Complex659
+FGL2 : Complex660
+SPHK1 : Complex660
+KIF7 : Complex660
+ZNF282 : Complex660
+CYLD : Complex660
+ANKRD50 : Complex661
+ARL13B : Complex661
+IFT74 : Complex661
+IFT81 : Complex661
+USP54 : Complex662
+HELZ : Complex662
+PUM1 : Complex662
+DOC2A : Complex663
+TTC21B : Complex663
+DOC2B : Complex663
+SLC16A13 : Complex664
+ERGIC3 : Complex664
+ERGIC2 : Complex664
+NHSL1 : Complex665
+SPOCK1 : Complex665
+GTF2E1 : Complex665
+GTF2E2 : Complex665
+EPB41L2 : Complex665
+SMR3B : Complex666
+GALT : Complex666
+UBTD2 : Complex666
+C3orf52 : Complex667
+LIPH : Complex667
+DHX32 : Complex667
+BAIAP2 : Complex668
+CHMP6 : Complex668
+AFF4 : Complex669 Complex757
+CCNT1 : Complex669
+ELL3 : Complex669
+MLLT3 : Complex669
+AFF1 : Complex669
+CCNT2 : Complex669 Complex757
+AFF3 : Complex669
+CDK9 : Complex669 Complex757
+ELL2 : Complex669
+EAF2 : Complex669
+MLLT1 : Complex669
+RPAIN : Complex670
+RPA3 : Complex670 Complex982
+RPA4 : Complex670
+TOM1 : Complex670
+HMCES : Complex670
+RPA1 : Complex670 Complex739
+RPA2 : Complex670 Complex739
+DCTN6 : Complex671
+DCTN3 : Complex671
+ACTR1B : Complex671
+DCTN2 : Complex671
+ACTR1A : Complex671
+DCTN4 : Complex671
+ACTR10 : Complex671
+DCTN1 : Complex671
+DCTN5 : Complex671
+MRPS10 : Complex672
+MRPS9 : Complex672
+MRPS18C : Complex672 Complex1056
+USP25 : Complex673
+CROT : Complex673
+KLHDC4 : Complex673
+CCDC112 : Complex674
+NOL4L : Complex674
+TEX9 : Complex674
+NOL4 : Complex674
+PRPS1L1 : Complex675
+PRPS2 : Complex675
+PRPS1 : Complex675
+TNFAIP1 : Complex676
+KCTD10 : Complex676
+KCTD13 : Complex676
+BCL6 : Complex677 Complex748
+COPG2 : Complex678
+SACM1L : Complex678
+COPB2 : Complex678
+ACRBP : Complex679
+CSNK1G2 : Complex679
+ATL2 : Complex679
+ATL3 : Complex679
+TRAPPC1 : Complex680
+TRAPPC12 : Complex680
+TRAPPC2L : Complex680
+TNK1 : Complex680
+TRAPPC11 : Complex680
+TRAPPC2 : Complex680
+TRAPPC3 : Complex680
+CEP55 : Complex680
+TRAPPC8 : Complex680
+TRAPPC5 : Complex680
+TRAPPC6A : Complex680
+RBM14-RBM4 : Complex680
+CES3 : Complex681
+TMEM25 : Complex681
+HTRA1 : Complex681
+HTRA3 : Complex681
+PABPC1 : Complex682
+RPL6 : Complex682
+RO60 : Complex682 Complex847
+PPP4R1 : Complex683 Complex1077
+CCDC6 : Complex683 Complex1077
+PPP4C : Complex683
+PPP4R3B : Complex683
+PPP4R3A : Complex683
+PPP4R2 : Complex683
+CT45A10 : Complex683
+TTC1 : Complex684
+MTCL1 : Complex684
+SOGA1 : Complex684
+RNF41 : Complex684
+SAMHD1 : Complex684
+CDNF : Complex685
+LYRM4 : Complex685
+NFS1 : Complex685
+NAA25 : Complex686
+NAA20 : Complex686
+UROC1 : Complex686
+FZD6 : Complex687
+ITGA5 : Complex687
+KLC3 : Complex687
+SYNE4 : Complex687
+ZFPL1 : Complex687
+DDX3Y : Complex688
+IL24 : Complex688
+EEA1 : Complex688
+AGA : Complex689
+STXBP2 : Complex690
+STXBP5L : Complex690
+STX19 : Complex690
+GDI2 : Complex691
+AS3MT : Complex691
+PALM2 : Complex692
+ANK3 : Complex692
+FPGS : Complex692
+POLR1E : Complex693 Complex814
+ATG10 : Complex694
+ATG7 : Complex694
+ATG12 : Complex694
+SIL1 : Complex695
+PSMC5 : Complex695
+PAAF1 : Complex695
+MACF1 : Complex695
+C1QBP : Complex696
+LBR : Complex696
+ZNF579 : Complex696
+RBM23 : Complex696
+NAGPA : Complex697
+SLAMF7 : Complex697
+TBC1D23 : Complex697
+FAM122A : Complex698
+PPP2R2D : Complex698
+FBXL16 : Complex698
+PPP2R2A : Complex698
+TSC1 : Complex699
+TBC1D7 : Complex699
+TSC2 : Complex699
+KIF27 : Complex699
+KIAA1671 : Complex700
+WASHC3 : Complex700
+PLEKHO1 : Complex700
+CAPZA2 : Complex700 Complex738 Complex905 Complex948 Complex988
+TBPL2 : Complex701
+TAF1A : Complex701
+TAF1D : Complex701
+TAF1C : Complex701
+TAF1B : Complex701
+DNAJA1 : Complex702
+OSBPL11 : Complex702
+UQCRQ : Complex702
+OSBPL9 : Complex702
+ENDOG : Complex702
+RADX : Complex702
+NCAPH2 : Complex703
+SMC2 : Complex703
+NCAPG2 : Complex703
+SMC4 : Complex703
+NCAPD3 : Complex703
+RNF126 : Complex704
+UBL4A : Complex704
+GET4 : Complex704
+ASNA1 : Complex704
+BAG6 : Complex704
+TEDC1 : Complex705
+FOXP1 : Complex705
+RABEP1 : Complex705
+RABGEF1 : Complex705
+CCDC183 : Complex705
+RUNDC1 : Complex705
+TMF1 : Complex705
+CEBPA : Complex705
+AKR7A3 : Complex706
+AKR7L : Complex706
+AKR7A2 : Complex706
+KCNIP4 : Complex707
+KCNIP2 : Complex707
+KCNIP1 : Complex707
+CHTF18 : Complex708
+MDM2 : Complex708
+DSCC1 : Complex708
+PHOSPHO1 : Complex708
+CHTF8 : Complex708
+NDUFAB1 : Complex709
+ATPAF2 : Complex709
+LYRM7 : Complex709
+OXSM : Complex709
+COA6 : Complex710
+CRYZ : Complex710
+TAX1BP3 : Complex710
+LDHAL6A : Complex710
+ETFB : Complex710 Complex1061
+PIH1D1 : Complex711
+LRCH3 : Complex711
+URI1 : Complex711
+RPAP3 : Complex711 Complex923
+UXT : Complex711 Complex1110
+POLR3G : Complex711
+PDRG1 : Complex711
+POLR3E : Complex711 Complex923 Complex1110
+COPB1 : Complex712
+COPA : Complex712
+ARCN1 : Complex712
+COPZ1 : Complex712
+COPE : Complex712
+OGFOD1 : Complex712
+COPG1 : Complex712
+SERINC1 : Complex713
+ASGR2 : Complex713
+ADGRL3 : Complex713
+TMUB1 : Complex714
+DNAJC11 : Complex714
+ACBD5 : Complex714
+RMDN3 : Complex714
+MBOAT7 : Complex714
+HTR3C : Complex715
+ABHD16A : Complex715
+SEC11C : Complex715
+METTL25 : Complex715
+ABHD10 : Complex716
+UBR4 : Complex716
+NIPSNAP3A : Complex716
+KCMF1 : Complex716
+EFR3A : Complex717
+CPNE8 : Complex717
+IGKC : Complex718
+ALB : Complex718
+IGHG1 : Complex718
+APOA1 : Complex718
+TF : Complex718
+FGB : Complex718
+SERPINA1 : Complex718
+DOCK4 : Complex719
+ELMO1 : Complex719
+MTHFD2 : Complex719 Complex1119
+USP4 : Complex719
+CKM : Complex719 Complex791 Complex813
+DOCK5 : Complex719
+ZNF398 : Complex719
+DOCK3 : Complex719
+ELMO2 : Complex719
+CRK : Complex719 Complex791
+DOCK1 : Complex719
+ARID3B : Complex720
+LHX6 : Complex720
+NUDT22 : Complex720
+WDR45 : Complex720
+ATG2B : Complex720
+VPS18 : Complex721
+VPS8 : Complex721
+VPS41 : Complex721
+VPS11 : Complex721
+VPS33A : Complex721
+VPS16 : Complex721
+TGFBRAP1 : Complex721
+RALY : Complex722
+RPUSD3 : Complex722
+RPL35 : Complex723
+ATP5F1D : Complex723 Complex1029
+METTL7A : Complex724
+SLC44A1 : Complex724
+TSPAN17 : Complex724
+COL2A1 : Complex725
+PTPN2 : Complex725
+COL4A5 : Complex725
+COL8A2 : Complex725
+COL5A1 : Complex725
+GORASP2 : Complex726 Complex959
+ALDOC : Complex726 Complex921 Complex997
+GPD1L : Complex726
+PGD : Complex726 Complex891
+TENT5A : Complex727
+FNDC3B : Complex727
+FNDC3A : Complex727
+ASCC2 : Complex728
+ASCC3 : Complex728
+ASCC1 : Complex728
+TRIP4 : Complex728
+S1PR2 : Complex729
+SLC35F2 : Complex729
+TMEM120A : Complex729
+POMK : Complex729
+BRIP1 : Complex729
+PIGB : Complex729
+PKDCC : Complex729
+GFOD1 : Complex730
+CARD10 : Complex730
+RALGAPB : Complex730
+GFOD2 : Complex730
+RALGAPA2 : Complex730
+RALGAPA1 : Complex730
+FBXO9 : Complex730
+NMT2 : Complex731
+NCK1 : Complex731
+WIPF3 : Complex731
+PNMA1 : Complex732
+PNMA8A : Complex732
+MOAP1 : Complex732
+ZCCHC12 : Complex732
+YOD1 : Complex733
+CCDC51 : Complex733
+TGM5 : Complex733
+JUP : Complex733
+MON1A : Complex734
+SP6 : Complex734
+RMC1 : Complex734
+DNAAF3 : Complex734
+TRIP12 : Complex735
+DTD1 : Complex735 Complex1114
+EIF1 : Complex735
+TAOK1 : Complex735 Complex1012
+LRRC47 : Complex735 Complex1012 Complex1102
+NXN : Complex735
+GYG1 : Complex736
+GYS1 : Complex736
+MID1 : Complex736 Complex786
+EPM2A : Complex736
+STBD1 : Complex736 Complex786
+GYS2 : Complex736
+ARPC3 : Complex737 Complex830 Complex964
+RRM1 : Complex737 Complex898 Complex1094
+ARHGDIB : Complex737
+EIF4E : Complex737 Complex941
+DOCK8 : Complex737
+BST2 : Complex738
+CARMIL1 : Complex738
+CDK7 : Complex739
+ERCC2 : Complex739 Complex1083
+ZNF358 : Complex740
+FAM170A : Complex740
+SEC31A : Complex740
+CSNK1A1 : Complex740
+SEC23A : Complex740
+CSNK1A1L : Complex740
+HNRNPAB : Complex741
+HNRNPD : Complex741 Complex1026 Complex1037 Complex1062
+HNRNPH3 : Complex741 Complex946
+DDX1 : Complex741 Complex830 Complex946
+HNRNPA0 : Complex741 Complex1022
+NMNAT3 : Complex742
+THAP3 : Complex743
+TNIK : Complex743
+SPATS2 : Complex743
+ADD1 : Complex744
+UBP1 : Complex744
+ANKRD29 : Complex744
+ADD3 : Complex744
+BIN1 : Complex744
+MVD : Complex745
+GSTK1 : Complex745
+CYB5B : Complex745
+ACSS2 : Complex745
+CYCS : Complex745
+SRSF5 : Complex746 Complex969
+PRPF4 : Complex746 Complex1015 Complex1069
+SRRM1 : Complex746
+DAAM1 : Complex747
+RHOD : Complex747
+C1orf198 : Complex747
+PLXNB2 : Complex747
+TRIM27 : Complex748 Complex1124
+KDM2B : Complex748 Complex817
+ZNF621 : Complex748 Complex1124
+DHX40 : Complex748
+ETV6 : Complex748
+HAAO : Complex749
+UBQLN1 : Complex749 Complex888
+IDH1 : Complex749
+PHGDH : Complex749 Complex888
+UBQLN2 : Complex749
+IDH2 : Complex749
+CBS : Complex750 Complex1058
+ALDH7A1 : Complex750
+OXCT2 : Complex750
+BPNT1 : Complex750 Complex925 Complex1046 Complex1061
+HSD17B14 : Complex750
+MOB2 : Complex751
+SAR1B : Complex751
+STK38 : Complex751
+YARS2 : Complex752
+NOC4L : Complex753
+NOP14 : Complex753
+MAPK3 : Complex753
+DHPS : Complex753
+SUSD4 : Complex753
+ARMC6 : Complex754
+XPNPEP1 : Complex754
+SMARCAL1 : Complex754
+PRDX2 : Complex755
+PRDX3 : Complex755
+DAZAP1 : Complex755
+PRDX1 : Complex755 Complex962
+DTYMK : Complex755 Complex962
+TTN : Complex755
+DLG4 : Complex756
+PTK2B : Complex756
+UFC1 : Complex756
+OSBPL1A : Complex757
+HEXIM2 : Complex757
+HEXIM1 : Complex757
+NSMAF : Complex757
+LSM4 : Complex758 Complex1135
+SPTBN2 : Complex758
+LSM5 : Complex758
+LSM1 : Complex758 Complex934
+LSM3 : Complex758 Complex934
+SPTB : Complex758
+SINHCAF : Complex759
+SLC3A2 : Complex760
+ITGA1 : Complex760
+SLC1A1 : Complex760
+GAMT : Complex761
+ECHS1 : Complex761
+ANXA4 : Complex761
+CALD1 : Complex762
+FDXACB1 : Complex762
+THUMPD1 : Complex762
+MYH8 : Complex763
+ACTN2 : Complex763 Complex919 Complex948
+LRRFIP1 : Complex764 Complex829
+PPP1CB : Complex764
+ZFP1 : Complex765 Complex875
+AKR1C2 : Complex765
+PLXDC2 : Complex765
+AKR1C1 : Complex765
+AKR1C3 : Complex765
+AKR1C4 : Complex765
+NME2P1 : Complex766
+SEPHS1 : Complex766
+ACADS : Complex766
+B4GALT3 : Complex767
+CHST12 : Complex767 Complex1011
+ADAM17 : Complex767 Complex976
+PACC1 : Complex767
+SCAP : Complex767
+HSPD1 : Complex768
+LRRC28 : Complex768
+CCAR2 : Complex768
+NACA2 : Complex768 Complex837 Complex1038
+PGM5 : Complex769 Complex1013
+OXCT1 : Complex769 Complex790
+GPT2 : Complex769
+DBI : Complex769
+GPHA2 : Complex769
+HIBCH : Complex769
+PWP1 : Complex770
+ZNF445 : Complex771
+ZNF574 : Complex771 Complex913
+TALDO1 : Complex772
+PEPD : Complex772
+TAGLN3 : Complex772 Complex1058
+ENO3 : Complex772 Complex839 Complex1033 Complex1058
+FKBP2 : Complex772 Complex1010
+FKBP1A : Complex772
+BTBD10 : Complex773
+BUB1B : Complex773
+BUB1 : Complex773
+PCBD1 : Complex773
+BUB3 : Complex773
+GORASP1 : Complex774
+PPM1A : Complex775 Complex798
+FAAP20 : Complex775
+ST3GAL6 : Complex776
+UGT3A2 : Complex776
+PON2 : Complex776
+PTCH1 : Complex776
+ACAT1 : Complex776
+ABCA2 : Complex776
+ST6GALNAC3 : Complex776
+ALDH9A1 : Complex777
+CFAP161 : Complex777
+PMVK : Complex777
+TXNRD1 : Complex777
+TPD52L2 : Complex777
+FGD6 : Complex778
+NEURL4 : Complex778
+DBNL : Complex778
+HERC2 : Complex778
+ZBTB5 : Complex778
+ADPRHL2 : Complex779
+PCID2 : Complex779
+UPB1 : Complex779
+PTPN11 : Complex780
+RAB5C : Complex780
+SUN2 : Complex780
+CHM : Complex780 Complex949
+RAB5B : Complex780
+GNL3L : Complex781
+WDR36 : Complex781 Complex796
+WDR3 : Complex781
+PANK2 : Complex782
+AKR1E2 : Complex782
+DNM2 : Complex782
+RPE : Complex782
+DNM3 : Complex782
+HASPIN : Complex783
+CNRIP1 : Complex783
+UTP4 : Complex783
+ATE1 : Complex784
+BANF1 : Complex784
+PARP1 : Complex784
+HSPH1 : Complex785
+HSPA2 : Complex785
+HSPA1L : Complex785
+HSPA1B : Complex785
+STIP1 : Complex785 Complex916
+BAG2 : Complex785
+GABARAPL1 : Complex786
+PPP1R3C : Complex786
+GYG2 : Complex786
+GABARAP : Complex786
+SKA2 : Complex787
+SKA3 : Complex787
+WARS : Complex788
+CAMK2D : Complex788
+CAMK2G : Complex788
+MMUT : Complex788
+GRPEL2 : Complex788
+SIAH1 : Complex789
+JSRP1 : Complex789
+SIAH2 : Complex789
+HMGCL : Complex790
+TAGLN : Complex790 Complex1127
+ISOC1 : Complex790
+PCBP3 : Complex790 Complex1057
+TIAL1 : Complex790
+PPP2R5A : Complex791
+HK2 : Complex791 Complex809
+PPFIA1 : Complex791
+PPME1 : Complex791
+CKB : Complex791 Complex809 Complex1119
+IPO11 : Complex792
+ZNF7 : Complex792 Complex875
+IPO8 : Complex792
+ZNF331 : Complex792 Complex875
+PDS5B : Complex793 Complex1067
+SLC43A1 : Complex794
+NXPH3 : Complex794
+ZACN : Complex794
+EDEM1 : Complex794
+DPY19L4 : Complex794
+SLC41A3 : Complex794
+SUFU : Complex794
+CHST8 : Complex795
+PSG11 : Complex795
+CHCHD2 : Complex795
+PSG4 : Complex795
+GAL3ST1 : Complex795
+BCCIP : Complex796
+TENT2 : Complex796
+PWP2 : Complex796
+GFPT2 : Complex797
+ACADM : Complex797
+SIRT6 : Complex797
+TARSL2 : Complex797
+GFPT1 : Complex797
+INPPL1 : Complex798
+MTHFR : Complex798
+PPM1B : Complex798
+DENND6A : Complex799
+FAM171A2 : Complex799
+RPS6KC1 : Complex799
+PHIP : Complex800
+SDC2 : Complex800
+CHD1 : Complex800
+TMPO : Complex800
+GSTA1 : Complex801
+GSTA2 : Complex801
+GSTA3 : Complex801
+GSTA5 : Complex801
+GSTA4 : Complex801
+SERPINB3 : Complex802
+S100A7 : Complex802
+LGALS7B : Complex802
+SERPINB4 : Complex802
+UNC119B : Complex803
+PDIA4 : Complex803
+H3F3C : Complex804
+HDAC1 : Complex804
+ZBTB2 : Complex804
+MTA2 : Complex804
+CD109 : Complex805
+SAT2 : Complex805
+COA7 : Complex805
+FCN1 : Complex806 Complex979
+KIAA0319L : Complex806
+FCN2 : Complex806
+DNAJC13 : Complex806
+KIAA1549 : Complex806 Complex935
+SUSD5 : Complex806 Complex979
+ZBTB49 : Complex807
+ZNF140 : Complex807
+SERPINB1 : Complex808
+HYI : Complex808
+LACTB2 : Complex808
+ITPA : Complex808
+CUL5 : Complex809
+OGDHL : Complex809
+ASB9 : Complex809
+ELOC : Complex809
+ELOB : Complex809
+MFAP1 : Complex810
+PRPF38A : Complex810
+RTN3 : Complex810
+PPP2R3A : Complex811
+LZTS1 : Complex811
+LPP : Complex811
+SESTD1 : Complex811
+LZTS2 : Complex811
+CALR : Complex812 Complex1005
+P4HA2 : Complex812 Complex1038 Complex1095
+FAU : Complex812 Complex1038
+P4HA1 : Complex812
+P4HB : Complex812 Complex1095
+ZNF131 : Complex813
+YEATS2 : Complex813 Complex867
+GMCL1 : Complex813
+PLBD1 : Complex813
+TWISTNB : Complex814
+CRCP : Complex814
+POLR2A : Complex814 Complex923
+POLR1B : Complex814
+POLR3H : Complex814 Complex923
+POLR2L : Complex814
+FSCN1 : Complex815
+ACOT7 : Complex815
+NECAP2 : Complex815
+NECAP1 : Complex815
+SAR1A : Complex815
+GCNT2 : Complex816
+TMEM79 : Complex816
+FLOT2 : Complex816 Complex1044
+MPZL3 : Complex816
+ATP2A1 : Complex816
+BCORL1 : Complex817
+FH : Complex818
+TBCA : Complex818
+C1orf50 : Complex818
+AHCY : Complex818
+FKBP1B : Complex818 Complex839 Complex1058
+NUDC : Complex819
+RNF10 : Complex819 Complex996
+CD2AP : Complex819
+ERC2 : Complex819 Complex1045
+RNF25 : Complex819 Complex1053
+ERC1 : Complex819
+HNRNPR : Complex820 Complex1022
+API5 : Complex820 Complex1022
+PRMT1 : Complex820 Complex1088 Complex1142
+EP300 : Complex821
+C3orf62 : Complex821
+CITED2 : Complex821
+SOD1 : Complex822 Complex872 Complex1010 Complex1013 Complex1033
+RGN : Complex822
+TANGO2 : Complex822
+TXN : Complex822 Complex872
+NME1 : Complex822
+YWHAQ : Complex823
+FAM83G : Complex823
+YWHAH : Complex823
+SFN : Complex823
+YWHAB : Complex823
+YWHAG : Complex823
+YWHAE : Complex823
+CYB5R3 : Complex824
+TROAP : Complex824
+CPVL : Complex824
+ACOT8 : Complex825
+NANP : Complex825
+PML : Complex825
+KLHL23 : Complex825
+GOLGA6B : Complex825
+EMG1 : Complex826
+PHB2 : Complex826 Complex1029
+SEC24A : Complex827
+AMPD2 : Complex827 Complex1049
+TRMT1 : Complex827
+CCDC198 : Complex827
+SLC25A29 : Complex827
+PDYN : Complex828
+TLN1 : Complex828
+EIF4EBP2 : Complex828
+TIMM13 : Complex828
+TIMM8B : Complex828
+FLII : Complex829
+TRIOBP : Complex829 Complex1023
+RAI14 : Complex829 Complex1023
+GAS2L3 : Complex829
+DNAJC1 : Complex830 Complex941 Complex1094
+RHPN2 : Complex831
+BCL2 : Complex831
+BAX : Complex831
+BCL2L1 : Complex831
+BAD : Complex831
+BCL2L11 : Complex831
+MINDY2 : Complex832
+DNMT1 : Complex832
+PTRH2 : Complex832
+EEF1A2 : Complex833
+TTLL12 : Complex833
+EEF1D : Complex833
+PBDC1 : Complex833
+KBTBD6 : Complex834
+KLHL42 : Complex834 Complex962
+KBTBD7 : Complex834
+TEFM : Complex834
+DOK4 : Complex834 Complex1024
+RPS26P11 : Complex835
+HIST1H1A : Complex835 Complex901
+SLC25A6 : Complex835
+SLC25A20 : Complex835
+MRPS18B : Complex836 Complex1056
+DLST : Complex837 Complex1154
+DLD : Complex837
+MRPS36 : Complex837
+OGDH : Complex837
+ITPRID2 : Complex838
+ITPR2 : Complex838
+ITPR3 : Complex838
+TESPA1 : Complex838
+BOK : Complex838
+ITPR1 : Complex838
+PGK2 : Complex839
+TSFM : Complex839 Complex1027
+FBXW5 : Complex840
+MYCBP2 : Complex840
+FBXO45 : Complex840
+LGALS3BP : Complex840
+PKP4 : Complex840
+SPRYD3 : Complex840
+TAF2 : Complex841
+TBP : Complex841
+TAF4 : Complex841
+TAF5 : Complex841
+ZMYND8 : Complex842
+ZNF687 : Complex842
+CLTC : Complex842
+KDM5C : Complex842
+ZNF592 : Complex842
+ZNF532 : Complex842
+RAB32 : Complex843
+SHROOM3 : Complex843
+RAB38 : Complex843
+C8orf34 : Complex844
+OGN : Complex844
+ASB7 : Complex844
+FAM177A1 : Complex845
+RABL3 : Complex845
+CKAP4 : Complex845
+CLCN7 : Complex845
+SNX2 : Complex846
+COMMD9 : Complex846 Complex1090
+GTF2A2 : Complex847
+CUEDC2 : Complex847
+GTF2A1 : Complex847
+TBPL1 : Complex847
+TUBA4A : Complex848
+CAPS : Complex848
+TUBB2B : Complex848
+TUBB2A : Complex848
+ARL2 : Complex848
+PYCR1 : Complex849
+KITLG : Complex849
+KLHDC10 : Complex849
+TOMM34 : Complex850
+TARS : Complex850
+RNMT : Complex850
+EPS8 : Complex850
+MYL9 : Complex850
+PSPH : Complex851
+PRPSAP1 : Complex851
+IVNS1ABP : Complex851
+ST8SIA1 : Complex852
+NMD3 : Complex852
+TTC27 : Complex852
+FARSA : Complex853 Complex972
+SEC23IP : Complex854
+C5orf51 : Complex854
+DDHD2 : Complex854
+PRRC1 : Complex855
+PLPP6 : Complex856
+CIT : Complex856
+PPM1F : Complex856
+CAPNS2 : Complex857
+CAST : Complex857
+DDI2 : Complex857
+LZIC : Complex857
+LIX1L : Complex857
+LUC7L2 : Complex858
+CLASRP : Complex858 Complex911 Complex989
+HK1 : Complex859
+ASPDH : Complex859
+ATP6V1E1 : Complex859
+RAB8A : Complex859
+SPATC1L : Complex859
+VPS13C : Complex860
+IP6K1 : Complex860
+UBXN4 : Complex860
+UBE4A : Complex860
+VPS13A : Complex860
+HSPA4L : Complex861
+CDV3 : Complex861
+TRAIP : Complex861
+NISCH : Complex861
+HAT1 : Complex861
+NFYA : Complex862
+FCGR2A : Complex862
+PLCB3 : Complex862
+GTPBP1 : Complex862
+NFYC : Complex862
+NFYB : Complex862
+RPS17 : Complex863
+RPL5 : Complex863 Complex901
+ARHGAP27 : Complex863 Complex901
+ALDH3A1 : Complex864
+UCP2 : Complex864
+GPR18 : Complex864
+EIF2S2 : Complex865
+SNRPN : Complex865
+CDC123 : Complex865
+FAM76B : Complex866
+ADO : Complex866
+KCNJ10 : Complex866
+SMCHD1 : Complex867
+LRIF1 : Complex867
+CEP41 : Complex867
+KAT2A : Complex867
+ETS2 : Complex868
+COP1 : Complex868
+ETV1 : Complex868
+CHTOP : Complex869 Complex887
+THOC7 : Complex869 Complex887 Complex970
+THOC1 : Complex869 Complex1028 Complex1115
+CCDC9B : Complex869 Complex970
+THOC2 : Complex869 Complex1115
+DDX39A : Complex869 Complex1138
+REEP6 : Complex870
+ATP1B3 : Complex870
+REEP5 : Complex870
+IL2RG : Complex870
+SCAMP4 : Complex870
+MRFAP1 : Complex871
+NUDT2 : Complex872
+AIP : Complex872
+TXN2 : Complex872
+FAM161B : Complex872 Complex1010
+DPY30 : Complex872
+CFAP410 : Complex873
+CEP97 : Complex873
+NEK1 : Complex873
+CCP110 : Complex873
+CEP104 : Complex873
+FUBP1 : Complex874
+PPIL3 : Complex874
+CCDC58 : Complex874
+FUBP3 : Complex874
+RBM38 : Complex874
+GIGYF2 : Complex874
+KIF19 : Complex875
+ZNF845 : Complex875
+CBX1 : Complex876
+RLF : Complex876
+CENPV : Complex876
+MDC1 : Complex876
+PAFAH1B3 : Complex877
+FADD : Complex877
+IL37 : Complex877
+PAFAH1B1 : Complex877
+PAFAH1B2 : Complex877
+LACC1 : Complex878
+SGO2 : Complex878
+PLP2 : Complex878
+MSH6 : Complex878 Complex937
+H3F3B : Complex878
+FBXL17 : Complex879
+FCGR3B : Complex879
+KLHL20 : Complex879
+LRRC8E : Complex879
+LRRC8C : Complex879
+ENO1 : Complex880
+PGAM1 : Complex880
+PGAM2 : Complex880
+ENO2 : Complex880
+PGAM4 : Complex880
+SMN2 : Complex881
+ZNF696 : Complex881
+DYM : Complex881 Complex977
+DSTN : Complex882 Complex1057
+CST3 : Complex882
+ARF5 : Complex882
+LDHAL6B : Complex882
+ARF1 : Complex882
+MSN : Complex883
+EZR : Complex883
+PLS1 : Complex883
+FLNB : Complex883
+DECR2 : Complex883
+GABARAPL2 : Complex883
+ZNF70 : Complex884
+URB2 : Complex884 Complex994
+ZNF48 : Complex884
+URB1 : Complex884
+DDX51 : Complex884
+ALDH8A1 : Complex885
+ALDH6A1 : Complex885
+ACAD10 : Complex885
+MGRN1 : Complex886
+FKBP3 : Complex887
+POFUT2 : Complex887
+POLDIP3 : Complex887
+MCTS1 : Complex887 Complex897 Complex1053
+DENR : Complex887 Complex1053
+UBQLN4 : Complex888
+RIDA : Complex888
+RAD23B : Complex888
+HIBADH : Complex888 Complex1003 Complex1027 Complex1126
+KYAT1 : Complex889
+PALLD : Complex889
+ATP5IF1 : Complex889
+GRPEL1 : Complex889
+CMPK1 : Complex889
+GANC : Complex890
+ARHGDIG : Complex890
+HSD17B10 : Complex890
+AGO1 : Complex890
+TRMT10C : Complex890
+GLRX5 : Complex891
+PHPT1 : Complex891
+APRT : Complex891 Complex959 Complex1037 Complex1055
+PGP : Complex891 Complex959
+PMM1 : Complex892
+HMOX2 : Complex892
+POTEE : Complex892
+GPR35 : Complex892
+PMM2 : Complex892
+ZCCHC17 : Complex893
+PTRHD1 : Complex893
+LAP3 : Complex893
+RPL26L1 : Complex894
+SKIV2L : Complex894
+TTC37 : Complex894
+CD96 : Complex895
+LDB3 : Complex895
+HSPA1A : Complex895
+MTUS2 : Complex896
+CHMP2A : Complex896
+CHMP3 : Complex896
+TFG : Complex896
+UMAD1 : Complex896
+TM9SF1 : Complex896
+PTH1R : Complex897
+DUS3L : Complex897
+OTUB1 : Complex897 Complex1053
+DNAJC17 : Complex897
+SUMF2 : Complex897
+ARPC4 : Complex898 Complex941
+DAB2 : Complex898
+SLC25A41 : Complex898
+PLEKHB1 : Complex899
+ARHGEF12 : Complex899
+TRMT61A : Complex899
+DAZAP2 : Complex899
+RBFOX2 : Complex899
+KRT6A : Complex900
+KRT8 : Complex900
+KRT17 : Complex900
+HIST1H1C : Complex901 Complex1130
+RBMXL1 : Complex902
+SRSF2 : Complex902 Complex1092
+TTLL1 : Complex903
+LRRC49 : Complex903
+TPGS1 : Complex903
+TPGS2 : Complex903
+C11orf49 : Complex903
+DNAJC7 : Complex904
+NAA11 : Complex904
+CPNE2 : Complex904
+NAA50 : Complex904
+PRPSAP2 : Complex904
+WASH3P : Complex905
+WASH6P : Complex905
+TSR1 : Complex906
+RIOK2 : Complex906 Complex1122
+HNRNPL : Complex907 Complex946
+ACLY : Complex907
+MAP3K4 : Complex907 Complex1142
+TBC1D10B : Complex907
+WDR91 : Complex907
+CLVS2 : Complex908
+PITRM1 : Complex908
+DDX41 : Complex908
+SASS6 : Complex909
+MLYCD : Complex909
+CCDC68 : Complex909
+NFIB : Complex909
+FYCO1 : Complex909
+IMPDH2 : Complex910
+SLC25A44 : Complex910
+PDE8B : Complex910
+IMPDH1 : Complex910
+DDX53 : Complex910
+CDC40 : Complex911
+GPATCH1 : Complex911 Complex960
+CCDC12 : Complex911 Complex958 Complex989
+SNIP1 : Complex911
+ZPR1 : Complex912
+YTHDF1 : Complex912
+PDAP1 : Complex912
+ZNF526 : Complex913
+HOXD3 : Complex913
+EIF4A2 : Complex914
+EIF3A : Complex914
+PFKFB4 : Complex914
+EIF4G2 : Complex914
+EIF4A1 : Complex914
+EIF4G1 : Complex914
+CCDC43 : Complex915
+SCML1 : Complex915
+PAWR : Complex915
+HSPA8 : Complex916
+ANXA5 : Complex916
+DNAJA2 : Complex916
+OGT : Complex916
+HCFC1 : Complex916
+TRARG1 : Complex917
+SGPL1 : Complex917
+ANKRD12 : Complex917
+FEM1A : Complex918
+ICK : Complex918
+BARD1 : Complex918
+CDK17 : Complex918
+CDK16 : Complex918
+BRCA1 : Complex918
+MYH6 : Complex919 Complex971
+MYH7 : Complex919
+AASDH : Complex919
+MYH1 : Complex919
+SNRPE : Complex920
+SNRPF : Complex920
+IK : Complex920
+ZNF286B : Complex921
+HEXA : Complex921 Complex997
+DNAJA4 : Complex921
+ABCA7 : Complex921
+ARHGAP32 : Complex921
+SIRT3 : Complex922
+POLL : Complex922
+SEMG1 : Complex922
+C9orf64 : Complex922
+LSM14B : Complex922
+SEMG2 : Complex922
+POLR3C : Complex923
+WDR92 : Complex923
+POLR3D : Complex923 Complex1110
+POLR3B : Complex923
+POLR3K : Complex923 Complex1087
+POLR3F : Complex923
+PYGL : Complex924
+CS : Complex924
+PNPO : Complex924
+FUCA2 : Complex924
+GIPC1 : Complex924
+FABP5 : Complex925
+RAB33A : Complex925
+DCXR : Complex925
+QDPR : Complex925
+PECR : Complex926
+LCN1 : Complex926
+LACRT : Complex926
+CEP120 : Complex927 Complex1132
+PRSS3 : Complex927
+TOMM40L : Complex928
+AFMID : Complex928
+STK17B : Complex928
+RGPD8 : Complex929
+CADM2 : Complex930
+SPATA46 : Complex931
+SNX24 : Complex931
+CSNK1E : Complex931 Complex1114
+GAPVD1 : Complex931
+HLCS : Complex931
+SNX22 : Complex931
+SNX9 : Complex932
+DPPA4 : Complex932
+ADD2 : Complex932
+MAT2A : Complex933
+MAT1A : Complex933
+HNRNPF : Complex933 Complex1052
+MAT2B : Complex933
+RHOC : Complex933
+SMNDC1 : Complex934
+ATG9A : Complex935
+A2M : Complex935 Complex979
+CLCN3 : Complex935
+CD58 : Complex935
+ANO6 : Complex935
+ABCC4 : Complex935
+ENPP4 : Complex935
+CD47 : Complex935
+LAMA4 : Complex935
+SLC36A1 : Complex935
+GSS : Complex936 Complex1143
+ADA2 : Complex936
+IDE : Complex936
+MRI1 : Complex936
+SERPINB8 : Complex936
+RMDN1 : Complex936
+SRSF11 : Complex937
+MSH2 : Complex937
+TBL2 : Complex938
+SREBF2 : Complex938
+PNPLA6 : Complex938
+SCRN1 : Complex939
+UBE2T : Complex939
+ETF1 : Complex939
+PABPC1L : Complex940
+ELAVL2 : Complex940
+PAIP1 : Complex940
+EIF4ENIF1 : Complex941
+EIF4G3 : Complex941
+DNAJB12 : Complex942
+MKNK1 : Complex942
+HECTD4 : Complex942
+TTC3 : Complex942
+PDLIM5 : Complex942
+FNIP1 : Complex943
+COPS6 : Complex943
+CUL1 : Complex943
+COPS5 : Complex943
+RBX1 : Complex943
+VCPKMT : Complex944
+UBXN2A : Complex944
+UBXN6 : Complex944
+TMOD3 : Complex944
+PHLDB2 : Complex945 Complex952
+DAPK3 : Complex945
+HNRNPA3 : Complex946 Complex1022
+MESD : Complex946
+HEYL : Complex947
+PGGT1B : Complex947
+AMMECR1L : Complex947
+CTTN : Complex948 Complex1156
+LMO7 : Complex948
+CHML : Complex949
+RILP : Complex949
+RBM26 : Complex950
+CPSF7 : Complex950 Complex970
+NUDT21 : Complex950 Complex1012 Complex1069
+CMTM8 : Complex951
+GBA2 : Complex951
+ILVBL : Complex951
+BHMT2 : Complex952
+CAPZB : Complex952
+HNRNPLL : Complex952 Complex1094
+ZCCHC8 : Complex953
+NFATC2IP : Complex953
+RBM7 : Complex953
+CROCC : Complex954
+ELAC2 : Complex954
+HARS2 : Complex954
+GTPBP6 : Complex954
+SARS2 : Complex954
+RAB33B : Complex955
+C2orf48 : Complex956
+FAT3 : Complex956
+PCDH7 : Complex956
+RAC1 : Complex957 Complex1016
+CPOX : Complex957
+BLVRB : Complex957
+BROX : Complex957
+FAM49B : Complex957
+SNRNP40 : Complex958 Complex1043 Complex1069
+USB1 : Complex958
+CBR1 : Complex959 Complex1048
+CBR3 : Complex959
+PDXP : Complex959 Complex1055
+CSTB : Complex959 Complex1048
+EXO1 : Complex960
+RIMS4 : Complex960
+TIRAP : Complex961
+NTMT1 : Complex961
+TEP1 : Complex961
+LRRC41 : Complex961
+RFK : Complex962
+ALDH16A1 : Complex962
+PCMT1 : Complex962 Complex1033
+C11orf54 : Complex962
+GSTCD : Complex963
+TTC13 : Complex963
+NGLY1 : Complex964
+ACTR3B : Complex964
+RAD23A : Complex964
+ATP5F1E : Complex965 Complex1029
+GJB2 : Complex965
+ACKR3 : Complex965
+TATDN1 : Complex966
+STAP1 : Complex966
+SH3KBP1 : Complex966
+PRPF40B : Complex967
+PPHLN1 : Complex967
+TMEM139 : Complex968
+RPS6KA3 : Complex968
+ZMYM5 : Complex968
+RDX : Complex969
+DDX3X : Complex969 Complex1072
+RBM15 : Complex970 Complex1028
+SF3A2 : Complex970 Complex1043
+TNNI1 : Complex971
+WDR46 : Complex972
+RAP1B : Complex972
+SFXN1 : Complex972
+EPHA7 : Complex972
+ACADVL : Complex973 Complex1054
+HNRNPU : Complex973
+SRBD1 : Complex973
+TBC1D13 : Complex974
+APIP : Complex974
+EPS15L1 : Complex974
+PCCA : Complex975
+NNT : Complex975
+TWF2 : Complex975 Complex1040 Complex1140
+IARS2 : Complex975
+FDXR : Complex975
+GALNT7 : Complex976
+AMIGO1 : Complex976
+EGFR : Complex976 Complex1134
+ADAM10 : Complex976
+EXOC6B : Complex977
+EXOC4 : Complex977
+EXOC1 : Complex977
+EXOC8 : Complex977
+GBF1 : Complex977
+GEMIN2 : Complex977
+EXOC2 : Complex977
+TYMS : Complex978
+DHFR : Complex978
+WDR45B : Complex978
+SEZ6L2 : Complex979
+H2AFZ : Complex980
+GNL1 : Complex981
+RPS11 : Complex981
+FKBP4 : Complex982
+PPAT : Complex982
+DPP3 : Complex982
+TOM1L2 : Complex982
+PCBP4 : Complex983
+OAT : Complex983
+AK1 : Complex983
+PPID : Complex983
+PGM1 : Complex983
+QKI : Complex984
+UBE2V1 : Complex984
+UBE2V2 : Complex984
+UBE2N : Complex984
+SORD : Complex984
+TBC1D22A : Complex985
+CERK : Complex985
+EFNB3 : Complex985
+HIST2H2BE : Complex986
+H2AFV : Complex986 Complex1107
+DDX47 : Complex986
+DNAJB2 : Complex987
+DNAJB6 : Complex987
+DNAJB8 : Complex987
+CYHR1 : Complex987
+KIAA1211 : Complex988
+MYH7B : Complex988 Complex1119
+PPIL1 : Complex989
+ZNF507 : Complex990
+RAB40AL : Complex990
+ARIH2 : Complex990
+RAB40A : Complex990
+SOCS6 : Complex990
+PI4KB : Complex991
+KIF3B : Complex991
+CASP1 : Complex991
+KIFAP3 : Complex991
+KIF3A : Complex991
+PRRC2C : Complex992 Complex1116
+ZNF689 : Complex992
+CBR4 : Complex993
+MACROD1 : Complex993
+HSD17B8 : Complex993
+ACOT9 : Complex993
+MOCOS : Complex993
+H3C2 : Complex994
+GSTM2 : Complex995
+GSTM5 : Complex995
+ARFGAP2 : Complex995
+GSTM4 : Complex995
+ARFGAP1 : Complex995
+ARFGAP3 : Complex995
+SERPINB5 : Complex996
+ARF4 : Complex996
+LDHC : Complex996
+UBE2D2 : Complex996 Complex1053 Complex1055
+ATOX1 : Complex996
+GSTO2 : Complex997
+NIT2 : Complex997
+ATM : Complex998 Complex1063
+COG3 : Complex998
+RSRC2 : Complex999
+TRA2A : Complex999
+SPEM1 : Complex1000
+TNN : Complex1000
+ZPBP2 : Complex1000
+RANBP17 : Complex1000
+PPP1R1A : Complex1000
+PRKRA : Complex1001
+TOPBP1 : Complex1002 Complex1083
+SETD3 : Complex1002
+DNAJC2 : Complex1002
+CWF19L1 : Complex1002
+HSPA14 : Complex1002
+NFAM1 : Complex1002
+CD68 : Complex1003
+LGALS1 : Complex1003
+HSPB1 : Complex1003
+CTSB : Complex1003
+NT5C2 : Complex1004
+SCRIB : Complex1004
+UBXN7 : Complex1004
+VIPAS39 : Complex1004
+LRRC1 : Complex1004
+MNS1 : Complex1005
+INHA : Complex1005
+PDIA3 : Complex1005
+SLC4A1AP : Complex1006
+PRKRIP1 : Complex1006
+RBM11 : Complex1006
+UACA : Complex1007
+MANF : Complex1007 Complex1047
+DISC1 : Complex1007
+CEP250 : Complex1007
+LASP1 : Complex1007
+PER1 : Complex1008
+PER3 : Complex1008
+CRY1 : Complex1008
+TEKT4 : Complex1008
+CRY2 : Complex1008
+CBLL1 : Complex1009
+METTL14 : Complex1009
+METTL3 : Complex1009
+RBM15B : Complex1009
+SART3 : Complex1009 Complex1068
+ADI1 : Complex1010
+TRABD : Complex1010
+NME2 : Complex1010 Complex1058
+NPR1 : Complex1011
+GSPT1 : Complex1011
+OGA : Complex1011
+NRXN1 : Complex1013
+GLOD4 : Complex1013 Complex1041
+C4BPA : Complex1013
+TMEM131L : Complex1014
+100294276 : Complex1014
+RNF130 : Complex1014
+HLA-DRB1 : Complex1014
+TMEM219 : Complex1014
+ADARB1 : Complex1015
+NMT1 : Complex1015
+PRDX5 : Complex1016 Complex1041
+SPR : Complex1016
+HINT1 : Complex1016
+CRIP2 : Complex1016
+SERPINH1 : Complex1016
+DHX37 : Complex1017
+ZNF768 : Complex1017
+DERL2 : Complex1018
+PSEN1 : Complex1018
+SLC35E1 : Complex1018
+ABCB7 : Complex1018
+NCSTN : Complex1018
+MRPS34 : Complex1019
+UBL5 : Complex1020
+BCAS2 : Complex1020 Complex1043
+PDIA5 : Complex1020
+PPP1R14B : Complex1021
+FXN : Complex1021
+SYNE1 : Complex1021
+TPD52 : Complex1021
+HS1BP3 : Complex1022
+CWC27 : Complex1022
+SUPT4H1 : Complex1024
+RBM46 : Complex1024
+GTF2F2 : Complex1024
+CCNI2 : Complex1025
+MOB3A : Complex1025
+CDK5 : Complex1025
+CDK20 : Complex1025
+CDK5R1 : Complex1025
+ELAVL1 : Complex1026
+PTBP1 : Complex1026 Complex1037
+SUGP2 : Complex1026
+MARCKSL1 : Complex1026
+GSTP1 : Complex1027 Complex1064
+TXNDC17 : Complex1027 Complex1126
+AK2 : Complex1027 Complex1113
+ZC3H11A : Complex1028 Complex1138
+PRMT7 : Complex1030
+FAXC : Complex1030
+ACSL4 : Complex1030
+EIF2S3 : Complex1030
+CLUH : Complex1030
+CAD : Complex1030
+ENSA : Complex1031
+STMN1 : Complex1031
+CDC42SE2 : Complex1031
+CDC42 : Complex1031
+ANXA3 : Complex1031
+P2RY8 : Complex1032
+ATP1A4 : Complex1032
+ATP1B4 : Complex1032
+TMEM8A : Complex1032
+ATP1A2 : Complex1032
+PYCR3 : Complex1033
+YDJC : Complex1033
+PARK7 : Complex1033
+CLIC6 : Complex1034
+CSK : Complex1034
+KYNU : Complex1034
+CLIC4 : Complex1034
+ARHGAP44 : Complex1035
+RTCB : Complex1035 Complex1103
+RTRAF : Complex1035
+FERMT1 : Complex1036
+CACYBP : Complex1036
+SNX3 : Complex1036
+CTPS2 : Complex1036
+CTPS1 : Complex1036
+SFPQ : Complex1037 Complex1062
+NONO : Complex1037
+CNBP : Complex1037
+CALU : Complex1038
+PTRH1 : Complex1038
+RCN1 : Complex1038
+BAZ1B : Complex1039
+MAK16 : Complex1039
+FTSJ3 : Complex1039
+BCAT1 : Complex1040
+SERPINB10 : Complex1040
+HARS : Complex1040
+PTK2 : Complex1040
+PRDX6 : Complex1041
+AKR1B1 : Complex1041
+GLO1 : Complex1041
+GRHPR : Complex1041
+HMGB1 : Complex1042
+S100A10 : Complex1042
+HMGB2 : Complex1042
+CTNNBL1 : Complex1043
+ATP6V0D1 : Complex1044
+ATP6V0A1 : Complex1044
+ATP6AP1 : Complex1044
+FLOT1 : Complex1044
+SETD5 : Complex1045
+KSR1 : Complex1045
+MAP2K1 : Complex1045
+CAT : Complex1046 Complex1058
+CHST7 : Complex1046
+CLYBL : Complex1046
+QSOX1 : Complex1046
+GLT8D2 : Complex1046
+TSGA10IP : Complex1047
+HYPK : Complex1047
+NAA16 : Complex1047
+EHBP1L1 : Complex1047
+TMEM255A : Complex1048
+GCA : Complex1048
+DENND3 : Complex1048
+DPP8 : Complex1049
+WDR4 : Complex1049
+METTL1 : Complex1049
+PLS3 : Complex1049
+MARCHF6 : Complex1050
+ZDHHC7 : Complex1050
+PIGN : Complex1050
+GLRA2 : Complex1050
+TXNDC15 : Complex1050
+SOX5 : Complex1051
+SOX13 : Complex1051
+XPO5 : Complex1051
+CEP85 : Complex1051
+CLEC12A : Complex1051
+CGNL1 : Complex1052
+CUX1 : Complex1052
+ELOF1 : Complex1052
+PDIA6 : Complex1052
+OTUD6B : Complex1053
+TCERG1 : Complex1053
+ZFAND5 : Complex1054
+TXLNA : Complex1054
+CDC37 : Complex1054
+ADA : Complex1055
+PUDP : Complex1055
+PCK2 : Complex1055
+MRPS23 : Complex1056
+MRPS33 : Complex1056
+TIA1 : Complex1057
+ALDH5A1 : Complex1057 Complex1078
+ADK : Complex1057
+TAGLN2 : Complex1058
+PYROXD1 : Complex1059
+SAE1 : Complex1059
+UBA2 : Complex1059
+PRPF39 : Complex1059
+GDF15 : Complex1059
+INTS8 : Complex1060
+INTS13 : Complex1060
+C7orf26 : Complex1060
+INTS6L : Complex1060
+ETFA : Complex1061
+CTSD : Complex1061
+CTSA : Complex1061
+PFAS : Complex1062
+ROBO1 : Complex1062
+NIF3L1 : Complex1062
+DNAAF5 : Complex1063
+ARRDC1 : Complex1063
+OSBPL6 : Complex1063
+GLMN : Complex1063
+AKR1B10 : Complex1064
+AKR1B15 : Complex1064
+LAMP1 : Complex1064
+RSPH9 : Complex1065
+LONP2 : Complex1065
+ZC3H4 : Complex1065
+SUMO4 : Complex1066
+ESYT2 : Complex1066
+SAFB2 : Complex1067
+SAFB : Complex1067
+XRN1 : Complex1068
+TUT1 : Complex1068
+MTPN : Complex1069
+BAG1 : Complex1069
+SNRPB : Complex1069
+MEPCE : Complex1070 Complex1089 Complex1122
+USP36 : Complex1070
+DTD2 : Complex1071
+RBSN : Complex1071
+ACOT13 : Complex1071
+VPS45 : Complex1071
+DHX15 : Complex1072
+SMU1 : Complex1072
+UHRF2 : Complex1072
+ACTN4 : Complex1073
+ESF1 : Complex1074
+NDUFA9 : Complex1075
+MOB4 : Complex1077
+NPEPPS : Complex1078
+NEU1 : Complex1079
+RGPD5 : Complex1079
+SPTAN1 : Complex1080
+SREK1 : Complex1081
+EIF5 : Complex1082
+ASF1B : Complex1082
+CAND1 : Complex1082
+PLK1 : Complex1083
+EIF2A : Complex1083
+NT5DC1 : Complex1084
+PKLR : Complex1084
+PRKAR2A : Complex1084
+ADAM9 : Complex1085
+EIF4H : Complex1088
+HNRNPA2B1 : Complex1088
+AGO2 : Complex1088
+RFC4 : Complex1089
+PCLAF : Complex1089
+PCNA : Complex1089
+RANBP1 : Complex1090 Complex1152
+VPS35L : Complex1090
+ALDH18A1 : Complex1090
+ERFE : Complex1091 Complex1134
+PRPF38B : Complex1092
+CAMSAP1 : Complex1094
+CHD9 : Complex1095
+HSP90B1 : Complex1095
+FOXRED2 : Complex1096
+JOSD1 : Complex1097
+ARG1 : Complex1098
+FLG : Complex1098
+S100A14 : Complex1098
+USP15 : Complex1099
+BPGM : Complex1100
+NUDT16 : Complex1100
+KLF16 : Complex1100
+TIGAR : Complex1100
+PDLIM4 : Complex1101
+CDO1 : Complex1101
+ACO1 : Complex1101
+PHYKPL : Complex1101
+SNRPA : Complex1102
+ECT2 : Complex1102
+DHX16 : Complex1102 Complex1114
+KLHL12 : Complex1103
+EWSR1 : Complex1103
+RETREG3 : Complex1104
+PLSCR1 : Complex1104
+FAM210B : Complex1104
+SPRY2 : Complex1104
+SYF2 : Complex1105
+GNPNAT1 : Complex1106
+ARHGDIA : Complex1106
+EME1 : Complex1107
+MUS81 : Complex1107
+HSD17B6 : Complex1108
+ATP2B1 : Complex1108
+ATP2B2 : Complex1108
+ATP2B3 : Complex1108
+RWDD2B : Complex1109
+MYH11 : Complex1109
+ATF6B : Complex1109
+OVCA2 : Complex1109
+POLR1C : Complex1110
+ACAD9 : Complex1111
+SAPCD2 : Complex1112
+GPSM1 : Complex1112
+PLIN5 : Complex1112
+CFLAR : Complex1112
+ZFYVE19 : Complex1113
+VPS4A : Complex1113
+PRPF18 : Complex1114
+SRSF4 : Complex1115 Complex1128 Complex1144
+SCAF4 : Complex1116
+HADHB : Complex1117
+UBR5 : Complex1117
+HIST1H1D : Complex1117
+STARD7 : Complex1118
+KHDC4 : Complex1118
+ZNF346 : Complex1118
+NAT2 : Complex1118
+HNRNPUL1 : Complex1120
+RUVBL1 : Complex1120
+DDX17 : Complex1120
+CSNK2A1 : Complex1121
+TSR2 : Complex1122
+H1FX : Complex1122
+PIK3C2A : Complex1123
+EPS15 : Complex1123
+TRIM39 : Complex1124
+ZNF19 : Complex1124
+HTATSF1 : Complex1125
+CNDP2 : Complex1126
+NEDD8 : Complex1126
+PPIAL4D : Complex1127
+EFTUD2 : Complex1128
+LSM8 : Complex1129
+BYSL : Complex1130
+FAM207A : Complex1130
+SUOX : Complex1131
+FBXW2 : Complex1131
+FBXO17 : Complex1131
+SPANXN3 : Complex1131
+C9orf78 : Complex1132
+CRELD2 : Complex1133
+CLIC1 : Complex1133
+DPEP2 : Complex1134
+LSM2 : Complex1135
+BICD2 : Complex1135
+ZMAT2 : Complex1135
+PNP : Complex1136
+PKN2 : Complex1136
+TXNL1 : Complex1136
+PXDNL : Complex1136
+CDT1 : Complex1137
+GMNN : Complex1137
+XPOT : Complex1138
+C19orf47 : Complex1138
+PSMD7 : Complex1139
+CSNK1G3 : Complex1140
+SAAL1 : Complex1141
+HNRNPK : Complex1142
+TNRC6C : Complex1143
+GGA1 : Complex1143
+RAB23 : Complex1143
+NKTR : Complex1144
+SAP18 : Complex1144
+XPO6 : Complex1145
+ARL17A : Complex1147
+GPATCH8 : Complex1148
+RBM39 : Complex1148
+TINAGL1 : Complex1149
+DOK3 : Complex1149
+TPP2 : Complex1149
+HSPG2 : Complex1149
+DDR2 : Complex1150
+PIR : Complex1150
+UBE2D3 : Complex1150
+CHORDC1 : Complex1150
+SRC : Complex1151
+EEPD1 : Complex1151
+RANBP3L : Complex1152
+OR6C70 : Complex1153
+KLK10 : Complex1153
+A2ML1 : Complex1153
+L2HGDH : Complex1153
+DBT : Complex1154
+KCNAB3 : Complex1154
+HDAC6 : Complex1154
+ZCRB1 : Complex1157

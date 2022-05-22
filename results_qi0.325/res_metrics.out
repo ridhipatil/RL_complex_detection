@@ -1,0 +1,382 @@
+
+ --- On training set ---
+No. of known complexes =  132
+No. of Predicted complexes =  93
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.606
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 15
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.718
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 0
+No. of matches in MMR =  93
+MMR Precision = 0.630
+MMR Recall = 0.444
+MMR F1 score = 0.521
+Net F1 score = 0.657
+Unbiased PPV = 0.928
+Unbiased Sn = 0.669
+Unbiased accuracy= 0.788
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.662
+Prediction Precision = 0.613
+Prediction Recall = 0.523
+Prediction F1 score = 0.564
+No. of Predicted complexes after removing non-gold std proteins =  93
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.606
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 15
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.718
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 0
+No. of matches in MMR =  93
+MMR Precision = 0.630
+MMR Recall = 0.444
+MMR F1 score = 0.521
+Net F1 score = 0.657
+Unbiased PPV = 0.928
+Unbiased Sn = 0.669
+Unbiased accuracy= 0.788
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.662
+Prediction Precision = 0.613
+Prediction Recall = 0.523
+Prediction F1 score = 0.564
+-- Finished writing main metrics -- 
+
+
+ --- On testing set ---
+No. of known complexes =  56
+No. of Predicted complexes =  47
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.538
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 21
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.726
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 0
+No. of matches in MMR =  47
+MMR Precision = 0.642
+MMR Recall = 0.538
+MMR F1 score = 0.586
+Net F1 score = 0.618
+Unbiased PPV = 0.944
+Unbiased Sn = 0.523
+Unbiased accuracy= 0.702
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.632
+Prediction Precision = 0.617
+Prediction Recall = 0.500
+Prediction F1 score = 0.552
+No. of Predicted complexes after removing non-gold std proteins =  47
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.538
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 21
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.726
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 0
+No. of matches in MMR =  47
+MMR Precision = 0.642
+MMR Recall = 0.538
+MMR F1 score = 0.586
+Net F1 score = 0.618
+Unbiased PPV = 0.944
+Unbiased Sn = 0.523
+Unbiased accuracy= 0.702
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.632
+Prediction Precision = 0.617
+Prediction Recall = 0.500
+Prediction F1 score = 0.552
+-- Finished writing main metrics -- 
+
+
+ --- On both sets ---
+No. of known complexes =  188
+No. of Predicted complexes =  148
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.614
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 20
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.700
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 0
+No. of matches in MMR =  148
+MMR Precision = 0.612
+MMR Recall = 0.482
+MMR F1 score = 0.540
+Net F1 score = 0.654
+Unbiased PPV = 0.902
+Unbiased Sn = 0.662
+Unbiased accuracy= 0.772
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.657
+Prediction Precision = 0.588
+Prediction Recall = 0.511
+Prediction F1 score = 0.547
+No. of Predicted complexes after removing non-gold std proteins =  148
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.614
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 20
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.700
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 0
+No. of matches in MMR =  148
+MMR Precision = 0.612
+MMR Recall = 0.482
+MMR F1 score = 0.540
+Net F1 score = 0.654
+Unbiased PPV = 0.902
+Unbiased Sn = 0.662
+Unbiased accuracy= 0.772
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.657
+Prediction Precision = 0.588
+Prediction Recall = 0.511
+Prediction F1 score = 0.547
+-- Finished writing main metrics -- 
+
+
+ --- On training set ---
+No. of known complexes =  132
+No. of Predicted complexes =  93
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.606
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 15
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.718
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 0
+No. of matches in MMR =  93
+MMR Precision = 0.630
+MMR Recall = 0.444
+MMR F1 score = 0.521
+Net F1 score = 0.657
+Unbiased PPV = 0.928
+Unbiased Sn = 0.669
+Unbiased accuracy= 0.788
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.662
+Prediction Precision = 0.613
+Prediction Recall = 0.523
+Prediction F1 score = 0.564
+No. of Predicted complexes after removing non-gold std proteins =  93
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.606
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 15
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.718
+No. of perfectly recalled matches = 23
+No. of matches not recalled at all = 0
+No. of matches in MMR =  93
+MMR Precision = 0.630
+MMR Recall = 0.444
+MMR F1 score = 0.521
+Net F1 score = 0.657
+Unbiased PPV = 0.928
+Unbiased Sn = 0.669
+Unbiased accuracy= 0.788
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.662
+Prediction Precision = 0.613
+Prediction Recall = 0.523
+Prediction F1 score = 0.564
+-- Finished writing main metrics -- 
+
+Sensitivity	PPV	ACC	MMR	PWMMR	MMR_PWMMR_hmean
+0.682	0.598	0.639	0.484	0.596	0.534
+
+Precision	Recall	Precision Recall product
+0.639	0.520	0.573
+
+Clique Precision Mean	Recall Mean	F-Grand K-Clique	Clique Weighted Precision Mean	Weighted Recall Mean	Clique Weighted hmean (F-weighted K-Clique)
+
+0.996	0.996	0.996	0.999	1.000	1.000
+
+
+ --- On testing set ---
+No. of known complexes =  56
+No. of Predicted complexes =  47
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.538
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 21
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.726
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 0
+No. of matches in MMR =  47
+MMR Precision = 0.642
+MMR Recall = 0.538
+MMR F1 score = 0.586
+Net F1 score = 0.618
+Unbiased PPV = 0.944
+Unbiased Sn = 0.523
+Unbiased accuracy= 0.702
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.632
+Prediction Precision = 0.617
+Prediction Recall = 0.500
+Prediction F1 score = 0.552
+No. of Predicted complexes after removing non-gold std proteins =  47
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.538
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 21
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.726
+No. of perfectly recalled matches = 20
+No. of matches not recalled at all = 0
+No. of matches in MMR =  47
+MMR Precision = 0.642
+MMR Recall = 0.538
+MMR F1 score = 0.586
+Net F1 score = 0.618
+Unbiased PPV = 0.944
+Unbiased Sn = 0.523
+Unbiased accuracy= 0.702
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.632
+Prediction Precision = 0.617
+Prediction Recall = 0.500
+Prediction F1 score = 0.552
+-- Finished writing main metrics -- 
+
+Sensitivity	PPV	ACC	MMR	PWMMR	MMR_PWMMR_hmean
+0.491	0.918	0.672	0.498	0.648	0.563
+
+Precision	Recall	Precision Recall product
+0.670	0.471	0.553
+
+Clique Precision Mean	Recall Mean	F-Grand K-Clique	Clique Weighted Precision Mean	Weighted Recall Mean	Clique Weighted hmean (F-weighted K-Clique)
+
+1.000	0.916	0.950	1.000	0.993	0.996
+
+
+ --- On both sets ---
+No. of known complexes =  188
+No. of Predicted complexes =  148
+
+ -- Metrics on complexes with all proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.614
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 20
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.700
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 0
+No. of matches in MMR =  148
+MMR Precision = 0.612
+MMR Recall = 0.482
+MMR F1 score = 0.540
+Net F1 score = 0.654
+Unbiased PPV = 0.902
+Unbiased Sn = 0.662
+Unbiased accuracy= 0.772
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.657
+Prediction Precision = 0.588
+Prediction Recall = 0.511
+Prediction F1 score = 0.547
+No. of Predicted complexes after removing non-gold std proteins =  148
+
+ -- Metrics on complexes with only gold std proteins -- 
+Best Predicted match for known complexes - 
+Averaged F1 score = 0.614
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 20
+Best known match for Predicted complexes - 
+Averaged F1 score = 0.700
+No. of perfectly recalled matches = 41
+No. of matches not recalled at all = 0
+No. of matches in MMR =  148
+MMR Precision = 0.612
+MMR Recall = 0.482
+MMR F1 score = 0.540
+Net F1 score = 0.654
+Unbiased PPV = 0.902
+Unbiased Sn = 0.662
+Unbiased accuracy= 0.772
+Net Averaged F1 score (Average of Precision and Recall based on F1 score) = 0.657
+Prediction Precision = 0.588
+Prediction Recall = 0.511
+Prediction F1 score = 0.547
+-- Finished writing main metrics -- 
+
+Sensitivity	PPV	ACC	MMR	PWMMR	MMR_PWMMR_hmean
+0.652	0.644	0.648	0.495	0.584	0.536
+
+Precision	Recall	Precision Recall product
+0.621	0.508	0.559
+
+Clique Precision Mean	Recall Mean	F-Grand K-Clique	Clique Weighted Precision Mean	Weighted Recall Mean	Clique Weighted hmean (F-weighted K-Clique)
+
+0.996	0.676	0.787	1.000	0.976	0.987
+
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  2612
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  129
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  129
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
+No. of perfectly recalled original CORUM matches =  9
+No. of duplicate complexes (match with corum)=  128
