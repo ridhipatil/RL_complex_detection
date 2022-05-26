@@ -4,55 +4,14 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import logging
 import time
+from argparse import ArgumentParser as argparse_ArgumentParser
+from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 
-import numpy as np
 
-start_time = time.time()
-matplotlib.use('Agg')
-logging.basicConfig(level=logging.WARNING)
-gamma = 0.5
-matplotlib.use('tkagg')
-
-# get training data
-fileName = "../../training_CORUM_complexes_node_lists.txt"
-with open(fileName) as f:
-    complexes = f.read().splitlines()
-for c in range(len(complexes)):
-    complexes[c] = complexes[c].split()
-weight = []
-
-# get edges data
-fileName = "../../humap_network_weighted_edge_lists.txt"
-G = nx.read_weighted_edgelist(fileName, nodetype=str)
-f.close()
-# remove duplicate edges and none
-G.remove_edges_from(nx.selfloop_edges(G))
-for i in list(G.nodes()):
-    if i.isnumeric() is False:
-        G.remove_node(i)
-
-# create subgraphs from training complexes
-subgraphs = []
-for s in range(len(complexes)):
-    sub = G.subgraph(complexes[s])
-    subgraphs.append(sub)
-
-action_returns = []
-node_order = []
-value_dict = {}
-reward_dict = {}
-gg = nx.Graph()
-dens = nx.density(gg)
-value_dict[dens] = 0
-dens_counter = {}
-valuefn_update = {}
-intervals = [0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1]
-
-def network():
-    global imag_n
+def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs):
     iteration = 0
     reward_dict = {}
-
+    gamma = 0.5
     # run for each graph in subgraph
     for graph in subgraphs:
         all_nodes = list(G.nodes())
@@ -99,7 +58,7 @@ def network():
                 neighbors = []
                 imag_n = 0
                 neighb_val = {}
-                update = 0
+
                 for k in curr_nodes:
                     neighbors = neighbors + list(G.neighbors(k))
                 neighbors = list(set(neighbors) - set(curr_nodes))
@@ -170,22 +129,72 @@ def network():
                             nx.add_path(gg, [added_n, k], weight=ed_weight.get('weight'))
                             value_dict[d] = neighb_val[added_n]
     return gg
-    #e += 1
+    # e += 1
+
 
 def main():
-    network()
+    start_time = time.time()
+    matplotlib.use('Agg')
+    logging.basicConfig(level=logging.WARNING)
+    matplotlib.use('tkagg')
+    # input data
+    parser = argparse_ArgumentParser("Input parameters")
+    parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
+    parser.add_argument("--graph_file", default="", help="Graph edges file path")
+    parser.add_argument("--results", default="../results", help="Directory for main results")
+
+    args = parser.parse_args()
+
+    # get training data
+    # file = "../../training_CORUM_complexes_node_lists.txt"
+    file = args.input_training_file
+    with open(file) as f:
+        complexes = f.read().splitlines()
+    for c in range(len(complexes)):
+        complexes[c] = complexes[c].split()
+
+    # get edges data
+    # filename = "../../humap_network_weighted_edge_lists.txt"
+    filename = args.graph_file
+    G = nx.read_weighted_edgelist(filename, nodetype=str)
+    f.close()
+    # remove duplicate edges and none
+    G.remove_edges_from(nx.selfloop_edges(G))
+    for i in list(G.nodes()):
+        if i.isnumeric() is False:
+            G.remove_node(i)
+
+    # create subgraphs from training complexes
+    subgraphs = []
+    for s in range(len(complexes)):
+        sub = G.subgraph(complexes[s])
+        subgraphs.append(sub)
+
+    value_dict = {}
+    gg = nx.Graph()
+    dens = nx.density(gg)
+    value_dict[dens] = 0
+    dens_counter = {}  # frequency of each density encountered
+    valuefn_update = {}  # shows how value fn changes over time for each density
+    intervals = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9,
+                 0.95, 1]
+
+    network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs)
     # save value function scores in dictionary
-    file = open("../Value_dictionary.txt", "w")
+    fname = args.results + "/value_fn_dens_dictionary.txt"
+    file = open(fname, "w")
     value_dict_sorted = sorted(value_dict.items())
     # value_dict_sort = {keys[i]: vals[i] for i in range(len(keys))}
     str_dictionary = repr(value_dict_sorted)
     file.write(str_dictionary + "\n")
     file.close()
-    with open('../Value_Dictionary.pkl', 'wb') as f:
+    fname = args.results + "/value_fn_dens_dictionary.pkl"
+    with open(fname, 'wb') as f:
         pickle.dump(value_dict_sorted, f)
 
     # Frequency of density visited
-    file = open("../Density Frequency.txt", "w")
+    fname = args.results + "/density_freq.txt"
+    file = open(fname, "w")
     str_dictionary = repr(dens_counter)
     file.write("density  = " + str_dictionary + "\n")
     file.close()
@@ -200,7 +209,7 @@ def main():
     plt.xlabel('Density')
     plt.ylabel('Value Function')
     plt.title('Value Function and Density Relationship')
-    plt.savefig('Value Function and Density Relationship ')
+    plt.savefig(args.results + '/' + 'Value Function and Density Relationship' + '.png')
 
     # plot updating value fns for each one
     keys = valuefn_update.keys()
@@ -213,7 +222,9 @@ def main():
         str_key = str(i)
         title = 'Value Function and Density Over Time for ' + str_key
         plt.title(title)
-        plt.savefig(title + '.png')
-main()
+        plt.savefig(args.results + '/' + title + '.png')
+    print("--- %s seconds ---" % (time.time() - start_time))
 
-print("--- %s seconds ---" % (time.time() - start_time))
+
+if __name__ == '__main__':
+    main()
