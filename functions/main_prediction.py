@@ -1,51 +1,23 @@
 import pickle
 import matplotlib
 import matplotlib.pyplot as plt
-import numpy as np
 import networkx as nx
-import csv
 import logging
-import scipy as sp
 from pickle import load as pickle_load
 from pickle import dump as pickle_dump
-from collections import Counter
 import scipy.interpolate
 from tqdm import tqdm
 from joblib import Parallel, delayed
 from multiprocessing import cpu_count as mul_cpu_count
 from glob import glob
 import time
-start_time = time.time()
-matplotlib.use('Agg')
-logging.basicConfig(level=logging.WARNING)
+from argparse import ArgumentParser as argparse_ArgumentParser
 
-# dictionary containing states (density) and corresponding value functions
-with open('../Value_Dictionary.pkl', 'rb') as f:
-    value_functions = pickle_load(f)
-value_functions = dict(value_functions)
-
-# edges data
-fileName = "../../humap_network_weighted_edge_lists.txt"
-G = nx.Graph()
-G = nx.read_weighted_edgelist(fileName, nodetype=str)
-# remove duplicate edges and none
-G.remove_edges_from(nx.selfloop_edges(G))
-for i in list(G.nodes()):
-    if i.isnumeric() is False:
-        G.remove_node(i)
-
-# humap nodes
-nodes = G.nodes()
-
-# new graph
-gg = nx.Graph()
-
-# i.e interval 1 is for states in between 0.05-1, interval 0.95 is for states in between 0.9-0.95, etc.
-intervals = list(np.arange(0.05,1.05,0.05))
-valuefn_update = dict.fromkeys(intervals,[0])
 
 def interval(graph):
     # intervals for states to better organize and observe data
+    intervals = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9,
+                 0.95, 1]
     d = nx.density(graph)
     for i in intervals:
         if d <= i:
@@ -55,15 +27,16 @@ def interval(graph):
             continue
     return d
 
+
 # if previous training method did not encounter a state, the value function of that state is interpolated
-def interpolate(value_functions,dens):
+def interpolate(value_functions, dens):
     d = list(value_functions.keys())
     v = list(value_functions.values())
-    interp = scipy.interpolate.interp1d(d,v)
+    interp = scipy.interpolate.interp1d(d, v)
     new_vf = interp(dens)
     return new_vf
 
-def pred_complex(n,nodes_list):
+def pred_complex(n, nodes_list, G, gg, value_functions):
     # make sure n is not a node floating around
     neighb_n = list(G.neighbors(str(n)))
     if len(neighb_n) == 0:
@@ -75,7 +48,7 @@ def pred_complex(n,nodes_list):
 
     # create seed edge
     temp_weight = G.get_edge_data(n, n2)
-    nx.add_path(gg, [n, n2],weight=temp_weight.get('weight'))
+    nx.add_path(gg, [n, n2], weight=temp_weight.get('weight'))
     nodes_order = [n, n2]
     val_fns = []
 
@@ -135,18 +108,19 @@ def pred_complex(n,nodes_list):
                     temp_weight = G.get_edge_data(added_n, k)
                     nx.add_path(gg, [added_n, k], weight=temp_weight.get('weight'))
     tup_cmplx = (nodes_order, cmplx_val_fn)
-    with open('./humap/nodes_complexes/'+str(n), 'wb') as f:
+    with open('./humap/nodes_complexes/' + str(n), 'wb') as f:
         pickle_dump(tup_cmplx, f)
-    with open('./humap/nodes_complexes/'+str(n),'rb') as f:
+    with open('./humap/nodes_complexes/' + str(n), 'rb') as f:
         pickle_load(f)
 
-def network():
+
+def network(G, gg, nodes, intervals, value_functions):
     nodes_list = list(nodes)
 
     # parallel running
     num_cores = mul_cpu_count()
     Parallel(n_jobs=num_cores, backend='loky')(
-        delayed(pred_complex)(node, nodes_list) for node in tqdm(nodes_list))
+        delayed(pred_complex)((node, nodes_list, G, gg, value_functions)) for node in tqdm(nodes_list))
 
     pred_comp_list = []
     sdndap = pred_comp_list.append
@@ -157,7 +131,7 @@ def network():
         sdndap(pred_comp_tmp)
 
     with open('./humap/predicted_complexes.pkl', 'wb') as f:
-        pickle_dump(pred_comp_list,f)
+        pickle_dump(pred_comp_list, f)
 
     # make sure all intervals are accounted for
     for i in intervals:
@@ -168,25 +142,65 @@ def network():
     with open('../Value_dictionary Final.txt', 'wb') as f:
         pickle.dump(value_functions, f)
 
-network()
+
+def main():
+    start_time = time.time()
+    matplotlib.use('Agg')
+    logging.basicConfig(level=logging.WARNING)
+    # input data
+    parser = argparse_ArgumentParser("Input parameters")
+    parser.add_argument("--input_file", default="", help="Input Complexes file path")
+    parser.add_argument("--graph_file", default="", help="Graph edges file path")
+    parser.add_argument("--results", default="../results", help="Directory for main results")
+    args = parser.parse_args()
 
 
-#print(cmplx_info)
-with open('../../humap_CORUM_complexes_node_lists.pkl', 'wb') as f:
-    pickle_dump(list(nodes),f)
+    # dictionary containing states (density) and corresponding value functions
+    file = args.results + "/" + 'value_fn_dens_dict.pkl'
+    with open(file, 'rb') as f:
+        value_functions = pickle_load(f)
+    value_functions = dict(value_functions)
 
-with open('../Value_dictionary Final.txt', 'rb') as f:
-    val_dict = pickle.load(f)
+    # edges data
+    #fileName = "../../humap_network_weighted_edge_lists.txt"
+    filename = args.graph_file
+    G = nx.read_weighted_edgelist(filename, nodetype=str)
+    f.close()
+    # remove duplicate edges and none
+    G.remove_edges_from(nx.selfloop_edges(G))
+    for i in list(G.nodes()):
+        if i.isnumeric() is False:
+            G.remove_node(i)
+    # humap nodes
+    nodes = G.nodes()
+    # new graph
+    gg = nx.Graph()
+    # i.e interval 1 is for states in between 0.05-1, interval 0.95 is for states in between 0.9-0.95, etc.
+    intervals = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9,
+                 0.95, 1]
 
-# histogram of densities and value functions
-densities = [key[0] for key in val_dict]
-vals = [val[1] for val in val_dict]
+    network(G, gg, nodes, intervals, value_functions)
 
-plt.figure()
-plt.hist(densities, bins = 'auto',label='density')
-plt.savefig('Histogram of Density humap')
-plt.figure()
-plt.hist(vals,bins = 'auto',label='value functions')
-plt.savefig('Histogram of VF humap')
+    file = args.results + "/humap_CORUM_complexes_node_lists.pkl"
+    with open(file, 'wb') as f:
+        pickle_dump(list(nodes), f)
 
-print("--- %s seconds ---" % (time.time() - start_time))
+    fname = args.results + "/value_fn_dict_humap.txt"
+    with open(fname, 'rb') as f:
+        val_dict = pickle.load(f)
+
+    # histogram of densities and value functions
+    densities = [key[0] for key in val_dict]
+    vals = [val[1] for val in val_dict]
+    plt.figure()
+    plt.hist(densities, bins='auto', label='density')
+    plt.savefig('Histogram of Density humap')
+    plt.figure()
+    plt.hist(vals, bins='auto', label='value functions')
+    plt.savefig(args.results + '/Histogram of VF humap.png')
+
+    print("--- %s seconds ---" % (time.time() - start_time))
+
+
+if __name__ == '__main__':
+    main()
