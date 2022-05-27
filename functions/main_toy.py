@@ -83,6 +83,7 @@ def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraph
                                 reward = reward_dict[m]
                                 update = reward + gamma * 0
                                 #valuefn_update[temp_dens] = update
+                                imag_n = 0 + gamma * 0
                             # if density encountered before, update VF
                             else:
                                 logging.warning("Updating value function of density")
@@ -91,8 +92,8 @@ def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraph
                                 reward = reward_dict[m]
                                 update = reward + gamma * old_val
                                 #valuefn_update[temp_dens] = update
-                            # add imaginary node value function to stop program
-                            imag_n = 0
+                                imag_n = 0 + gamma * old_val # add imaginary node value function to stop program
+
                             neighb_val[m] = update
 
                 # find the node that has the highest value function
@@ -137,7 +138,7 @@ def main():
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
-    parser.add_argument("--results", default="../results", help="Directory for main results")
+    parser.add_argument("--toy_train_results", default="../toy_train_results", help="Directory for main results")
     args = parser.parse_args()
 
     # get training data
@@ -176,19 +177,19 @@ def main():
 
     network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs)
     # save value function scores in dictionary
-    fname = args.results + "/value_fn_dens_dict.txt"
+    fname = args.toy_train_results + "/value_fn_dens_dict.txt"
     file = open(fname, "w")
     value_dict_sorted = sorted(value_dict.items())
     # value_dict_sort = {keys[i]: vals[i] for i in range(len(keys))}
     str_dictionary = repr(value_dict_sorted)
     file.write(str_dictionary + "\n")
     file.close()
-    fname = args.results + "/value_fn_dens_dict.pkl"
+    fname = args.toy_train_results + "/value_fn_dens_dict.pkl"
     with open(fname, 'wb') as f:
         pickle.dump(value_dict_sorted, f)
 
     # Frequency of density visited
-    fname = args.results + "/density_freq.txt"
+    fname = args.toy_train_results + "/density_freq.txt"
     file = open(fname, "w")
     str_dictionary = repr(dens_counter)
     file.write("density  = " + str_dictionary + "\n")
@@ -204,7 +205,7 @@ def main():
     plt.xlabel('Density')
     plt.ylabel('Value Function')
     plt.title('Value Function and Density Relationship')
-    plt.savefig(args.results + '/' + 'Value Function and Density Relationship' + '.png')
+    plt.savefig(args.toy_train_results + '/' + 'Value Function and Density Relationship' + '.png')
 
 # plot updating value fns for each one
 #    keys = valuefn_update.keys()
@@ -217,7 +218,7 @@ def main():
 #        str_key = str(i)
 #        title = 'Value Function and Density Over Time for ' + str_key
 #        plt.title(title)
-#        plt.savefig(args.results + '/' + title + '.png')
+#        plt.savefig(args.toy_train_results + '/' + title + '.png')
     print("--- %s seconds ---" % (time.time() - start_time))
 
 if __name__ == '__main__':
