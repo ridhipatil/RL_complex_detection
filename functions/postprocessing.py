@@ -2,7 +2,7 @@ from pickle import load as pickle_load
 from pickle import dump as pickle_dump
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 import networkx as nx
-from postprocess import merge_filter_overlapped_score_qi
+from postprocess_sc import merge_filter_overlapped_score_qi
 from convert_humap_ids2names import convert2names_wscores
 from argparse import ArgumentParser as argparse_ArgumentParser
 
@@ -48,18 +48,19 @@ def main():
         file = args.out_dir_name + '/qi_results'
     elif inputs['overlap method'] == '1':  # jaccard coeff
         file = args.out_dir_name + '/jacc_results'
-   
+
     filename = file + inputs['out_comp_nm']
-    with open(filename + '/pred_complexes_pp.pkl', 'wb') as f:
+    with open(filename + '_pred_complexes_pp.pkl', 'wb') as f:
         pickle_dump(fin_list_graphs_orig, f)
-    with open(filename + '/pred_complexes_pp.txt', 'w') as f:
+    with open(filename + '_pred_complexes_pp.txt', 'w') as f:
         f.writelines([''.join(str(comp)) + '\n' for comp in fin_list_graphs_orig])
 
-    with open(inputs['dir_nm'] + inputs['out_comp_nm'] + "input_pp.yaml", 'w') as outfile:
+    inputs['out_comp_nm'] = '/res_' + inputs['overlap method'] + str(inputs['over_t']) + '/res'
+    with open(inputs['out_comp_nm'] + "input_pp.yaml", 'w') as outfile:
         yaml_dump(inputs, outfile, default_flow_style=False)
 
     # write out protein names
-    out_comp_nm = inputs['dir_nm'] + inputs['out_comp_nm']
+    out_comp_nm = file + inputs['out_comp_nm']
     if inputs['dir_nm'] == "humap":  # humap
         convert2names_wscores(fin_list_graphs_orig, out_comp_nm + '_pred_names.out',
                               G, out_comp_nm + '_pred_edges_names.out')
