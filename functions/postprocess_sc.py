@@ -62,7 +62,7 @@ def NA(set1, set2):
     b = inter/ls2
     return a,b,a*b
 
-def merge_filter_overlapped_score_qi(list_comp, inputs, G):
+def merge_filter_overlapped_score_qi(list_comp, inputs, G,scores):
     logging_info("Filtering complexes...")
 
     fin_list = list(list_comp)
@@ -103,10 +103,8 @@ def merge_filter_overlapped_score_qi(list_comp, inputs, G):
                     # Rather than subgraph operation which requires the full graph, 
                     # you can add only additional edges from the node adjacency lists
                     merge_comp = nx_Graph(G.subgraph(merge_comp_nodes), comp_score=0)
-                    with open('yeast/Value Functions Interpolated Intervals yeast.txt', 'rb') as f:
-                        value_functions = pickle_load(f)
 
-                    value_functions = dict(value_functions)
+                    value_functions = dict(scores)
                     dens_merge = nx.density(merge_comp)
                     intervals = [0.05,0.1,0.15,0.2,0.25, 0.3,0.35, 0.4,0.45, 0.5,0.55, 0.6,0.65, 0.7,0.75, 0.8,0.85, 0.9,0.95, 1]
                     temp_dens = 0
@@ -183,7 +181,7 @@ def merge_filter_overlapped_score(list_comp, inputs, G):
                     # Rather than subgraph operation which requires the full graph, 
                     # you can add only additional edges from the node adjacency lists
                     merge_comp = nx_Graph(G.subgraph(merge_comp_nodes), comp_score=0)
-                    with open('humap/Value Functions Intervals.txt', 'rb') as f:
+                    with open('../Value Functions Intervals.txt', 'rb') as f:
                         value_functions = pickle_load(f)
                     value_functions = dict(value_functions)
                     dens_merge = nx.density(merge_comp)

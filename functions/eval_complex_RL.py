@@ -9,8 +9,8 @@ def eval_training(inputs, fin_list_graphs_orig, out_comp_nm, args):
     # TRAINING SET
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On training set ---", file=fid)
-
-    with open('../../training_CORUM_complexes_node_lists.txt', 'r') as f:
+    file = args.graph_files_dir + '/training_CORUM_complexes_node_lists.txt'
+    with open(file, 'r') as f:
         training = f.read().splitlines()
     for c in range(len(training)):
         training[c] = training[c].split()
@@ -39,7 +39,8 @@ def eval_testing(inputs, fin_list_graphs_orig, out_comp_nm, args):
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On testing set ---", file=fid)
 
-    with open('../../testing_CORUM_complexes_node_lists.pkl', 'rb') as f:
+    file = args.graph_files_dir + '/testing_CORUM_complexes_node_lists.pkl'
+    with open(file, 'rb') as f:
         testing = pickle_load(f)
 
     known_complex_nodes_list = testing
@@ -63,9 +64,13 @@ def eval_both(inputs, fin_list_graphs_orig, out_comp_nm, args):
     # BOTH SETS
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On both sets ---", file=fid)
-    with open('../../testing_CORUM_complexes_node_lists.pkl', 'rb') as f:
+
+    file_test = args.graph_files_dir + '/testing_CORUM_complexes_node_lists.pkl'
+    with open(file_test, 'rb') as f:
         testing = pickle_load(f)
-    with open('../../training_CORUM_complexes_node_lists.txt', 'r') as f:
+
+    file_train = args.graph_files_dir + '/training_CORUM_complexes_node_lists.txt'
+    with open(file_train, 'r') as f:
         training = f.read().splitlines()
     for c in range(len(training)):
         training[c] = training[c].split()
@@ -93,7 +98,7 @@ def main():
     # Evaluating
     parser: ArgumentParser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_file_name", default="input_humap.yaml", help="Input parameters file name")
-    parser.add_argument("--graph_files_dir", default="", help="Graph files' folder path")
+    parser.add_argument("--graph_files_dir", default="", help="Testing and Training Graph files' folder path")
     parser.add_argument("--out_dir_name", default="../results", help="Output directory name")
     parser.add_argument("--evaluate_additional_metrics", default=1, help="complexes file name")
     args = parser.parse_args()

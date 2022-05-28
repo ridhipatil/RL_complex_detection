@@ -2,7 +2,7 @@ from pickle import load as pickle_load
 from pickle import dump as pickle_dump
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 import networkx as nx
-from postprocess_sc import merge_filter_overlapped_score_qi
+from humap.functions.postprocess_sc import merge_filter_overlapped_score_qi
 from convert_humap_ids2names import convert2names_wscores
 from argparse import ArgumentParser as argparse_ArgumentParser
 
@@ -14,6 +14,7 @@ def main():
     parser.add_argument("--graph_files", default="", help="Graph files' folder path")
     parser.add_argument("--out_dir_name", default="/results", help="Output directory name")
     parser.add_argument("--pred_results", default="../pred_results", help="Directory for prediction results")
+    parser.add_argument("--train_results", default="../train_results", help="Directory for main results")
     args = parser.parse_args()
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)
@@ -40,8 +41,11 @@ def main():
             G.remove_node(i)
 
     # Finding unique complexes
+    file = args.train_results + '/value_fn_dens_dict.pkl'
+    with open(file, 'rb') as f:
+        value_fns_dict = pickle_load(f)
     fin_list_graphs = set([(frozenset(comp), score) for comp, score in cmplx_tup if len(comp) > 2])
-    fin_list_graphs_orig = merge_filter_overlapped_score_qi(fin_list_graphs, inputs, G)
+    fin_list_graphs_orig = merge_filter_overlapped_score_qi(fin_list_graphs, inputs, G, value_fns_dict)
     fin_list_graphs_orig = [(set(comp), score) for comp, score in fin_list_graphs_orig]
     file = ''
     if inputs['overlap method'] == 'qi':
