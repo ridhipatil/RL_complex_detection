@@ -4,13 +4,11 @@ Created on Thu Mar  5 17:22:47 2020
 
 @author: Meghana
 """
-import logging
 from logging import info as logging_info, debug as logging_debug
 from networkx import number_of_nodes as nx_number_of_nodes, write_weighted_edgelist as nx_write_weighted_edgelist, \
     Graph as nx_Graph
 from jaccard_coeff import jaccard_coeff
 from numpy import argmax as np_argmax, argsort as np_argsort
-from sample import get_score
 from pickle import load as pickle_load
 from convert_humap_ids2names import convert2names_wscores
 import networkx as nx

@@ -108,13 +108,22 @@ def pred_complex(n, nodes_list, G, gg, value_functions):
                     temp_weight = G.get_edge_data(added_n, k)
                     nx.add_path(gg, [added_n, k], weight=temp_weight.get('weight'))
     tup_cmplx = (nodes_order, cmplx_val_fn)
-    with open('./humap/nodes_complexes/' + str(n), 'wb') as f:
+
+    parser = argparse_ArgumentParser("Input parameters")
+    parser.add_argument("--pred_results", default="../pred_results", help="Directory for main results")
+    args = parser.parse_args()
+    file = args.pred_results + '/nodes_complexes/'
+    with open(file + str(n), 'wb') as f:
         pickle_dump(tup_cmplx, f)
-    with open('./humap/nodes_complexes/' + str(n), 'rb') as f:
+    with open('file' + str(n), 'rb') as f:
         pickle_load(f)
 
 
 def network(G, gg, nodes, intervals, value_functions):
+    ## input data
+    parser = argparse_ArgumentParser("Input parameters")
+    parser.add_argument("--pred_results", default="../pred_results", help="Directory for main results")
+    args = parser.parse_args()
     nodes_list = list(nodes)
 
     # parallel running
@@ -124,13 +133,13 @@ def network(G, gg, nodes, intervals, value_functions):
 
     pred_comp_list = []
     sdndap = pred_comp_list.append
-    allfiles = './nodes_complexes/*'
+    allfiles = args.pred_results + '/nodes_complexes/*'
     for fname in glob(allfiles, recursive=True):
         with open(fname, 'rb') as f:
             pred_comp_tmp = pickle_load(f)
         sdndap(pred_comp_tmp)
-
-    with open('./humap/predicted_complexes.pkl', 'wb') as f:
+    file = args.pred_results + '/predicted_complexes.pkl'
+    with open(file, 'wb') as f:
         pickle_dump(pred_comp_list, f)
 
     # make sure all intervals are accounted for
@@ -138,10 +147,9 @@ def network(G, gg, nodes, intervals, value_functions):
         if i not in value_functions:
             val_fn = interpolate(value_functions, i)
             value_functions[i] = val_fn
-
-    with open('../Value_dictionary Final.txt', 'wb') as f:
+    filename = args.pred_results + '/value_fns_dens_dict humap.pkl'
+    with open(filename, 'wb') as f:
         pickle.dump(value_functions, f)
-
 
 def main():
     start_time = time.time()
@@ -149,14 +157,14 @@ def main():
     logging.basicConfig(level=logging.WARNING)
     # input data
     parser = argparse_ArgumentParser("Input parameters")
-    parser.add_argument("--input_file", default="", help="Input Complexes file path")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
-    parser.add_argument("--results", default="../results", help="Directory for main results")
+    parser.add_argument("--train_results", default="../train_results", help="Directory for training results")
+    parser.add_argument("--pred_results", default="../pred_results", help="Directory for main results")
     args = parser.parse_args()
 
 
     # dictionary containing states (density) and corresponding value functions
-    file = args.results + "/" + 'value_fn_dens_dict.pkl'
+    file = args.train_results + '/value_fn_dens_dict.pkl'
     with open(file, 'rb') as f:
         value_functions = pickle_load(f)
     value_functions = dict(value_functions)
@@ -181,11 +189,11 @@ def main():
 
     network(G, gg, nodes, intervals, value_functions)
 
-    file = args.results + "/humap_CORUM_complexes_node_lists.pkl"
+    file = args.graph_file + "/humap_CORUM_complexes_node_lists.pkl"
     with open(file, 'wb') as f:
         pickle_dump(list(nodes), f)
 
-    fname = args.results + "/value_fn_dict_humap.txt"
+    fname = args.pred_results + "/value_fn_dens_dict_humap.txt"
     with open(fname, 'rb') as f:
         val_dict = pickle.load(f)
 
@@ -197,7 +205,7 @@ def main():
     plt.savefig('Histogram of Density humap')
     plt.figure()
     plt.hist(vals, bins='auto', label='value functions')
-    plt.savefig(args.results + '/Histogram of VF humap.png')
+    plt.savefig(args.pred_results + '/Histogram of VF humap.png')
 
     print("--- %s seconds ---" % (time.time() - start_time))
 

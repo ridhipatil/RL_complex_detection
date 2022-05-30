@@ -2,7 +2,7 @@ from pickle import load as pickle_load
 from pickle import dump as pickle_dump
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 import networkx as nx
-from humap.functions.postprocess_sc import merge_filter_overlapped_score_qi
+from postprocess_sc import merge_filter_overlapped_score_qi
 from convert_humap_ids2names import convert2names_wscores
 from argparse import ArgumentParser as argparse_ArgumentParser
 
