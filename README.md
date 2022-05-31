@@ -25,19 +25,19 @@ intermed_graph_files_dir = hu.MAP_network/intermediate_data
 training_dat = $intermed_graph_files_dir/training_CORUM_complexes_node_lists.txt
 testing_dat = $intermed_graph_files_dir/testing_CORUM_complexes_node_lists.txt
 out_dir_name = /results
-network_file_dir = hu.MAP_network/input_data/humap_network_weighted_edge_lists.txt
+graph_ed_file = hu.MAP_network/input_data/humap_network_weighted_edge_lists.txt
 
 echo Training Algorithm....
-python3 functions/main_training.py  --input_training_file $training_dat --graph_file $network_file_dir --train_results $out_dir_name/train_results
+python3 functions/main_training.py  --input_training_file $training_dat --graph_file $graph_ed_file --train_results $out_dir_name/train_results
 
 echo Predicting new complexes from known communities...
-python3 functions/main_prediction.py --input_file_name $input_file_name --graph_file $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
+python3 functions/main_prediction.py --input_file_name $input_file_name --graph_file $graph_ed_file --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
 
 echo Merging similar communities...
-python3 functions/postprocessing.py --input_file_name $input_file_name --graph_files $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
+python3 functions/postprocessing.py --input_file_name $input_file_name --graph_files $graph_ed_file --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
 
 echo Comparing predicted and known communitites...
-python3 functions/eval_complex_RL --input_file_name $input_file_name --graph_files $network_file_dir`
+python3 functions/eval_complex_RL --input_file_name $input_file_name --graph_files_dir $intermed_graph_files_dir`
 
 # Additional tips:
 For each of the scripts, optional arguments can be viewed by running: python3 script_name.py --help
