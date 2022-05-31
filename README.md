@@ -10,10 +10,6 @@ Requirements installation:
 1. For a toy network use input_toy.yaml
 2. For hu.MAP - use input file input_humap.yaml
 
-# Tests:
-`pip install -U pytest
-cd /path_to_RL_complex_detection_directory
-pytest`
 
 # Instructions:
 To run this pipeline on a new network, construct an input file similar to input_toy.yaml specifying where to find the required inputs.
@@ -35,13 +31,13 @@ echo Training Algorithm....
 python3 functions/main_training.py  --input_training_file $training_dat --graph_file $network_file_dir --train_results $out_dir_name/train_results
 
 echo Predicting new complexes from known communities...
-python3 functions/main_prediction.py --graph_file $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
+python3 functions/main_prediction.py --input_file_name $input_file_name --graph_file $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
 
 echo Merging similar communities...
-python3 functions/postprocessing.py --graph_files $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
+python3 functions/postprocessing.py --input_file_name $input_file_name --graph_files $network_file_dir --train_results $out_dir_name/train_results --pred_results $out_dir_name/pred_results
 
 echo Comparing predicted and known communitites...
-python3 functions/eval_complex_RL --graph_files $network_file_dir`
+python3 functions/eval_complex_RL --input_file_name $input_file_name --graph_files $network_file_dir`
 
 # Additional tips:
 For each of the scripts, optional arguments can be viewed by running: python3 script_name.py --help
