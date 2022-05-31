@@ -137,12 +137,12 @@ def main():
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
-    parser.add_argument("--train_results", default="../train_results", help="Directory for main results")
+    parser.add_argument("--train_results", default="", help="Directory for training results")
     args = parser.parse_args()
 
     # get training data
-    # file = "../../training_CORUM_complexes_node_lists.txt"
     file = args.input_training_file
+    #file = "../../training_CORUM_complexes_node_lists.txt"
     with open(file) as f:
         complexes = f.read().splitlines()
     for c in range(len(complexes)):

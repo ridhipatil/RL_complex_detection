@@ -13,8 +13,8 @@ def main():
     parser.add_argument("--input_file_name", default="input_humap.yaml", help="Input parameters file name")
     parser.add_argument("--graph_files", default="", help="Graph files' folder path")
     parser.add_argument("--out_dir_name", default="/results", help="Output directory name")
-    parser.add_argument("--pred_results", default="../pred_results", help="Directory for prediction results")
-    parser.add_argument("--train_results", default="../train_results", help="Directory for main results")
+    parser.add_argument("--pred_results", default="", help="Directory for prediction results")
+    parser.add_argument("--train_results", default="", help="Directory for main results")
     args = parser.parse_args()
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)

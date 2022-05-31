@@ -158,8 +158,8 @@ def main():
     # input data
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
-    parser.add_argument("--train_results", default="../train_results", help="Directory for training results")
-    parser.add_argument("--pred_results", default="../pred_results", help="Directory for main results")
+    parser.add_argument("--train_results", default="", help="Directory for training results")
+    parser.add_argument("--pred_results", default="", help="Directory for main results")
     args = parser.parse_args()
 
 
