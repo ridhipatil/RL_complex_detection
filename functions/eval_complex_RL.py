@@ -97,19 +97,18 @@ def eval_both(inputs, fin_list_graphs_orig, out_comp_nm, args):
 def main():
     # Evaluating
     parser: ArgumentParser = argparse_ArgumentParser("Input parameters")
-    parser.add_argument("--input_file_name", default="input_humap.yaml", help="Input parameters file name")
+    parser.add_argument("--input_file_name", default="", help="Input parameters file name")
     parser.add_argument("--graph_files_dir", default="", help="Testing and Training Graph files' folder path")
     parser.add_argument("--out_dir_name", default="../results", help="Output directory name")
     parser.add_argument("--evaluate_additional_metrics", default=1, help="complexes file name")
     args = parser.parse_args()
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)
-    inputs['out_comp_nm'] = '/res_' + inputs['overlap method'] + str(inputs['over_t']) + '/res'
 
     # filename = 'humap/results_qi0.350/predicted_postprocess.pkl'
-    if inputs['overlap method'] == 'qi':
+    if inputs['overlap_method'] == 'qi':
         file = args.out_dir_name + '/qi_results'
-    elif inputs['overlap method'] == '1':  # jaccard coeff
+    elif inputs['overlap_method'] == '1':  # jaccard coeff
         file = args.out_dir_name + '/jacc_results'
     filename = file + inputs['out_comp_nm'] + "_pred_complexes_pp.pkl"
     with open(filename, 'rb') as f:

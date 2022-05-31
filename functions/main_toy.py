@@ -138,7 +138,7 @@ def main():
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
-    parser.add_argument("--toy_train_results", default="../toy_train_results", help="Directory for main results")
+    parser.add_argument("--toy_train_results", default="", help="Directory for main results")
     args = parser.parse_args()
 
     # get training data

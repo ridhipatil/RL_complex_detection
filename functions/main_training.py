@@ -149,8 +149,8 @@ def main():
         complexes[c] = complexes[c].split()
 
     # get edges data
-    # filename = "../../humap_network_weighted_edge_lists.txt"
     filename = args.graph_file
+   # filename = "../../humap_network_weighted_edge_lists.txt"
     G = nx.read_weighted_edgelist(filename, nodetype=str)
     f.close()
     # remove duplicate edges and none
@@ -176,6 +176,7 @@ def main():
 
     network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs)
     # save value function scores in dictionary
+    #args.train_results = "../results/train_results"
     fname = args.train_results + "/value_fn_dens_dict.txt"
     file = open(fname, "w")
     value_dict_sorted = sorted(value_dict.items())
