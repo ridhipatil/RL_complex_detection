@@ -112,7 +112,6 @@ def pred_complex(n, nodes_list, G, gg, value_functions, intervals,args):
     #args.pred_results = "../../humap2/pred_results"
 
    # args.pred_results = "../results/pred_results"
-    os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
     file = args.pred_results + '/nodes_complexes/'
     with open(file + str(n), 'wb') as f:
         pickle_dump(tup_cmplx, f)
@@ -164,6 +163,7 @@ def main():
     parser.add_argument("--pred_results", default="", help="Directory for main results")
     parser.add_argument("--out_dir_name", default = "", help = 'Main output directory')
     args = parser.parse_args()
+    os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
 
    # args.graph_file = "../hu.MAP_network_experiments/input_data/humap_network_weighted_edge_lists.txt"
    # args.train_results = "../results/train_results"
