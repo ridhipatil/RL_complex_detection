@@ -12,7 +12,7 @@ from multiprocessing import cpu_count as mul_cpu_count
 from glob import glob
 import time
 from argparse import ArgumentParser as argparse_ArgumentParser
-
+import os
 
 def interval(graph):
     # intervals for states to better organize and observe data
@@ -36,7 +36,7 @@ def interpolate(value_functions, dens):
     new_vf = interp(dens)
     return new_vf
 
-def pred_complex(n, nodes_list, G, gg, value_functions):
+def pred_complex(n, nodes_list, G, gg, value_functions, intervals,args):
     # make sure n is not a node floating around
     neighb_n = list(G.neighbors(str(n)))
     if len(neighb_n) == 0:
@@ -107,12 +107,12 @@ def pred_complex(n, nodes_list, G, gg, value_functions):
                 if added_n in neighbors:
                     temp_weight = G.get_edge_data(added_n, k)
                     nx.add_path(gg, [added_n, k], weight=temp_weight.get('weight'))
-    tup_cmplx = (nodes_order, cmplx_val_fn)
 
-    parser = argparse_ArgumentParser("Input parameters")
-    parser.add_argument("--pred_results", default="", help="Directory for main results")
-    args = parser.parse_args()
+    tup_cmplx = (nodes_order, cmplx_val_fn)
+    #args.pred_results = "../../humap2/pred_results"
+
    # args.pred_results = "../results/pred_results"
+    os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
     file = args.pred_results + '/nodes_complexes/'
     with open(file + str(n), 'wb') as f:
         pickle_dump(tup_cmplx, f)
@@ -120,17 +120,25 @@ def pred_complex(n, nodes_list, G, gg, value_functions):
         pickle_load(f)
 
 
-def network(G, gg, nodes, intervals, value_functions):
+def network(G, gg, nodes, intervals, value_functions,args):
     ## input data
-    parser = argparse_ArgumentParser("Input parameters")
-    parser.add_argument("--pred_results", default="", help="Directory for main results")
-    args = parser.parse_args()
     nodes_list = list(nodes)
-   # args.pred_results = "../results/pred_results"
+    # make sure all intervals are accounted for
+    for i in intervals:
+        if i not in value_functions:
+            val_fn = interpolate(value_functions, i)
+            value_functions[i] = val_fn
+    filename = args.pred_results + '/value_fns_pred.pkl'
+    with open(filename, 'wb') as f:
+        pickle.dump(value_functions, f)
+    fname = args.pred_results + '/value_fns_interp.txt'
+    with open(fname, 'w') as f:
+        f.write(str(value_functions))
+
     # parallel running
     num_cores = mul_cpu_count()
     Parallel(n_jobs=num_cores, backend='loky')(
-        delayed(pred_complex)(node, nodes_list, G, gg, value_functions) for node in tqdm(nodes_list))
+        delayed(pred_complex)(node, nodes_list, G, gg, value_functions, intervals,args) for node in tqdm(nodes_list))
 
     pred_comp_list = []
     sdndap = pred_comp_list.append
@@ -143,14 +151,7 @@ def network(G, gg, nodes, intervals, value_functions):
     with open(file, 'wb') as f:
         pickle_dump(pred_comp_list, f)
 
-    # make sure all intervals are accounted for
-    for i in intervals:
-        if i not in value_functions:
-            val_fn = interpolate(value_functions, i)
-            value_functions[i] = val_fn
-    filename = args.pred_results + '/value_fns_pred.pkl'
-    with open(filename, 'wb') as f:
-        pickle.dump(value_functions, f)
+
 
 def main():
     start_time = time.time()
@@ -161,6 +162,7 @@ def main():
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
     parser.add_argument("--train_results", default="", help="Directory for training results")
     parser.add_argument("--pred_results", default="", help="Directory for main results")
+    parser.add_argument("--out_dir_name", default = "", help = 'Main output directory')
     args = parser.parse_args()
 
    # args.graph_file = "../hu.MAP_network_experiments/input_data/humap_network_weighted_edge_lists.txt"
@@ -175,6 +177,7 @@ def main():
     # edges data
     #fileName = "../../humap_network_weighted_edge_lists.txt"
     filename = args.graph_file
+
     G = nx.read_weighted_edgelist(filename, nodetype=str)
     f.close()
     # remove duplicate edges and none
@@ -190,24 +193,10 @@ def main():
     intervals = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9,
                  0.95, 1]
 
-    network(G, gg, nodes, intervals, value_functions)
+    network(G, gg, nodes, intervals, value_functions,args)
     file = args.pred_results + "/humap_CORUM_complexes_node_lists.pkl"
     with open(file, 'wb') as f:
         pickle_dump(list(nodes), f)
-
-    fname = args.pred_results + "/value_fns_pred.pkl"
-    with open(fname, 'rb') as f:
-        val_dict = pickle.load(f)
-    val_dict = dict(val_dict)
-    # histogram of densities and value functions
-    densities = val_dict.keys()
-    vals = val_dict.values()
-    plt.figure()
-    plt.hist(densities, bins='auto', label='density')
-    plt.savefig(args.pred_results + '/Histogram of Density humap')
-    plt.figure()
-    plt.hist(vals, bins='auto', label='value functions')
-    plt.savefig(args.pred_results + '/Histogram of VF humap.png')
 
     print("--- %s seconds ---" % (time.time() - start_time))
 

@@ -9,7 +9,7 @@ from seaborn import distplot as sns_distplot
 from numpy import zeros as np_zeros, count_nonzero as np_count_nonzero, sum as np_sum, argmax as np_argmax, sqrt as np_sqrt
 from logging import info as logging_info
 from matplotlib.pyplot import figure as plt_figure, savefig as plt_savefig, close as plt_close, xlabel as plt_xlabel, title as plt_title, plot as plt_plot,ylabel as plt_ylabel, rc as plt_rc, rcParams as plt_rcParams
-from convert_humap_ids2names import convert2names_wscores_matches
+from humap.functions.convert_humap_ids2names import convert2names_wscores_matches
 from collections import Counter
 from test_F1_MMR import f1_mmr
 
@@ -316,12 +316,10 @@ def compute_metrics(known_complex_nodes_list, fin_list_graphs,out_comp_nm,N_test
             print("Prediction Recall = %.3f" % Recall, file=fid)
             print("Prediction F1 score = %.3f" % F1_score, file=fid)    
     
-def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_list=[], fin_list_graphs=[],suffix="both"):
+def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_list=[], fin_list_graphs=[], out_comp_nm = '',suffix="both"):
     # rf - read flag to read complexes from file
     logging_info("Evaluating complexes..." + suffix)
     out_comp_nm = inputs['dir_nm'] + inputs['out_comp_nm']
-    
-
     if rf == 1:
         if rf_nm == 0:
             rf_nm = out_comp_nm + '_pred.out'
@@ -340,7 +338,7 @@ def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_lis
         print("No. of known complexes = ", N_test_comp, file=fid) 
         print("No. of Predicted complexes = ", N_pred_comp, file=fid)
         print("\n -- Metrics on complexes with all proteins -- ", file=fid)       
-    
+    print(out_comp_nm)
     compute_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix+'_all_prots')            
     
     fin_list_graphs = remove_unknown_prots(fin_list_graphs, prot_list)

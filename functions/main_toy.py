@@ -142,7 +142,7 @@ def main():
     args = parser.parse_args()
 
     # get training data
-    # file = "../../toy_network/train_complexes.txt"
+    #file = "../../toy_network/train_complexes.txt"
     file = args.input_training_file
     with open(file) as f:
         complexes = f.read().splitlines()
@@ -150,9 +150,13 @@ def main():
         complexes[c] = complexes[c].split()
 
     # get edges data
-    #filename = "../../toy_network/all_complexes.txt"
+    #filename = "../../toy_network/all_complexes.pkl"
     filename = args.graph_file
-    G = nx.read_weighted_edgelist(filename, nodetype=str)
+    with open(filename, "rb") as f:
+        G = pickle.load(f)
+
+    nx.write_weighted_edgelist(G, "../../toy_network/toy_weighted_edges.txt")
+    G = nx.read_weighted_edgelist("../../toy_network/toy_weighted_edges.txt")
     f.close()
     # remove duplicate edges and none
     G.remove_edges_from(nx.selfloop_edges(G))
@@ -177,6 +181,7 @@ def main():
 
     network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs)
     # save value function scores in dictionary
+    #args.toy_train_results = "../../toy_network/train_results"
     fname = args.toy_train_results + "/value_fn_dens_dict.txt"
     file = open(fname, "w")
     value_dict_sorted = sorted(value_dict.items())
@@ -194,6 +199,16 @@ def main():
     str_dictionary = repr(dens_counter)
     file.write("density  = " + str_dictionary + "\n")
     file.close()
+    dens_counter = dict(sorted(dens_counter.items()))
+    x = list(dens_counter.keys())
+    y = list(dens_counter.values())
+    plt.figure()
+    plt.title("Density Histogram")
+    plt.ylabel("Frequency")
+    plt.xlabel("Density")
+    plt.bar(range(len(x)), y)
+    plt.xticks(range(len(x)), x)
+    plt.savefig(args.toy_train_results + '/density_freq_hist.png')
 
     # plotting Value Function vs Density
     keys = [key[0] for key in value_dict_sorted]
@@ -205,7 +220,7 @@ def main():
     plt.xlabel('Density')
     plt.ylabel('Value Function')
     plt.title('Value Function and Density Relationship')
-    plt.savefig(args.toy_train_results + '/' + 'Value Function and Density Relationship' + '.png')
+    plt.savefig(args.toy_train_results + '/Value Function and Density Relationship.png')
 
 # plot updating value fns for each one
 #    keys = valuefn_update.keys()

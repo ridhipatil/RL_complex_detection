@@ -68,6 +68,7 @@ def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraph
                             nx.add_path(gg, [k, m], weight=temp_weight.get('weight'))
                             temp_dens = nx.density(gg)
                             gg.remove_node(m)  # remove node
+                            update_list = []
                             # get intervals for density
                             for i in intervals:
                                 if temp_dens <= i:
@@ -75,22 +76,25 @@ def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraph
                                     break
                                 else:
                                     continue
-
                             # new state if new density encountered
-                            if temp_dens not in value_dict:
+                            if temp_dens not in valuefn_update.keys():
+                                valuefn_update[temp_dens] = update_list
+                            if temp_dens not in value_dict.keys():
                                 # find corresponding reward
                                 reward = reward_dict[m]
                                 update = reward + gamma * 0
-                                valuefn_update[temp_dens] = [update]
                                 imag_n = 0 + gamma*0
+                                update_list.append(update)
+                                valuefn_update[temp_dens] = update_list
                             # if density encountered before, update VF
                             else:
                                 # get value function of neighbor
                                 old_val = value_dict[temp_dens]
                                 reward = reward_dict[m]
                                 update = reward + gamma * old_val
-                                #vf_update = valuefn_update[temp_dens]
-                                #vf_update.append(update)
+                                update_list = valuefn_update[temp_dens]
+                                update_list.append(update)
+                                valuefn_update[temp_dens] = update_list
                                 # add imaginary node value function to stop program
                                 imag_n = 0 + gamma*old_val
                             neighb_val[m] = update
@@ -194,7 +198,16 @@ def main():
     str_dictionary = repr(dens_counter)
     file.write("density  = " + str_dictionary + "\n")
     file.close()
-
+    dens_counter = dict(sorted(dens_counter.items()))
+    x = list(dens_counter.keys())
+    y = list(dens_counter.values())
+    plt.figure()
+    plt.title("Density Histogram")
+    plt.ylabel("Frequency")
+    plt.xlabel("Density")
+    plt.bar(range(len(x)), y)
+    plt.xticks(range(len(x)), x)
+    plt.savefig(args.train_results + '/density_freq_hist.png')
     # plotting Value Function vs Density
     keys = [key[0] for key in value_dict_sorted]
     vals = [val[1] for val in value_dict_sorted]
@@ -208,17 +221,17 @@ def main():
     plt.savefig(args.train_results + '/Value Function and Density Relationship.png')
 
     # plot updating value fns for each one
-#    keys = valuefn_update.keys()
-#    for i in keys:
-#        y = valuefn_update[i]
-#        plt.figure()
-#        plt.plot(y, 'o-')
-#        plt.xlabel('Time')
-#        plt.ylabel('Value Function')
-#        str_key = str(i)
-#        title = 'Value Function and Density Over Time for ' + str_key
-#        plt.title(title)
-#        plt.savefig(args.train_results + '/' + title + '.png')
+    keys = valuefn_update.keys()
+    for i in keys:
+        y = valuefn_update[i]
+        plt.figure()
+        plt.plot(y, 'o-')
+        plt.xlabel('Time')
+        plt.ylabel('Value Function')
+        str_key = str(i)
+        title = 'Value Function Over Time for Density ' + str_key
+        plt.title(title)
+        plt.savefig(args.train_results + '/' + title + '.png')
     print("--- %s seconds ---" % (time.time() - start_time))
 
 
