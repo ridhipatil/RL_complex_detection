@@ -1,3 +1,5 @@
+
+
 # -*- coding: utf-8 -*-
 """
 Created on Tue Mar  3 17:36:07 2020
@@ -19,7 +21,7 @@ from sys import path as sys_path
 sys_path.insert(1, 'functions_py3/')
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 from argparse import ArgumentParser as argparse_ArgumentParser
-from humap.functions.eval_complex_RL import eval_complex
+from humap.functions.eval_cmplx_sc import eval_complex
 # from random_walk_control import control
 
 from logging import basicConfig as logging_basicConfig, INFO as logging_INFO
@@ -115,7 +117,7 @@ def main():
     if args.out_dir_name or inputs['out_comp_nm'] == "/results/res":
         if not os_path.exists(inputs['dir_nm'] + args.out_dir_name):
             os_mkdir(inputs['dir_nm'] + args.out_dir_name)
-        inputs['out_comp_nm'] = args.out_dir_name + "/res"
+        #inputs['out_comp_nm'] = args.out_dir_name + "/res"
         
     inputs['train_test_files_dir'] = ''
     if args.train_test_files_dir:
@@ -279,7 +281,7 @@ def main():
         if not os_path.exists(out_comp_nm + "_edge_pr_files"):
             os_mkdir(out_comp_nm + "_edge_pr_files")
         for pref in ["", "_train", "_test"]:
-	    # model dir not outcompnm
+	        # model dir not outcompnm
     	    out_comp_nm_model = inputs['dir_nm'] + inputs['model_dir']
     	    results_wprob = out_comp_nm + '_tot_pred_edges_unique_max_comp_prob_inKnown' + pref + '.out'
     	    input_pos = out_comp_nm_model + pref + '_tot_known_edges_unique.out'
