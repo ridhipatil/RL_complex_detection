@@ -160,10 +160,10 @@ def main():
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--graph_file", default="", help="Graph edges file path")
     parser.add_argument("--train_results", default="", help="Directory for training results")
-    parser.add_argument("--pred_results", default="", help="Directory for main results")
+    parser.add_argument("--pred_results", default="", help="Directory for prediction results")
     parser.add_argument("--out_dir_name", default = "", help = 'Main output directory')
     args = parser.parse_args()
-    os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
+    #os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
 
    # args.graph_file = "../hu.MAP_network_experiments/input_data/humap_network_weighted_edge_lists.txt"
    # args.train_results = "../results/train_results"
