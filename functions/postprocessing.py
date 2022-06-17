@@ -5,9 +5,10 @@ from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 import networkx as nx
 from networkx import write_weighted_edgelist as nx_write_weighted_edgelist
 from postprocess_sc import merge_filter_overlapped_score_qi
-from humap.functions.convert_humap_ids2names import convert2names_wscores
+from convert_humap_ids2names import convert2names_wscores
 from argparse import ArgumentParser as argparse_ArgumentParser
 import time
+import numpy as np
 
 def main():
     start_time = time.time()
@@ -36,6 +37,8 @@ def main():
     node_lists = [n[0] for n in all_lists]
     cmplx_tup = []
     for n in range(len(node_lists)):
+        if isinstance(value_fns[n],np.ndarray) is True:
+            value_fns[n] = float(value_fns[n])
         tup = (set(node_lists[n]), value_fns[n])  # make score the value function of complex
         cmplx_tup.append(tup)
 
@@ -56,17 +59,20 @@ def main():
     fin_list_graphs_orig = merge_filter_overlapped_score_qi(fin_list_graphs, inputs, G, value_fns_dict)
     fin_list_graphs_orig = [(set(comp), score) for comp, score in fin_list_graphs_orig]
     file = ''
-    if inputs['overlap_method'] == 'qi':
-       file = args.out_dir_name + '/qi_results'
-       os.makedirs(args.out_dir_name + '/qi_results', exist_ok=True)
-       filename = file + '/res'  # inputs['out_comp_nm']
-       os.makedirs(file + '/results_qi', exist_ok=True)
-    elif inputs["overlap_method"] == '1':  # jaccard coeff
-       file = args.out_dir_name + '/jacc_results'
-       os.makedirs(args.out_dir_name + '/jacc_results', exist_ok=True)
-       filename = file + '/res'  # inputs['out_comp_nm']
-       os.makedirs(file + '/results_jacc', exist_ok=True)
-
+    if inputs['dir_nm'] == 'toy_network':
+        file = args.out_dir_name + '/qi_results'
+        filename = file + '/res'
+    else:
+        if inputs['overlap_method'] == 'qi':
+           file = args.out_dir_name + '/qi_results'
+           #os.makedirs(args.out_dir_name + '/qi_results', exist_ok=True)
+           filename = file + '/res'  # inputs['out_comp_nm']
+           #os.makedirs(file + '/results_qi', exist_ok=True)
+        elif inputs["overlap_method"] == '1':  # jaccard coeff
+           file = args.out_dir_name + '/jacc_results'
+           #os.makedirs(args.out_dir_name + '/jacc_results', exist_ok=True)
+           filename = file + '/res'  # inputs['out_comp_nm']
+           #os.makedirs(file + '/results_jacc', exist_ok=True)
 
     with open(filename + '_pred_complexes_pp.pkl', 'wb') as f:
         pickle_dump(fin_list_graphs_orig, f)

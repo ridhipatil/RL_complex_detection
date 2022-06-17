@@ -7,10 +7,10 @@ Created on Thu Mar  5 17:22:47 2020
 from logging import info as logging_info, debug as logging_debug
 from networkx import number_of_nodes as nx_number_of_nodes, write_weighted_edgelist as nx_write_weighted_edgelist, \
     Graph as nx_Graph
-from humap.functions.jaccard_coeff import jaccard_coeff
+from jaccard_coeff import jaccard_coeff
 from numpy import argmax as np_argmax, argsort as np_argsort
 from pickle import load as pickle_load
-from humap.functions.convert_humap_ids2names import convert2names_wscores
+from convert_humap_ids2names import convert2names_wscores
 import networkx as nx
 
 def filter_overlapped(list_comp, inputs):
