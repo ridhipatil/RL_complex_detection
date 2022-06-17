@@ -14,14 +14,17 @@ def main():
     # Input data
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_file_name", default="", help="Input parameters file name")
-    parser.add_argument("--graph_files", default="", help="Graph edges file path")
+    parser.add_argument("--graph_file", default="", help="Graph edges file path")
     parser.add_argument("--out_dir_name", default="", help="Output directory name")
     parser.add_argument("--pred_results", default="", help="Directory for prediction results")
     parser.add_argument("--train_results", default="", help="Directory for main results")
-    parser.add_argument("--graph_files_dir", default="", help="Directory for testing and training graphs")
-    parser.add_argument("--qi", default="", help="Qi threshold")
-    args = parser.parse_args()
+    parser.add_argument("--input_training_file", default="", help="Training Graph file path")
+    parser.add_argument("--input_testing_file", default="", help="Testing Graph file path")
+    #parser.add_argument("--threshold", default="", help="Qi or Jaccard threshold")
+    parser.add_argument("--id_map_path", default="", help="Path for id to gene name file")
 
+    args = parser.parse_args()
+    #args.threshold = str(args.th)
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)
 
@@ -37,7 +40,7 @@ def main():
         cmplx_tup.append(tup)
 
     # postprocessing
-    fileName = args.graph_files
+    fileName = args.graph_file
     G = nx.read_weighted_edgelist(fileName, nodetype=str)
     # remove duplicate edges and none
     G.remove_edges_from(nx.selfloop_edges(G))
@@ -56,13 +59,15 @@ def main():
     if inputs['overlap_method'] == 'qi':
        file = args.out_dir_name + '/qi_results'
        os.makedirs(args.out_dir_name + '/qi_results', exist_ok=True)
+       filename = file + '/res'  # inputs['out_comp_nm']
+       os.makedirs(file + '/results_qi', exist_ok=True)
     elif inputs["overlap_method"] == '1':  # jaccard coeff
        file = args.out_dir_name + '/jacc_results'
        os.makedirs(args.out_dir_name + '/jacc_results', exist_ok=True)
+       filename = file + '/res'  # inputs['out_comp_nm']
+       os.makedirs(file + '/results_jacc', exist_ok=True)
 
 
-    filename = file + '/results_qi' + args.qi +'/res' #inputs['out_comp_nm']
-    os.makedirs(file + '/results_qi' + args.qi, exist_ok = True)
     with open(filename + '_pred_complexes_pp.pkl', 'wb') as f:
         pickle_dump(fin_list_graphs_orig, f)
     with open(filename + '_pred_complexes_pp.txt', 'w') as f:
@@ -71,17 +76,17 @@ def main():
         yaml_dump(inputs, outfile, default_flow_style=False)
 
     # write out protein names
-    out_comp_nm = file + '/results_qi' + args.qi + '/res' #inputs['out_comp_nm']
+    out_comp_nm = file + '/res' #inputs['out_comp_nm']
     if inputs['dir_nm'] == "humap2":  # humap
         convert2names_wscores(fin_list_graphs_orig, out_comp_nm + '_pred_names.out',
-                              G, out_comp_nm + '_pred_edges_names.out')
+                              G, out_comp_nm + '_pred_edges_names.out', args.id_map_path)
     tot_pred_edges_unique_max_comp_prob = {}
     fin_list_graphs = sorted(fin_list_graphs_orig, key=lambda x: x[1], reverse=True)
-    with open(args.graph_files_dir + '/testing_CORUM_complexes_node_lists.txt', 'r') as f:
+    with open(args.input_testing_file, 'r') as f:
         testing = f.read().splitlines() #pickle_load(f)
     for c in range(len(testing)):
         testing[c] = testing[c].split()
-    with open(args.graph_files_dir + '/training_CORUM_complexes_node_lists.txt', 'r') as f:  # opens the file in read mode
+    with open(args.input_training_file, 'r') as f:  # opens the file in read mode
         training = f.read().splitlines()
     for c in range(len(training)):
         training[c] = training[c].split()

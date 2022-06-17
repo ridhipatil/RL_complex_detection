@@ -9,23 +9,21 @@ def main():
     # Evaluating
     parser: ArgumentParser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_file_name", default="", help="Input parameters file name")
-    parser.add_argument("--training_graph_file", default="", help="Training Graph file path")
-    parser.add_argument("--testing_graph_file", default="", help="Testing Graph file path")
+    parser.add_argument("--input_training_file", default="", help="Training Graph file path")
+    parser.add_argument("--input_testing_file", default="", help="Testing Graph file path")
     parser.add_argument("--out_dir_name", default="", help="Output directory name")
     parser.add_argument("--evaluate_additional_metrics", default=1, help="complexes file name")
-    parser.add_argument("--threshold", default="", help="Qi or Jaccard threshold")
     args = parser.parse_args()
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)
-    #inputs['dir_nm'] = "/Users/ridhi/Documents/PycharmProjects/Research/humap2/qi_results"
 
     file = ''
     if inputs['overlap_method'] == 'qi':
         file = args.out_dir_name + '/qi_results'
-        out_comp_nm = file + '/results_qi' + args.threshold + '/res'  # inputs['out_comp_nm']
+        out_comp_nm = file + '/res'  # inputs['out_comp_nm']
     elif inputs['overlap_method'] == '1':  # jaccard coeff
         file = args.out_dir_name + '/jacc_results'
-        out_comp_nm = file + '/results_jacc' + args.threshold + '/res'  # inputs['out_comp_nm']
+        out_comp_nm = file + '/res'  # inputs['out_comp_nm']
     with open(out_comp_nm + "_input_eval_train.yaml", 'w') as outfile:
         yaml_dump(inputs, outfile, default_flow_style=False)
 
@@ -36,7 +34,7 @@ def main():
     ## training set
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On training set ---", file=fid)
-    file = args.training_graph_file
+    file = args.input_training_file
     with open(file, 'r') as f:
         training = f.read().splitlines()
     for c in range(len(training)):
@@ -49,7 +47,7 @@ def main():
     # Remove all proteins in Predicted complexes that are not present in known complex protein list
     fin_list_graphs = remove_unknown_prots(fin_list_graphs_orig, prot_list)
     suffix = ''
-    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm,suffix="_train")
+    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm, suffix="_train")
     if args.evaluate_additional_metrics:
         try:
             run_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm, "_train")
@@ -60,7 +58,7 @@ def main():
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On testing set ---", file=fid)
 
-    file = args.graph_files_dir + '/testing_CORUM_complexes_node_lists.txt'
+    file = args.input_testing_file
     with open(file, 'r') as f:
         testing = f.read().splitlines()
     for c in range(len(testing)):
@@ -84,13 +82,13 @@ def main():
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("\n --- On both sets ---", file=fid)
 
-    file_test = args.testing_graph_file
+    file_test = args.input_testing_file
     with open(file_test, 'r') as f:
         testing = f.read().splitlines()
     for c in range(len(testing)):
         testing[c] = testing[c].split()
 
-    file_train = args.training_graph_file
+    file_train = args.input_training_file
     with open(file_train, 'r') as f:
         training = f.read().splitlines()
     for c in range(len(training)):

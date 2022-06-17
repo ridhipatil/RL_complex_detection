@@ -319,7 +319,6 @@ def compute_metrics(known_complex_nodes_list, fin_list_graphs,out_comp_nm,N_test
 def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_list=[], fin_list_graphs=[], out_comp_nm = '',suffix="both"):
     # rf - read flag to read complexes from file
     logging_info("Evaluating complexes..." + suffix)
-    out_comp_nm = inputs['dir_nm'] + inputs['out_comp_nm']
     if rf == 1:
         if rf_nm == 0:
             rf_nm = out_comp_nm + '_pred.out'
