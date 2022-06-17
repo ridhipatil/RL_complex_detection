@@ -9,7 +9,7 @@ from seaborn import distplot as sns_distplot
 from numpy import zeros as np_zeros, count_nonzero as np_count_nonzero, sum as np_sum, argmax as np_argmax, sqrt as np_sqrt
 from logging import info as logging_info
 from matplotlib.pyplot import figure as plt_figure, savefig as plt_savefig, close as plt_close, xlabel as plt_xlabel, title as plt_title, plot as plt_plot,ylabel as plt_ylabel, rc as plt_rc, rcParams as plt_rcParams
-from humap.functions.convert_humap_ids2names import convert2names_wscores_matches
+from convert_humap_ids2names import convert2names_wscores_matches
 from collections import Counter
 from test_F1_MMR import f1_mmr
 

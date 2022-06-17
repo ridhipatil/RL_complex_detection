@@ -14,16 +14,21 @@ def main():
     parser.add_argument("--out_dir_name", default="", help="Output directory name")
     parser.add_argument("--evaluate_additional_metrics", default=1, help="complexes file name")
     args = parser.parse_args()
+    print(args.input_file_name)
     with open(args.input_file_name, 'r') as f:
         inputs = yaml_load(f, yaml_Loader)
 
     file = ''
-    if inputs['overlap_method'] == 'qi':
+    if inputs['dir_nm'] == 'toy_network':
         file = args.out_dir_name + '/qi_results'
-        out_comp_nm = file + '/res'  # inputs['out_comp_nm']
-    elif inputs['overlap_method'] == '1':  # jaccard coeff
-        file = args.out_dir_name + '/jacc_results'
-        out_comp_nm = file + '/res'  # inputs['out_comp_nm']
+        out_comp_nm = file + '/res'
+    else:
+        if inputs['overlap_method'] == 'qi':
+            file = args.out_dir_name + '/qi_results'
+            out_comp_nm = file + '/res'  # inputs['out_comp_nm']
+        elif inputs['overlap_method'] == '1':  # jaccard coeff
+            file = args.out_dir_name + '/jacc_results'
+            out_comp_nm = file + '/res'  # inputs['out_comp_nm']
     with open(out_comp_nm + "_input_eval_train.yaml", 'w') as outfile:
         yaml_dump(inputs, outfile, default_flow_style=False)
 
