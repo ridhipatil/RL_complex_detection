@@ -29,7 +29,7 @@ train_results = $out_dir_name/train_results
 pred_results = $out_dir_name/pred_results
 id_map_path = convert_ids/humap_gene_id_name_map.txt
 echo Training Algorithm....
-python3 functions/main_training.py --input_training_file $input_training_file --graph_file $graph_file --train_results $train_results)
+python3 functions/main_training.py --input_training_file $input_training_file --graph_file $graph_file --train_results $train_results
 
 echo Predicting new complexes from known communities...
 python3 functions/main_prediction.py --graph_file $graph_file --train_results $train_results --out_dir_name $out_dir_name --pred_results $pred_results
