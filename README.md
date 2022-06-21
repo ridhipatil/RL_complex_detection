@@ -15,7 +15,7 @@ To run this pipeline on a new network, construct an input file similar to input_
 1. Specify the network input file: Set options dir_nm (directory containing the network) and netf_nm (file name of the network)
 2. Specify the paths for train and test communitites, in the options comf_nm and comf_test_nm (relative to the directory specified in the option- dir_nm)
 
-An example bash script to run the RL pipeline after the above steps is shown below: This is for hu.MAP complexes
+An example bash script to run the RL pipeline after the above steps is shown below: This is for complexes learned on the human PPI network, hu.MAP 1.0:
 ```
 #!/bin/bash
 
@@ -49,3 +49,5 @@ For each command, add the desired argument directly on the terminal.
 
 # References:
 [Molecular complex detection in protein interaction networks through reinforcement learning](https://doi.org/10.1101/2022.06.20.496772) 
+
+Interactive visualizations of complexes learned by the RL algorithm on two human PPI networks, hu.MAP 1.0 and hu.MAP 2.0 are available here: [https://marcottelab.github.io/RL_humap_prediction/](https://marcottelab.github.io/RL_humap_prediction/)
