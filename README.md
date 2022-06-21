@@ -43,6 +43,9 @@ python3 functions/eval_complex_RL --input_file_name $input_file_name  --input_tr
 
 ```
 
-# Additional tips:
+## Additional tips:
 For each of the scripts, optional arguments can be viewed by running: python3 script_name.py --help
 For each command, add the desired argument directly on the terminal.
+
+# References:
+[Molecular complex detection in protein interaction networks through reinforcement learning](https://doi.org/10.1101/2022.06.20.496772) 
