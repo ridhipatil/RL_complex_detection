@@ -1,5 +1,5 @@
 # Reinforcement Learning Complex Detection
-This reinforcement learning algorithm is a machine learning method for complex detection in networks. Using known communities, it is trained and learns to find new complexes in the network.
+This is a reinforcement learning algorithm for community detection in networks. Trained on known communities, it learns to find new communities in a network.
 
 # Installation:
 Required python3                                  
