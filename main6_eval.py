@@ -21,7 +21,7 @@ from sys import path as sys_path
 sys_path.insert(1, 'functions_py3/')
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 from argparse import ArgumentParser as argparse_ArgumentParser
-from humap.functions.eval_cmplx_sc import eval_complex
+from eval_cmplx_sc import eval_complex
 # from random_walk_control import control
 
 from logging import basicConfig as logging_basicConfig, INFO as logging_INFO

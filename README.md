@@ -40,7 +40,7 @@ echo Merging similar communities...
 python3 postprocessing.py --input_file_name $input_file_name --graph_file $graph_file --out_dir_name $out_dir_name --pred_results $pred_results --train_results $train_results --input_training_file $input_training_file --input_testing_file $input_testing_file --id_map_path $id_map_path
 
 echo Comparing predicted and known communitites...
-python3 eval_complex_RL --input_file_name $input_file_name  --input_training_file $input_training_file --input_testing_file $input_testing_file --out_dir_name $out_dir_name
+python3 eval_complex_RL.py --input_file_name $input_file_name  --input_training_file $input_training_file --input_testing_file $input_testing_file --out_dir_name $out_dir_name --id_name_path $id_map_path
 
 ```
 

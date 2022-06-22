@@ -16,11 +16,11 @@ from test_F1_MMR import f1_mmr
 
 
 
-def write_best_matches(best_matches_for_known,out_comp_nm,dir_nm,suffix):
+def write_best_matches(best_matches_for_known,out_comp_nm,dir_nm,suffix,id_name_map):
        
     sorted_matches = sorted(best_matches_for_known,key=lambda x: x[2],reverse=True)
     if dir_nm == "humap":
-        convert2names_wscores_matches(sorted_matches, out_comp_nm + suffix + '_known_pred_matches_names.out')
+        convert2names_wscores_matches(sorted_matches, out_comp_nm + suffix + '_known_pred_matches_names.out',id_name_map)
  
     with open(out_comp_nm + suffix + '_known_pred_matches.out', "w") as fn:
         fn_write = fn.write
@@ -127,7 +127,7 @@ def f1_similarity(P,T):
     return F1_score, C 
 
 
-def one2one_matches(known_complex_nodes_list, fin_list_graphs, N_pred_comp, N_test_comp,out_comp_nm,suffix,dir_nm):
+def one2one_matches(known_complex_nodes_list, fin_list_graphs, N_pred_comp, N_test_comp,out_comp_nm,suffix,dir_nm, id_name_map):
 
     Metric = np_zeros((N_test_comp, N_pred_comp))
     Common_nodes = np_zeros((N_test_comp, N_pred_comp))
@@ -174,8 +174,8 @@ def one2one_matches(known_complex_nodes_list, fin_list_graphs, N_pred_comp, N_te
     avg_f1_score = (avged_f1_score4known + avged_f1_score4pred)/2
     net_f1_score = 2 * avged_f1_score4known * avged_f1_score4pred / (avged_f1_score4known + avged_f1_score4pred)
     
-    write_best_matches(best_matches_4known,out_comp_nm,dir_nm,'_best4known' + suffix)
-    write_best_matches(best_matches_4predicted,out_comp_nm,dir_nm,'_best4predicted' + suffix)
+    write_best_matches(best_matches_4known,out_comp_nm,dir_nm,'_best4known' + suffix, id_name_map)
+    write_best_matches(best_matches_4predicted,out_comp_nm,dir_nm,'_best4predicted' + suffix, id_name_map)
 
     prec_MMR, recall_MMR, f1_MMR, max_matching_edges = f1_mmr(Metric)
     
@@ -295,28 +295,28 @@ def remove_unknown_prots(fin_list_graphs_orig, prot_list):
     return fin_list_graphs
 
 
-def compute_metrics(known_complex_nodes_list, fin_list_graphs,out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix):
+def compute_metrics(known_complex_nodes_list, fin_list_graphs,out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix, id_name_map):
 
     if N_test_comp != 0 and N_pred_comp != 0:
         Precision, Recall, F1_score = node_comparison_prec_recall(known_complex_nodes_list,fin_list_graphs, N_pred_comp, N_test_comp, inputs["eval_p"],out_comp_nm+suffix)
         
-        avg_f1_score, net_f1_score,PPV,Sn,acc_unbiased,prec_MMR, recall_MMR, f1_MMR,n_matches = one2one_matches(known_complex_nodes_list, fin_list_graphs, N_pred_comp, N_test_comp,out_comp_nm,suffix,inputs['dir_nm'])
+        avg_f1_score, net_f1_score,PPV,Sn,acc_unbiased,prec_MMR, recall_MMR, f1_MMR,n_matches = one2one_matches(known_complex_nodes_list, fin_list_graphs, N_pred_comp, N_test_comp,out_comp_nm,suffix,inputs['dir_nm'], id_name_map)
         
         with open(out_comp_nm + '_metrics.out', "a") as fid:
             print("No. of matches in MMR = ", n_matches, file=fid)            
-            print("MMR Precision = %.3f" % prec_MMR, file=fid)
-            print("MMR Recall = %.3f" % recall_MMR, file=fid)
-            print("MMR F1 score = %.3f" % f1_MMR, file=fid)               
-            print("Net F1 score = %.3f" % net_f1_score, file=fid)   
+            print("FMM Precision = %.3f" % prec_MMR, file=fid)
+            print("FMM Recall = %.3f" % recall_MMR, file=fid)
+            print("FMM F1 score = %.3f" % f1_MMR, file=fid)               
+            print("CMMF = %.3f" % net_f1_score, file=fid)   
             print("Unbiased PPV = %.3f" % PPV, file=fid)
             print("Unbiased Sn = %.3f" % Sn, file=fid)
-            print("Unbiased accuracy= %.3f" % acc_unbiased, file=fid)             
+            print("Unbiased accuracy (UnSPA)= %.3f" % acc_unbiased, file=fid)             
             print("Net Averaged F1 score (Average of Precision and Recall based on F1 score) = %.3f" % avg_f1_score, file=fid)
-            print("Prediction Precision = %.3f" % Precision, file=fid)
-            print("Prediction Recall = %.3f" % Recall, file=fid)
-            print("Prediction F1 score = %.3f" % F1_score, file=fid)    
+            print("Qi et al Precision = %.3f" % Precision, file=fid)
+            print("Qi et al Recall = %.3f" % Recall, file=fid)
+            print("Qi et al F1 score = %.3f" % F1_score, file=fid)    
     
-def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_list=[], fin_list_graphs=[], out_comp_nm = '',suffix="both"):
+def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_list=[], fin_list_graphs=[], out_comp_nm = '',suffix="both", id_name_map = ""):
     # rf - read flag to read complexes from file
     logging_info("Evaluating complexes..." + suffix)
     if rf == 1:
@@ -338,7 +338,7 @@ def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_lis
         print("No. of Predicted complexes = ", N_pred_comp, file=fid)
         print("\n -- Metrics on complexes with all proteins -- ", file=fid)       
     print(out_comp_nm)
-    compute_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix+'_all_prots')            
+    compute_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix+'_all_prots',id_name_map)            
     
     fin_list_graphs = remove_unknown_prots(fin_list_graphs, prot_list)
     plot_size_dists(known_complex_nodes_list, fin_list_graphs, sizes_orig, out_comp_nm)
@@ -348,7 +348,7 @@ def eval_complex(rf=0, rf_nm=0, inputs={}, known_complex_nodes_list=[], prot_lis
         print("No. of Predicted complexes after removing non-gold std proteins = ", N_pred_comp, file=fid)
         print("\n -- Metrics on complexes with only gold std proteins -- ", file=fid)   
     
-    compute_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix+'_gold_std_prots')            
+    compute_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm,N_test_comp,N_pred_comp,inputs,suffix+'_gold_std_prots', id_name_map)            
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("-- Finished writing main metrics -- \n", file=fid)   
 
