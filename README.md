@@ -24,7 +24,8 @@ input_file_name=input_$mtype.yaml
 graph_file=hu.MAP_network/input_data/humap_network_weighted_edge_lists.txt
 input_training_file=hu.MAP_network/intermediate_data/training_CORUM_complexes_node_lists.txt
 input_testing_file=hu.MAP_network/intermediate_data/testing_CORUM_complexes_node_lists.txt
-out_dir_name=/results_$mtype
+mkdir results_$mtype
+out_dir_name=./results_$mtype
 train_results=$out_dir_name/train_results
 pred_results=$out_dir_name/pred_results
 id_map_path=convert_ids/humap_gene_id_name_map.txt
