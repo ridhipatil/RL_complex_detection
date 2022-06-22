@@ -21,7 +21,7 @@ from sys import path as sys_path
 sys_path.insert(1, 'functions_py3/')
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
 from argparse import ArgumentParser as argparse_ArgumentParser
-from humap.functions.eval_cmplx_sc import eval_complex
+from eval_cmplx_sc import eval_complex
 # from random_walk_control import control
 
 from logging import basicConfig as logging_basicConfig, INFO as logging_INFO
@@ -93,10 +93,7 @@ def main():
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_file_name", default="input_toy.yaml", help="Input parameters file name")
     parser.add_argument("--out_dir_name", default="/results", help="Output directory name, by default - /results")
-    parser.add_argument("--seed_mode", help="Seed mode - specify 'cliques' for the cliques algo")
     parser.add_argument("--train_test_files_dir", default="", help="Train test file path")
-    
-    parser.add_argument("--search_method", help="Sampling algorithm")
     parser.add_argument("--model_dir", help="Directory containing model")
     parser.add_argument("--python_command", default="python", help="python / python3")
     parser.add_argument("--read_flag", default=0, help="1 when you want to read from file for evaluation")

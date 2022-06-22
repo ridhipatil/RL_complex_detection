@@ -61,15 +61,22 @@ def main():
     file = ''
     if inputs['dir_nm'] == 'toy_network':
         file = args.out_dir_name + '/qi_results'
+
+        if not os.path.exists(args.out_dir_name + '/qi_results'):
+            os.mkdir(args.out_dir_name + '/qi_results')
         filename = file + '/res'
     else:
         if inputs['overlap_method'] == 'qi':
            file = args.out_dir_name + '/qi_results'
+           if not os.path.exists(args.out_dir_name + '/qi_results'):
+               os.mkdir(args.out_dir_name + '/qi_results')
            #os.makedirs(args.out_dir_name + '/qi_results', exist_ok=True)
            filename = file + '/res'  # inputs['out_comp_nm']
            #os.makedirs(file + '/results_qi', exist_ok=True)
         elif inputs["overlap_method"] == '1':  # jaccard coeff
            file = args.out_dir_name + '/jacc_results'
+           if not os.path.exists(file):
+               os.mkdir(file)
            #os.makedirs(args.out_dir_name + '/jacc_results', exist_ok=True)
            filename = file + '/res'  # inputs['out_comp_nm']
            #os.makedirs(file + '/results_jacc', exist_ok=True)

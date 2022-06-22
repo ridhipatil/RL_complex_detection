@@ -131,12 +131,16 @@ def network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraph
     return gg
     # e += 1
 
+import os
 
 def main():
     start_time = time.time()
     matplotlib.use('Agg')
     logging.basicConfig(level=logging.WARNING)
-    matplotlib.use('tkagg')
+    try:
+        matplotlib.use('tkagg')
+    except:
+        print("Can't use tkagg backend")
     # input data
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
@@ -181,6 +185,8 @@ def main():
     network(G, gg, value_dict, dens_counter, valuefn_update, intervals, subgraphs)
     # save value function scores in dictionary
     #args.train_results = "../results/train_results"
+    if not os.path.exists(args.train_results):
+        os.mkdir(args.train_results)
     fname = args.train_results + "/value_fn_dens_dict.txt"
     file = open(fname, "w")
     value_dict_sorted = sorted(value_dict.items())

@@ -113,14 +113,21 @@ def pred_complex(n, nodes_list, G, gg, value_functions, intervals,args):
 
    # args.pred_results = "../results/pred_results"
     file = args.pred_results + '/nodes_complexes/'
+
     with open(file + str(n), 'wb') as f:
         pickle_dump(tup_cmplx, f)
     with open(file + str(n), 'rb') as f:
         pickle_load(f)
 
+import os
 
 def network(G, gg, nodes, intervals, value_functions,args):
     ## input data
+
+    fol = args.pred_results + '/nodes_complexes/'
+    if not os.path.exists(fol):
+        os.mkdir(fol)
+
     nodes_list = list(nodes)
     # make sure all intervals are accounted for
     for i in intervals:
@@ -128,6 +135,8 @@ def network(G, gg, nodes, intervals, value_functions,args):
             val_fn = interpolate(value_functions, i)
             value_functions[i] = val_fn
     filename = args.pred_results + '/value_fns_pred.pkl'
+    if not os.path.exists(args.pred_results):
+        os.mkdir(args.pred_results)
     with open(filename, 'wb') as f:
         pickle.dump(value_functions, f)
     fname = args.pred_results + '/value_fns_interp.txt'

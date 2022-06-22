@@ -184,6 +184,6 @@ def convert2names_wscores(complexes, filename, G, filename_edges, ids_map):
     convert_edges_wscore(lines, G, filename_edges, id_name_map)
 
 
-def convert2names_wscores_matches(complex_matches, filename):
-    id_name_map = read_gene_id_map()
+def convert2names_wscores_matches(complex_matches, filename, id_name_map_path):
+    id_name_map = read_gene_id_map(id_name_map_path)
     convert_nodes_matches_wscore(complex_matches, filename, id_name_map)    

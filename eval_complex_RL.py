@@ -1,8 +1,7 @@
 from argparse import ArgumentParser as argparse_ArgumentParser, ArgumentParser
 from pickle import load as pickle_load
 from yaml import load as yaml_load, dump as yaml_dump, Loader as yaml_Loader
-from eval_cmplx_sc import eval_complex
-from eval_cmplx_sc import remove_unknown_prots
+from eval_cmplx_sc import eval_complex, remove_unknown_prots
 from main6_eval import run_metrics
 import os
 def main():
@@ -13,6 +12,7 @@ def main():
     parser.add_argument("--input_testing_file", default="", help="Testing Graph file path")
     parser.add_argument("--out_dir_name", default="", help="Output directory name")
     parser.add_argument("--evaluate_additional_metrics", default=1, help="complexes file name")
+    parser.add_argument("--id_name_path", default="", help="Path for id to gene name file")
     args = parser.parse_args()
     print(args.input_file_name)
     with open(args.input_file_name, 'r') as f:
@@ -52,7 +52,7 @@ def main():
     # Remove all proteins in Predicted complexes that are not present in known complex protein list
     fin_list_graphs = remove_unknown_prots(fin_list_graphs_orig, prot_list)
     suffix = ''
-    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm, suffix="_train")
+    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm, suffix="_train", id_name_map = args.id_name_path)
     if args.evaluate_additional_metrics:
         try:
             run_metrics(known_complex_nodes_list, fin_list_graphs, out_comp_nm, "_train")
@@ -75,7 +75,7 @@ def main():
     # Remove all proteins in Predicted complexes that are not present in known complex protein list
     fin_list_graphs = remove_unknown_prots(fin_list_graphs_orig, prot_list)
     suffix = ''
-    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm,suffix="_train")
+    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm,suffix="_train", id_name_map = args.id_name_path)
 
     if args.evaluate_additional_metrics:
         try:
@@ -109,7 +109,7 @@ def main():
     N_pred_comp = len(fin_list_graphs)
     suffix = ''
 
-    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm,suffix="_train")
+    eval_complex(0, 0, inputs, known_complex_nodes_list, prot_list, fin_list_graphs, out_comp_nm,suffix="_train", id_name_map = args.id_name_path)
 
     if args.evaluate_additional_metrics:
         try:
