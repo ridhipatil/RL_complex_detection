@@ -9,7 +9,7 @@ from seaborn import distplot as sns_distplot
 from jaccard_coeff import jaccard_coeff
 from numpy import mean as np_mean, argmax as np_argmax, var as np_var, sqrt as sqrt
 from numpy.random import permutation as rand_perm, choice as rand_choice
-from logging import info as logging_info
+from logging import info as logging_info, debug as debug_info
 from networkx import write_weighted_edgelist as nx_write_weighted_edgelist, is_connected as nx_is_connected
 from scipy.stats import norm as norm_dist
 from convert_humap_ids2names import convert2names
@@ -199,55 +199,6 @@ def split_ratio(perm_lines, ratio):
     return train_list, test_list
 
 
-def split_meth_orig(perm_lines, inputs):
-    fact = inputs['fact']  # 0.99
-    split_pt = int(round(len(perm_lines) * fact))
-    train_list = [line for line in perm_lines[0:split_pt]]
-    test_list = [line for line in perm_lines[split_pt:]]
-    # Start with something that has a biased size distribution !!
-
-    sizes = [len(line) for line in train_list]
-    train_mean = np_mean(sizes)
-
-    # Transferring some of the smaller complexes to the test list
-    train_list_lower_mean = [line for line in train_list if len(line) < train_mean]
-    perc_transfer = inputs['perc_transfer']  # 0.3 # You can optimize these parameters !
-    to_transfer = train_list_lower_mean[:int(round(len(train_list_lower_mean) * perc_transfer))]
-    test_list = test_list + to_transfer
-
-    # Now remove from train set
-    for line in to_transfer:
-        train_list.remove(line)
-
-    # Finding complexes in train that share an edge with a complex in test
-    com_comp = 10
-    while com_comp != 0:  # Do until train and test sets are completely separated
-
-        # Removing super huge complexes also (nodes >30 ) from test set
-        test_list = [line for line in test_list if len(line) < 30]
-
-        # REMOVE OVERLAP B/W TRAIN AND TEST DATA
-        # Remove complexes from train set sharing two proteins with test set
-        train_rem = []
-        train_rem_append = train_rem.append
-        com_comp = 0
-        for train_line in train_list:
-            pres = 0
-            for test_line in test_list:
-                common = len(set(train_line.edges()).intersection(set(test_line.edges)))
-                if common >= 1:
-                    pres = 1
-                    break
-            if pres == 1:
-                train_rem_append(train_line)
-                com_comp += 1
-
-        logging_info("No. of train complexes transferred = %s", str(com_comp))
-        test_list = test_list + train_rem
-        for t_line in train_rem:
-            train_list.remove(t_line)
-    return train_list, test_list
-
 
 def merge_overlapped(list_comp,overlap_thres = 0.6):
     logging_info("Merging complexes...")
@@ -354,7 +305,6 @@ def split_train_test_complexes(inputs, G):
 
     perm_lines = rand_perm(complexes)
     ratio = (70, 30)
-    # train_list, test_list = split_meth_orig(perm_lines, inputs)
     train_list, test_list = split_ratio(perm_lines, ratio)
     plot_size_dists(train_list, test_list, out_comp_nm)
     with open(out_comp_nm + "_train_complexes_new.txt", "w") as f:
@@ -366,8 +316,6 @@ def split_train_test_complexes(inputs, G):
             f.write(sep.join(line) + "\n")
     with open(out_comp_nm + '_metrics.out', "a") as fid:
         print("Split ratio = %.3f" % str(float(len(train_list)) / len(test_list)), file=fid)
-        # print("Initial train_test split = ", fact, file=fid)
-        # print("Percentage of low sizes transferred from train to test = ", perc_transfer, file=fid)
     return train_list, test_list
 
 
