@@ -136,7 +136,10 @@ def main():
     start_time = time.time()
     matplotlib.use('Agg')
     logging.basicConfig(level=logging.WARNING)
-    matplotlib.use('tkagg')
+    try:
+        matplotlib.use('tkagg')
+    except:
+        print("Can't use tkagg backend")
     # input data
     parser = argparse_ArgumentParser("Input parameters")
     parser.add_argument("--input_training_file", default="", help="Training Complexes file path")
