@@ -49,6 +49,6 @@ For each of the scripts, optional arguments can be viewed by running: python3 sc
 For each command, add the desired argument directly on the terminal.
 
 # References:
-[Molecular complex detection in protein interaction networks through reinforcement learning](https://www.biorxiv.org/content/10.1101/2022.06.20.496772v1) 
+M. V. Palukuri, R. S. Patil, and E. M. Marcotte, “Molecular complex detection in protein interaction networks through reinforcement learning.” bioRxiv, p. 2022.06.20.496772. doi: [10.1101/2022.06.20.496772](https://www.biorxiv.org/content/10.1101/2022.06.20.496772v1).
 
 Interactive visualizations of complexes learned by the RL algorithm on two human PPI networks, hu.MAP 1.0 and hu.MAP 2.0 are available here: [https://marcottelab.github.io/RL_humap_prediction/](https://marcottelab.github.io/RL_humap_prediction/)
