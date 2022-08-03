@@ -144,7 +144,11 @@ def network(G, gg, nodes, intervals, value_functions,args):
         f.write(str(value_functions))
 
     # parallel running
-    num_cores = mul_cpu_count()
+    if args.n_cores == "all":
+        num_cores = mul_cpu_count()
+    else:
+        num_cores = int(args.n_cores)
+    print("No. of cores used = ",num_cores)
     Parallel(n_jobs=num_cores, backend='loky')(
         delayed(pred_complex)(node, nodes_list, G, gg, value_functions, intervals,args) for node in tqdm(nodes_list))
 
@@ -171,6 +175,7 @@ def main():
     parser.add_argument("--train_results", default="", help="Directory for training results")
     parser.add_argument("--pred_results", default="", help="Directory for prediction results")
     parser.add_argument("--out_dir_name", default = "", help = 'Main output directory')
+    parser.add_argument("--n_cores", default = "all", help = 'No. of cores to use for parallel processing')
     args = parser.parse_args()
     #os.makedirs(args.pred_results + '/nodes_complexes', exist_ok=True)
 
